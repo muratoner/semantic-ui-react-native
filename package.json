@@ -1,0 +1,20 @@
+{
+  "name": "semantic-ui-react-native",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muratoner/semantic-ui-react-native.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muratoner/semantic-ui-react-native/issues"
+  },
+  "homepage": "https://github.com/monathmuratonereoctocat/semantic-ui-react-native"
+}
