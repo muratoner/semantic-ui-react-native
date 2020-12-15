@@ -1,0 +1,2 @@
+let Image = {}
+export { Image }

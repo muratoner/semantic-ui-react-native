@@ -1,20 +1,20 @@
 {
   "name": "semantic-ui-react-native",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "What is Semantic UI - User Interface is the language of the web - Details: https://semantic-ui.com/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/muratoner/semantic-ui-react-native.git"
+    "url": "git+https://github.com/muratoner/semantic-ui-react-native.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Murat ONER",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/muratoner/semantic-ui-react-native/issues"
   },
-  "homepage": "https://github.com/monathmuratonereoctocat/semantic-ui-react-native"
+  "homepage": "https://github.com/muratoner/semantic-ui-react-native"
 }
