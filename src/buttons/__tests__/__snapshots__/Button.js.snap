@@ -1,0 +1,388 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component should render with title and circular props 1`] = `
+<ForwardRef
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#e0e1e2",
+      "borderColor": null,
+      "borderRadius": 50,
+      "borderWidth": 0,
+      "flex": null,
+      "flexDirection": "row",
+      "opacity": 1,
+      "paddingHorizontal": 11,
+      "paddingVertical": 11,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "rgba(0,0,0,.6)",
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Button Component should render with title prop 1`] = `
+<ForwardRef
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#e0e1e2",
+      "borderColor": null,
+      "borderRadius": 3,
+      "borderWidth": 0,
+      "flex": null,
+      "flexDirection": "row",
+      "opacity": 1,
+      "paddingHorizontal": 11,
+      "paddingVertical": 11,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "rgba(0,0,0,.6)",
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Button Component should render with title, circular and disabled props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#e0e1e2",
+      "borderColor": null,
+      "borderRadius": 50,
+      "borderWidth": 0,
+      "flex": null,
+      "flexDirection": "row",
+      "opacity": 0.45,
+      "paddingHorizontal": 11,
+      "paddingVertical": 11,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "rgba(0,0,0,.6)",
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Button Component should render with title, circular, disabled and fluid props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#e0e1e2",
+      "borderColor": null,
+      "borderRadius": 50,
+      "borderWidth": 0,
+      "flex": 1,
+      "flexDirection": "row",
+      "opacity": 0.45,
+      "paddingHorizontal": 11,
+      "paddingVertical": 11,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "rgba(0,0,0,.6)",
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Button Component should render with title, circular, disabled, fluid and outline props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#fff",
+      "borderColor": "#e0e1e2",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "opacity": 0.45,
+      "paddingHorizontal": 11,
+      "paddingVertical": 11,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#e0e1e2",
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Button Component should render with title, circular, disabled, fluid, outline and style props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#fff",
+      "borderColor": "#e0e1e2",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "opacity": 0.45,
+      "paddingHorizontal": 11,
+      "paddingVertical": 11,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#e0e1e2",
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Button Component should render with title, circular, disabled, fluid, outline style props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#fff",
+      "borderColor": "#e0e1e2",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "opacity": 0.45,
+      "paddingHorizontal": 11,
+      "paddingVertical": 11,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#e0e1e2",
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Button Component should render with title, circular, disabled, fluid, outline, style and color props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#fff",
+      "borderColor": "#db2828",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "opacity": 0.45,
+      "paddingHorizontal": 11,
+      "paddingVertical": 11,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#db2828",
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Button Component should render with title, circular, disabled, fluid, outline, style and color props 2`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#fff",
+      "borderColor": "#db2828",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "opacity": 0.45,
+      "paddingHorizontal": 11,
+      "paddingVertical": 11,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#db2828",
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Button Component should render with title, circular, disabled, fluid, outline, style, color and iconName props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#fff",
+      "borderColor": "#db2828",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "opacity": 0.45,
+      "paddingHorizontal": 11,
+      "paddingVertical": 11,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#db2828",
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Button Component should render with title, circular, disabled, fluid, outline, style, color, iconName and iconType props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#fff",
+      "borderColor": "#db2828",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "opacity": 0.45,
+      "paddingHorizontal": 11,
+      "paddingVertical": 11,
+    }
+  }
+>
+  <Icon
+    color="#db2828"
+    name="user"
+    style={
+      Object {
+        "fontSize": 15,
+        "marginRight": 5,
+      }
+    }
+    type="Ionicons"
+  />
+  <Text
+    style={
+      Object {
+        "color": "#db2828",
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Button Component should render without issues 1`] = `
+<ForwardRef
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#e0e1e2",
+      "borderColor": null,
+      "borderRadius": 3,
+      "borderWidth": 0,
+      "flex": null,
+      "flexDirection": "row",
+      "opacity": 1,
+      "paddingHorizontal": 11,
+      "paddingVertical": 11,
+    }
+  }
+/>
+`;

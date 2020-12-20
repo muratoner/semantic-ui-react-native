@@ -4,7 +4,7 @@ import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import Icon from '../icons/Icon';
 import ButtonColor from './ButtonColor';
 
-const ComponentButton = ({
+const Button = ({
   circular,
   outline,
   disabled,
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   },
 });
 
-ComponentButton.propTypes = {
+Button.propTypes = {
   title: PropTypes.string,
   color: PropTypes.oneOf([
     'primary',
@@ -99,4 +99,4 @@ ComponentButton.propTypes = {
   ]),
 };
 
-export default ComponentButton;
+export default Button;

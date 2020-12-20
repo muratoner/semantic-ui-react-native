@@ -20,8 +20,6 @@ export default {
         return '#db2828';
       case 'orange':
         return '#f2711c';
-      case 'orange':
-        return '#f2711c';
       case 'yellow':
         return '#fbbd08';
       case 'olive':
