@@ -1,31 +1,43 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
-import {Inset, Stack} from 'react-native-spacing-system';
-import {Button, LabeledButton} from 'semantic-ui-react-native';
+import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
+import { Stack } from 'react-native-spacing-system';
+import { Button, LabeledButton } from 'semantic-ui-react-native';
 
 const App = () => {
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{ flex: 1 }}>
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
-        style={styles.scrollView}>
-        <Inset all={10}>
-          <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
-            <Button title="Save" style={{margin: 5}} />
-            <Button title="Save" disabled style={{margin: 5}} />
-            <Button title="Save" color="primary" style={{margin: 5}} />
-            <Button title="Save" color="primary" disabled style={{margin: 5}} />
-            <Button title="Save" color="secondary" style={{margin: 5}} />
+        style={styles.scrollView}
+      >
+        <View
+          style={{
+            alignItems: 'center',
+            justifyContent: 'center',
+            margin: 10
+          }}
+        >
+          <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+            <Button title="Save" style={{ margin: 5 }} />
+            <Button title="Save" disabled style={{ margin: 5 }} />
+            <Button title="Save" color="primary" style={{ margin: 5 }} />
+            <Button
+              title="Save"
+              color="primary"
+              disabled
+              style={{ margin: 5 }}
+            />
+            <Button title="Save" color="secondary" style={{ margin: 5 }} />
             <Button
               title="Save"
               color="secondary"
               disabled
-              style={{margin: 5}}
+              style={{ margin: 5 }}
             />
-            <Button title="Save" color="red" style={{margin: 5}} />
-            <Button title="Save" color="red" disabled style={{margin: 5}} />
+            <Button title="Save" color="red" style={{ margin: 5 }} />
+            <Button title="Save" color="red" disabled style={{ margin: 5 }} />
           </View>
-          <View style={{flexDirection: 'row'}}>
+          <View style={{ flexDirection: 'row' }}>
             <Button
               title="Add Favorite"
               color="secondary"
@@ -33,7 +45,7 @@ const App = () => {
               iconType="AntDesign"
               fluid
               circular
-              style={{marginRight: 10}}
+              style={{ marginRight: 10 }}
             />
             <Button
               title="Add Favorite"
@@ -43,14 +55,14 @@ const App = () => {
               disabled
             />
           </View>
-          <View style={{flexDirection: 'row', marginVertical: 10}}>
+          <View style={{ flexDirection: 'row', marginVertical: 10 }}>
             <Button
               outline
               title="Add Friend"
               color="secondary"
               iconName="user"
               iconType="FontAwesome"
-              style={{marginRight: 10}}
+              style={{ marginRight: 10 }}
             />
             <Button
               loading
@@ -60,7 +72,7 @@ const App = () => {
               iconName="user"
               iconType="FontAwesome"
               fluid
-              style={{marginRight: 10}}
+              style={{ marginRight: 10 }}
             />
             <Button
               disabled
@@ -169,7 +181,7 @@ const App = () => {
             labelIconType="Fontisto"
             title="Pause"
           />
-        </Inset>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -178,8 +190,8 @@ const App = () => {
 const styles = StyleSheet.create({
   scrollView: {
     flex: 1,
-    height: '100%',
-  },
+    height: '100%'
+  }
 });
 
 export default App;

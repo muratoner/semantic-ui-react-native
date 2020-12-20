@@ -13,3 +13,4 @@ img
 # Test cases
 __tests__
 dist/__tests__
+example

@@ -23,7 +23,7 @@ const LabeledButton = ({
   color,
   title,
   loading,
-  pointing,
+  pointing
 }) => {
   const bgColor = ButtonColor.getBgColor(color);
   const textColor = ButtonColor.getTextColor(color);
@@ -47,8 +47,8 @@ const LabeledButton = ({
           backgroundColor: outline ? '#fff' : bgColor,
           flex: fluid ? 1 : null,
           borderColor: outline ? bgColor : '#fff',
-          borderRightWidth: outline ? 1 : 0,
-        },
+          borderRightWidth: outline ? 1 : 0
+        }
       ])}
     >
       {labelIcon && labelIconType && (
@@ -59,8 +59,8 @@ const LabeledButton = ({
           style={StyleSheet.flatten([
             styles.icon,
             {
-              marginRight: label ? 5 : 0,
-            },
+              marginRight: label ? 5 : 0
+            }
           ])}
         />
       )}
@@ -69,8 +69,8 @@ const LabeledButton = ({
           style={StyleSheet.flatten([
             styles.label,
             {
-              color: outline ? bgColor : textColor,
-            },
+              color: outline ? bgColor : textColor
+            }
           ])}
         >
           {label}
@@ -90,9 +90,9 @@ const LabeledButton = ({
             transform: [
               { rotate: '45deg' },
               { translateX: labelRight ? -6 : -3 },
-              { translateY: labelRight ? 0 : 4 },
-            ],
-          },
+              { translateY: labelRight ? 0 : 4 }
+            ]
+          }
         ])}
       />
     ) : null;
@@ -102,13 +102,13 @@ const LabeledButton = ({
       disabled={disabled}
       style={StyleSheet.flatten([
         styles.button,
-        style,
         {
           borderColor: bgColor,
           borderRadius: circular ? 50 : 3,
-          opacity: disabled ? 0.45 : 1,
-          width: fluid ? '100%' : null,
+          width: fluid ? '100%' : undefined,
+          opacity: disabled ? 0.45 : 1
         },
+        style
       ])}
     >
       {!labelRight && getLabel()}
@@ -118,8 +118,8 @@ const LabeledButton = ({
             styles.title,
             {
               color: getValueColor(),
-              flex: fluid ? 1 : null,
-            },
+              flex: fluid ? 1 : null
+            }
           ])}
         >
           {!labelRight && getPointing()}
@@ -130,7 +130,7 @@ const LabeledButton = ({
         <ActivityIndicator
           style={StyleSheet.flatten([
             styles.indicator,
-            { flex: fluid ? 1 : null },
+            { flex: fluid ? 1 : null }
           ])}
         />
       )}
@@ -144,29 +144,29 @@ const styles = StyleSheet.create({
     height: '100%',
     paddingHorizontal: 21,
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   label: {
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   },
   button: {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
     overflow: 'hidden',
-    borderWidth: 1,
+    borderWidth: 1
   },
   icon: {
-    fontSize: 15,
+    fontSize: 15
   },
   indicator: {
     paddingHorizontal: 10,
-    paddingVertical: 10,
+    paddingVertical: 10
   },
   title: {
     fontWeight: 'bold',
     paddingHorizontal: 10,
-    paddingVertical: 10,
+    paddingVertical: 10
   },
   pointing: {
     position: 'absolute',
@@ -175,8 +175,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderBottomWidth: 1,
     borderLeftWidth: 1,
-    top: '50%',
-  },
+    top: '50%'
+  }
 });
 
 LabeledButton.propTypes = {
@@ -186,7 +186,7 @@ LabeledButton.propTypes = {
     'secondary',
     'red',
     'positive',
-    'negative',
+    'negative'
   ]),
   iconName: PropTypes.string,
   iconType: PropTypes.oneOf([
@@ -203,8 +203,8 @@ LabeledButton.propTypes = {
     'MaterialIcons',
     'Octicons',
     'SimpleLineIcons',
-    'Zocial',
-  ]),
+    'Zocial'
+  ])
 };
 
 export default LabeledButton;
