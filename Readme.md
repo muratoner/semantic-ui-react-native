@@ -1,5 +1,7 @@
-# Semantic UI For React Native
+<p align="center">
+  <img alt="react-native-elements" src="https://i.ibb.co/rv3pjVw/New-Project.png" width="300">
+</p>
 
 <p align="center">
-  <img alt="react-native-elements" src="https://ibb.co/ZNSgj0M" width="300">
-</p>
+  Semantic UI Kit For React Native
+  </p>
