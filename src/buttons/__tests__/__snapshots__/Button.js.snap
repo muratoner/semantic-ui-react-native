@@ -5,7 +5,6 @@ exports[`Button Component should render with title and circular props 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "alignSelf": "flex-start",
       "backgroundColor": "#e0e1e2",
       "borderColor": null,
       "borderRadius": 50,
@@ -36,7 +35,6 @@ exports[`Button Component should render with title prop 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "alignSelf": "flex-start",
       "backgroundColor": "#e0e1e2",
       "borderColor": null,
       "borderRadius": 3,
@@ -68,7 +66,6 @@ exports[`Button Component should render with title, circular and disabled props 
   style={
     Object {
       "alignItems": "center",
-      "alignSelf": "flex-start",
       "backgroundColor": "#e0e1e2",
       "borderColor": null,
       "borderRadius": 50,
@@ -100,7 +97,6 @@ exports[`Button Component should render with title, circular, disabled and fluid
   style={
     Object {
       "alignItems": "center",
-      "alignSelf": "flex-start",
       "backgroundColor": "#e0e1e2",
       "borderColor": null,
       "borderRadius": 50,
@@ -132,7 +128,6 @@ exports[`Button Component should render with title, circular, disabled, fluid an
   style={
     Object {
       "alignItems": "center",
-      "alignSelf": "flex-start",
       "backgroundColor": "#fff",
       "borderColor": "#e0e1e2",
       "borderRadius": 50,
@@ -164,7 +159,6 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
   style={
     Object {
       "alignItems": "center",
-      "alignSelf": "flex-start",
       "backgroundColor": "#fff",
       "borderColor": "#e0e1e2",
       "borderRadius": 50,
@@ -197,7 +191,6 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
   style={
     Object {
       "alignItems": "center",
-      "alignSelf": "flex-start",
       "backgroundColor": "#fff",
       "borderColor": "#e0e1e2",
       "borderRadius": 50,
@@ -230,7 +223,6 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
   style={
     Object {
       "alignItems": "center",
-      "alignSelf": "flex-start",
       "backgroundColor": "#fff",
       "borderColor": "#db2828",
       "borderRadius": 50,
@@ -263,7 +255,6 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
   style={
     Object {
       "alignItems": "center",
-      "alignSelf": "flex-start",
       "backgroundColor": "#fff",
       "borderColor": "#db2828",
       "borderRadius": 50,
@@ -296,7 +287,6 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
   style={
     Object {
       "alignItems": "center",
-      "alignSelf": "flex-start",
       "backgroundColor": "#fff",
       "borderColor": "#db2828",
       "borderRadius": 50,
@@ -329,7 +319,6 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
   style={
     Object {
       "alignItems": "center",
-      "alignSelf": "flex-start",
       "backgroundColor": "#fff",
       "borderColor": "#db2828",
       "borderRadius": 50,
@@ -372,7 +361,6 @@ exports[`Button Component should render without issues 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "alignSelf": "flex-start",
       "backgroundColor": "#e0e1e2",
       "borderColor": null,
       "borderRadius": 3,

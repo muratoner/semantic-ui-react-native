@@ -13,7 +13,7 @@ const Button = ({
   color,
   title,
   style,
-  fluid,
+  fluid
 }) => {
   const bgColor = ButtonColor.getBgColor(color);
   const textColor = outline ? bgColor : ButtonColor.getTextColor(color);
@@ -30,12 +30,11 @@ const Button = ({
           borderRadius: circular ? 50 : 3,
           alignItems: 'center',
           flexDirection: 'row',
-          alignSelf: 'flex-start',
           borderWidth: outline ? 1 : 0,
           borderColor: outline ? bgColor : null,
           opacity: disabled ? 0.45 : 1,
-          flex: fluid ? 1 : null,
-        },
+          flex: fluid ? 1 : null
+        }
       ])}
     >
       {iconName && iconType && (
@@ -46,8 +45,8 @@ const Button = ({
           style={StyleSheet.flatten([
             styles.icon,
             {
-              marginRight: title ? 5 : 0,
-            },
+              marginRight: title ? 5 : 0
+            }
           ])}
         />
       )}
@@ -55,7 +54,7 @@ const Button = ({
         <Text
           style={{
             fontWeight: 'bold',
-            color: textColor,
+            color: textColor
           }}
         >
           {title}
@@ -67,8 +66,8 @@ const Button = ({
 
 const styles = StyleSheet.create({
   icon: {
-    fontSize: 15,
-  },
+    fontSize: 15
+  }
 });
 
 Button.propTypes = {
@@ -78,7 +77,7 @@ Button.propTypes = {
     'secondary',
     'red',
     'positive',
-    'negative',
+    'negative'
   ]),
   iconName: PropTypes.string,
   iconType: PropTypes.oneOf([
@@ -95,8 +94,8 @@ Button.propTypes = {
     'MaterialIcons',
     'Octicons',
     'SimpleLineIcons',
-    'Zocial',
-  ]),
+    'Zocial'
+  ])
 };
 
 export default Button;

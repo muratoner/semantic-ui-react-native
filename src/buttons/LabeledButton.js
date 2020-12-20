@@ -5,7 +5,7 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from 'react-native';
 import Icon from '../icons/Icon';
 import ButtonColor from './ButtonColor';
@@ -153,7 +153,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
-    alignSelf: 'flex-start',
     overflow: 'hidden',
     borderWidth: 1,
   },
