@@ -1,5 +1,5 @@
 # Semantic UI For React Native
 
-## What is Semantic UI?
-User Interface is the language of the web
-- Detail: https://semantic-ui.com/
+<p align="center">
+  <img alt="react-native-elements" src="https://ibb.co/ZNSgj0M" width="300">
+</p>
