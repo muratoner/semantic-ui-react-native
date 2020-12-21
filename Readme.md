@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="semantic-ui-react-native" src="https://i.ibb.co/LPKmVyc/New-Project-1.png" width="300">
+  <img alt="semantic-ui-react-native" src="https://user-images.githubusercontent.com/4863567/102728950-86e3aa80-433f-11eb-9f6c-edbe1153a8b5.png" width="300">
 </p>
 
 <p align="center">
@@ -13,6 +13,10 @@
   <a href="https://www.npmjs.com/package/@muratoner/semantic-ui-react-native"><img src="https://img.shields.io/npm/dm/@muratoner/semantic-ui-react-native.svg"></a>
   <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
+</p>
+
+<p align="center">
+  <img alt="semantic-ui-react-native" src="https://user-images.githubusercontent.com/4863567/102728885-3c622e00-433f-11eb-930e-da5352dbc42a.jpg" width="300">
 </p>
 
 ## Get Started
