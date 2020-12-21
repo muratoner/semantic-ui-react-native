@@ -13,6 +13,48 @@
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 </p>
 
+## Get Started
+
+### Installation
+
+#### Step 1: Install @muratoner/semantic-ui-react-native
+
+```bash
+# yarn
+yarn add @muratoner/semantic-ui-react-native
+# or with npm
+npm i @muratoner/semantic-ui-react-native --save
+```
+
+#### Step 2: Install react-native-vector-icons
+
+If you have already installed react-native-vector-icons as a dependency for your project you can skip this step. Otherwise run the following command:
+
+> Manual linking of react-native-vector-icons is not necessary if you're using react-native@0.60.0 or above since it is done automatically. This will throw an error though it won't prevent the application from running. To fix this you'll simply have to run react-native unlink react-native-vector-icons and the process will run as expected.
+
+```bash
+# yarn
+yarn add react-native-vector-icons
+# or with npm
+npm i --save react-native-vector-icons
+
+# link
+react-native link react-native-vector-icons
+```
+
+If you have any issues installing react-native-vector-icons, check out their installation guide [here](https://github.com/oblador/react-native-vector-icons#installation).
+
+### Usage
+
+Start using the components or try it on Snack
+[here](https://snack.expo.io/@muratoner/semantic-ui-react-native).
+
+```js
+import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
+
+<Button />;
+```
+
 ## Ready Components
 
 - [ ] Accordion
