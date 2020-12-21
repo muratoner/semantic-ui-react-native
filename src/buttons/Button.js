@@ -17,7 +17,9 @@ const Button = ({
 }) => {
 	const bgColor = ButtonColor.getBgColor(color);
 	const textColor = outline ? bgColor : ButtonColor.getTextColor(color);
-
+	const iconStyle = {
+		marginRight: title ? 5 : 0
+	};
 	return (
 		<TouchableOpacity
 			disabled={disabled}
@@ -42,12 +44,7 @@ const Button = ({
 					name={iconName}
 					type={iconType}
 					color={textColor}
-					style={StyleSheet.flatten([
-						styles.icon,
-						{
-							marginRight: title ? 5 : 0
-						}
-					])}
+					style={StyleSheet.flatten([styles.icon, iconStyle])}
 				/>
 			)}
 			{title && (

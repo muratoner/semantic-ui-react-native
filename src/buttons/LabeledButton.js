@@ -39,63 +39,62 @@ const LabeledButton = ({
 		}
 	};
 
-	const getLabel = () => (
-		<View
-			style={StyleSheet.flatten([
-				styles.labelContainer,
-				{
-					backgroundColor: outline ? '#fff' : bgColor,
-					flex: fluid ? 1 : null,
-					borderColor: outline ? bgColor : '#fff',
-					borderRightWidth: outline ? 1 : 0
-				}
-			])}
-		>
-			{labelIcon && labelIconType && (
-				<Icon
-					name={labelIcon}
-					type={labelIconType}
-					color={outline ? bgColor : textColor}
-					style={StyleSheet.flatten([
-						styles.icon,
-						{
-							marginRight: label ? 5 : 0
-						}
-					])}
-				/>
-			)}
-			{label && (
-				<Text
-					style={StyleSheet.flatten([
-						styles.label,
-						{
-							color: outline ? bgColor : textColor
-						}
-					])}
-				>
-					{label}
-				</Text>
-			)}
-			{labelRight && getPointing()}
-		</View>
-	);
-
-	const getPointing = () =>
-		pointing ? (
+	const getLabel = () => {
+		const iconStyle = {
+			marginRight: label ? 5 : 0
+		};
+		return (
 			<View
 				style={StyleSheet.flatten([
-					styles.pointing,
+					styles.labelContainer,
 					{
+						backgroundColor: outline ? '#fff' : bgColor,
+						flex: fluid ? 1 : null,
 						borderColor: outline ? bgColor : '#fff',
-						transform: [
-							{ rotate: '45deg' },
-							{ translateX: labelRight ? -6 : -3 },
-							{ translateY: labelRight ? 0 : 4 }
-						]
+						borderRightWidth: outline ? 1 : 0
 					}
 				])}
-			/>
+			>
+				{labelIcon && labelIconType && (
+					<Icon
+						name={labelIcon}
+						type={labelIconType}
+						color={outline ? bgColor : textColor}
+						style={StyleSheet.flatten([styles.icon, iconStyle])}
+					/>
+				)}
+				{label && (
+					<Text
+						style={StyleSheet.flatten([
+							styles.label,
+							{
+								color: outline ? bgColor : textColor
+							}
+						])}
+					>
+						{label}
+					</Text>
+				)}
+				{labelRight && getPointing()}
+			</View>
+		);
+	};
+
+	const getPointing = () => {
+		const customStyle = {
+			borderColor: outline ? bgColor : '#fff',
+			transform: [
+				{ rotate: '45deg' },
+				{ translateX: labelRight ? -6 : -3 },
+				{ translateY: labelRight ? 0 : 4 }
+			]
+		};
+		return pointing ? (
+			<View style={StyleSheet.flatten([styles.pointing, customStyle])} />
 		) : null;
+	};
+
+	const indicatorStyle = { flex: fluid ? 1 : null };
 
 	return (
 		<TouchableOpacity
@@ -128,10 +127,7 @@ const LabeledButton = ({
 			)}
 			{loading && (
 				<ActivityIndicator
-					style={StyleSheet.flatten([
-						styles.indicator,
-						{ flex: fluid ? 1 : null }
-					])}
+					style={StyleSheet.flatten([styles.indicator, indicatorStyle])}
 				/>
 			)}
 			{labelRight && getLabel()}

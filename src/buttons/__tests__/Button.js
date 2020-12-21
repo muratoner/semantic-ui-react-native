@@ -57,7 +57,7 @@ describe('Button Component', () => {
 				fluid
 				outline
 				style={{
-					height: 50,
+					height: 50
 				}}
 			/>
 		);
@@ -75,7 +75,7 @@ describe('Button Component', () => {
 				fluid
 				outline
 				style={{
-					height: 50,
+					height: 50
 				}}
 			/>
 		);
@@ -93,7 +93,7 @@ describe('Button Component', () => {
 				fluid
 				outline
 				style={{
-					height: 50,
+					height: 50
 				}}
 				color="red"
 			/>
@@ -112,7 +112,7 @@ describe('Button Component', () => {
 				fluid
 				outline
 				style={{
-					height: 50,
+					height: 50
 				}}
 				color="red"
 				iconName="user"
@@ -132,7 +132,7 @@ describe('Button Component', () => {
 				fluid
 				outline
 				style={{
-					height: 50,
+					height: 50
 				}}
 				color="red"
 				iconName="user"
@@ -143,21 +143,9 @@ describe('Button Component', () => {
 		expect(toJson(component)).toMatchSnapshot();
 	});
 
-	it('should render with title, circular, disabled, fluid, outline, style, color, iconName and iconType props', () => {
+	it('should render with title, iconName and iconType props', () => {
 		const component = shallow(
-			<Button
-				title="Save"
-				circular
-				disabled
-				fluid
-				outline
-				style={{
-					height: 50,
-				}}
-				color="red"
-				iconName="user"
-				iconType="Ionicons"
-			/>
+			<Button title="Add Friend" iconName="user" iconType="Ionicons" />
 		);
 
 		expect(component.length).toBe(1);

@@ -1,0 +1,740 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Labeled Button Component should render with circular, disabled, fluid, outline, style, color, iconName and iconType props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#db2828",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "opacity": 0.45,
+      "overflow": "hidden",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderColor": "#db2828",
+        "borderRightWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with circular, disabled, fluid, outline, style, color, iconName, iconType and pointing props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#db2828",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "opacity": 0.45,
+      "overflow": "hidden",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderColor": "#db2828",
+        "borderRightWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with circular, disabled, fluid, outline, style, color, iconName, iconType and pointing props 2`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#db2828",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "opacity": 0.45,
+      "overflow": "hidden",
+      "width": "100%",
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="#999999"
+    hidesWhenStopped={true}
+    size="small"
+    style={
+      Object {
+        "flex": 1,
+        "paddingHorizontal": 10,
+        "paddingVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderColor": "#db2828",
+        "borderRightWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  >
+    <Icon
+      color="#db2828"
+      name="fork"
+      style={
+        Object {
+          "fontSize": 15,
+          "marginRight": 5,
+        }
+      }
+      type="Ionicons"
+    />
+    <Text
+      style={
+        Object {
+          "color": "#db2828",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Forks
+    </Text>
+    <View
+      style={
+        Object {
+          "backgroundColor": "#fff",
+          "borderBottomWidth": 1,
+          "borderColor": "#db2828",
+          "borderLeftWidth": 1,
+          "height": 10,
+          "position": "absolute",
+          "top": "50%",
+          "transform": Array [
+            Object {
+              "rotate": "45deg",
+            },
+            Object {
+              "translateX": -6,
+            },
+            Object {
+              "translateY": 0,
+            },
+          ],
+          "width": 10,
+        }
+      }
+    />
+  </View>
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with color, title, label, labelIcon and labelIconType props 1`] = `
+<ForwardRef
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#2185d0",
+      "borderRadius": 3,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "opacity": 1,
+      "overflow": "hidden",
+      "width": undefined,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#2185d0",
+        "borderColor": "#fff",
+        "borderRightWidth": 0,
+        "flex": null,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  >
+    <Icon
+      color="#fff"
+      name="fork"
+      style={
+        Object {
+          "fontSize": 15,
+          "marginRight": 5,
+        }
+      }
+      type="Ionicons"
+    />
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Forks
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#2185d0",
+        "flex": null,
+        "fontWeight": "bold",
+        "paddingHorizontal": 10,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    1,048
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with title and circular props 1`] = `
+<ForwardRef
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#e0e1e2",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "opacity": 1,
+      "overflow": "hidden",
+      "width": undefined,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e0e1e2",
+        "borderColor": "#fff",
+        "borderRightWidth": 0,
+        "flex": null,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "rgba(0,0,0,.6)",
+        "flex": null,
+        "fontWeight": "bold",
+        "paddingHorizontal": 10,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with title prop 1`] = `
+<ForwardRef
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#e0e1e2",
+      "borderRadius": 3,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "opacity": 1,
+      "overflow": "hidden",
+      "width": undefined,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e0e1e2",
+        "borderColor": "#fff",
+        "borderRightWidth": 0,
+        "flex": null,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "rgba(0,0,0,.6)",
+        "flex": null,
+        "fontWeight": "bold",
+        "paddingHorizontal": 10,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with title, circular and disabled props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#e0e1e2",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "opacity": 0.45,
+      "overflow": "hidden",
+      "width": undefined,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e0e1e2",
+        "borderColor": "#fff",
+        "borderRightWidth": 0,
+        "flex": null,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "rgba(0,0,0,.6)",
+        "flex": null,
+        "fontWeight": "bold",
+        "paddingHorizontal": 10,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with title, circular, disabled and fluid props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#e0e1e2",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "opacity": 0.45,
+      "overflow": "hidden",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e0e1e2",
+        "borderColor": "#fff",
+        "borderRightWidth": 0,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "rgba(0,0,0,.6)",
+        "flex": 1,
+        "fontWeight": "bold",
+        "paddingHorizontal": 10,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with title, circular, disabled, fluid and outline props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#e0e1e2",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "opacity": 0.45,
+      "overflow": "hidden",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderColor": "#e0e1e2",
+        "borderRightWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "rgba(0,0,0,.6)",
+        "flex": 1,
+        "fontWeight": "bold",
+        "paddingHorizontal": 10,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with title, circular, disabled, fluid, outline and style props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#e0e1e2",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "opacity": 0.45,
+      "overflow": "hidden",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderColor": "#e0e1e2",
+        "borderRightWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "rgba(0,0,0,.6)",
+        "flex": 1,
+        "fontWeight": "bold",
+        "paddingHorizontal": 10,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with title, circular, disabled, fluid, outline style props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#e0e1e2",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "opacity": 0.45,
+      "overflow": "hidden",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderColor": "#e0e1e2",
+        "borderRightWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "rgba(0,0,0,.6)",
+        "flex": 1,
+        "fontWeight": "bold",
+        "paddingHorizontal": 10,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with title, circular, disabled, fluid, outline, style and color props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#db2828",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "opacity": 0.45,
+      "overflow": "hidden",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderColor": "#db2828",
+        "borderRightWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "#db2828",
+        "flex": 1,
+        "fontWeight": "bold",
+        "paddingHorizontal": 10,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with title, circular, disabled, fluid, outline, style and color props 2`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#db2828",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "opacity": 0.45,
+      "overflow": "hidden",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderColor": "#db2828",
+        "borderRightWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "#db2828",
+        "flex": 1,
+        "fontWeight": "bold",
+        "paddingHorizontal": 10,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render with title, circular, disabled, fluid, outline, style, color and iconName props 1`] = `
+<ForwardRef
+  disabled={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#db2828",
+      "borderRadius": 50,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "opacity": 0.45,
+      "overflow": "hidden",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderColor": "#db2828",
+        "borderRightWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "#db2828",
+        "flex": 1,
+        "fontWeight": "bold",
+        "paddingHorizontal": 10,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Save
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Labeled Button Component should render without issues 1`] = `
+<ForwardRef
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#e0e1e2",
+      "borderRadius": 3,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "opacity": 1,
+      "overflow": "hidden",
+      "width": undefined,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e0e1e2",
+        "borderColor": "#fff",
+        "borderRightWidth": 0,
+        "flex": null,
+        "flexDirection": "row",
+        "height": "100%",
+        "paddingHorizontal": 21,
+      }
+    }
+  />
+</ForwardRef>
+`;

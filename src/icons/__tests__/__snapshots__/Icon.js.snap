@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon Component should render with name 1`] = `
+<Icon
+  allowFontScaling={false}
+  name="add-circle"
+  size={12}
+/>
+`;
+
+exports[`Icon Component should render with name, type 1`] = `
+<Icon
+  allowFontScaling={false}
+  name="info"
+  size={12}
+/>
+`;
+
+exports[`Icon Component should render with name, type, color 1`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="500px"
+  size={12}
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size 1`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="archive"
+  size={50}
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size, style 1`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="activity"
+  size={50}
+  style={
+    Object {
+      "left": 5,
+      "position": "absolute",
+      "top": 5,
+    }
+  }
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size, style 2`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="glass"
+  size={50}
+  style={
+    Object {
+      "left": 5,
+      "position": "absolute",
+      "top": 5,
+    }
+  }
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size, style 3`] = `
+<IconClass
+  brand={false}
+  color="#181896"
+  light={false}
+  name="ad"
+  regular={false}
+  size={50}
+  solid={false}
+  style={
+    Object {
+      "left": 5,
+      "position": "absolute",
+      "top": 5,
+    }
+  }
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size, style 4`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="aws"
+  size={50}
+  style={
+    Object {
+      "left": 5,
+      "position": "absolute",
+      "top": 5,
+    }
+  }
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size, style 5`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="alert"
+  size={50}
+  style={
+    Object {
+      "left": 5,
+      "position": "absolute",
+      "top": 5,
+    }
+  }
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size, style 6`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="add"
+  size={50}
+  style={
+    Object {
+      "left": 5,
+      "position": "absolute",
+      "top": 5,
+    }
+  }
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size, style 7`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="add"
+  size={50}
+  style={
+    Object {
+      "left": 5,
+      "position": "absolute",
+      "top": 5,
+    }
+  }
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size, style 8`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="alert"
+  size={50}
+  style={
+    Object {
+      "left": 5,
+      "position": "absolute",
+      "top": 5,
+    }
+  }
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size, style 9`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="360"
+  size={50}
+  style={
+    Object {
+      "left": 5,
+      "position": "absolute",
+      "top": 5,
+    }
+  }
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size, style 10`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="alert"
+  size={50}
+  style={
+    Object {
+      "left": 5,
+      "position": "absolute",
+      "top": 5,
+    }
+  }
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size, style 11`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="user"
+  size={50}
+  style={
+    Object {
+      "left": 5,
+      "position": "absolute",
+      "top": 5,
+    }
+  }
+/>
+`;
+
+exports[`Icon Component should render with name, type, color, size, style 12`] = `
+<Icon
+  allowFontScaling={false}
+  color="#181896"
+  name="acrobat"
+  size={50}
+  style={
+    Object {
+      "left": 5,
+      "position": "absolute",
+      "top": 5,
+    }
+  }
+/>
+`;
+
+exports[`Icon Component should render without issues 1`] = `
+<Icon
+  allowFontScaling={false}
+  size={12}
+/>
+`;

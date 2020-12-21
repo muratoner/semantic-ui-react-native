@@ -14,80 +14,48 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Octicons from 'react-native-vector-icons/Octicons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import Zocial from 'react-native-vector-icons/Zocial';
+import { IconProps } from '../index';
 
-class Icon extends React.Component {
-  state = {
-  	Icon: null,
-  };
+const Icon = (props: IconProps) => {
+	let { type, ...attributes } = props;
+	const getIcon = () => {
+		switch (type) {
+		case 'AntDesign':
+			return AntDesign;
+		case 'Entypo':
+			return Entypo;
+		case 'EvilIcons':
+			return EvilIcons;
+		case 'Feather':
+			return Feather;
+		case 'FontAwesome':
+			return FontAwesome;
+		case 'FontAwesome5':
+			return FontAwesome5;
+		case 'Fontisto':
+			return Fontisto;
+		case 'Foundation':
+			return Foundation;
+		case 'MaterialCommunityIcons':
+			return MaterialCommunityIcons;
+		case 'MaterialIcons':
+			return MaterialIcons;
+		case 'Octicons':
+			return Octicons;
+		case 'SimpleLineIcons':
+			return SimpleLineIcons;
+		case 'Zocial':
+			return Zocial;
+		case 'Ionicons':
+		default:
+			return Ionicons;
+		}
+	};
 
-  componentDidMount() {
-  	this.setIcon(this.props.type);
-  }
+	var IconType = getIcon();
 
-  setIcon(type) {
-  	let iconType;
-  	switch (type) {
-  	case 'AntDesign':
-  		iconType = AntDesign;
-  		break;
-  	case 'Entypo':
-  		iconType = Entypo;
-  		break;
-  	case 'EvilIcons':
-  		iconType = EvilIcons;
-  		break;
-  	case 'Feather':
-  		iconType = Feather;
-  		break;
-  	case 'FontAwesome':
-  		iconType = FontAwesome;
-  		break;
-  	case 'FontAwesome5':
-  		iconType = FontAwesome5;
-  		break;
-  	case 'Fontisto':
-  		iconType = Fontisto;
-  		break;
-  	case 'Foundation':
-  		iconType = Foundation;
-  		break;
-  	case 'Ionicons':
-  		iconType = Ionicons;
-  		break;
-  	case 'MaterialCommunityIcons':
-  		iconType = MaterialCommunityIcons;
-  		break;
-  	case 'MaterialIcons':
-  		iconType = MaterialIcons;
-  		break;
-  	case 'Octicons':
-  		iconType = Octicons;
-  		break;
-  	case 'SimpleLineIcons':
-  		iconType = SimpleLineIcons;
-  		break;
-  	case 'Zocial':
-  		iconType = Zocial;
-  		break;
-  	default:
-  		iconType = Ionicons;
-  	}
-  	this.setState({
-  		Icon: iconType,
-  	});
-  }
-
-  render() {
-  	return this.state.Icon ? (
-  		<this.state.Icon
-  			name={this.props.name}
-  			color={this.props.color}
-  			size={this.props.size}
-  			style={this.props.style}
-  		/>
-  	) : null;
-  }
-}
+	return <IconType {...attributes} />;
+};
 
 Icon.propTypes = {
 	name: PropTypes.string,
@@ -105,11 +73,11 @@ Icon.propTypes = {
 		'MaterialIcons',
 		'Octicons',
 		'SimpleLineIcons',
-		'Zocial',
+		'Zocial'
 	]),
 	size: PropTypes.number,
 	color: PropTypes.string,
-	style: PropTypes.object,
+	style: PropTypes.object
 };
 
 export default Icon;
