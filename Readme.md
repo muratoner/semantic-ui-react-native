@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img alt="semantic-ui-react-native" src="https://user-images.githubusercontent.com/4863567/102728885-3c622e00-433f-11eb-930e-da5352dbc42a.jpg">
+  <img alt="semantic-ui-react-native" src="https://user-images.githubusercontent.com/4863567/102729025-e477f700-433f-11eb-8e5a-08b466c7c211.jpg">
 </p>
 
 ## Get Started
