@@ -9,7 +9,6 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/@muratoner/semantic-ui-react-native"><img src="https://img.shields.io/npm/v/@muratoner/semantic-ui-react-native.svg"></a>
   <a href="https://travis-ci.org/muratoner/semantic-ui-react-native"><img src="https://img.shields.io/travis/muratoner/semantic-ui-react-native/master.svg"></a>
-<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fmuratoner%2Fsemantic-ui-react-native?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmuratoner%2Fsemantic-ui-react-native.svg?type=shield"/></a>
   <a href="https://codecov.io/gh/muratoner/semantic-ui-react-native"><img src="https://codecov.io/gh/muratoner/semantic-ui-react-native/coverage.svg"></a>
   <a href="https://www.npmjs.com/package/@muratoner/semantic-ui-react-native"><img src="https://img.shields.io/npm/dm/@muratoner/semantic-ui-react-native.svg"></a>
 </p>
@@ -127,6 +126,4 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [ ] Tab
 - [ ] Table
 - [ ] Tile
-- [ ] Tooltip
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmuratoner%2Fsemantic-ui-react-native.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmuratoner%2Fsemantic-ui-react-native?ref=badge_large)
+- [ ] Toolti
