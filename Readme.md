@@ -96,3 +96,4 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [ ] Table
 - [ ] Tile
 - [ ] Tooltip
+
