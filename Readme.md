@@ -54,7 +54,24 @@ Start using the components or try it on Snack
 ```js
 import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 
-<Button />;
+<Button
+  disabled
+  loading
+  outline
+  title="Add Friend"
+  color="red"
+  iconName="user"
+  iconType="FontAwesome"
+/>;
+<LabeledButton
+  outline
+  pointing
+  color="primary"
+  label="Forks"
+  labelIcon="fork"
+  labelIconType="AntDesign"
+  title="1,048"
+/>;
 ```
 
 ## Ready Components
