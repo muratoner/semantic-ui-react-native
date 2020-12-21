@@ -24,9 +24,6 @@
   <img alt="semantic-ui-react-native" src="https://user-images.githubusercontent.com/4863567/102729025-e477f700-433f-11eb-8e5a-08b466c7c211.jpg">
 </p>
 
-
-
-
 ## Get Started
 
 ### Installation
