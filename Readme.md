@@ -26,7 +26,7 @@
 </p>
 
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmuratoner%2Fsemantic-ui-react-native.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmuratoner%2Fsemantic-ui-react-native?ref=badge_large)
+
 
 ## Get Started
 
@@ -128,3 +128,5 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [ ] Table
 - [ ] Tile
 - [ ] Tooltip
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmuratoner%2Fsemantic-ui-react-native.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmuratoner%2Fsemantic-ui-react-native?ref=badge_large)
