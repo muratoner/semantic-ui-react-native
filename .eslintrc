@@ -2,7 +2,7 @@
   "extends": ["prettier"],
   "parser": "babel-eslint",
   "rules": {
-    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "indent": ["error", "tab"],
     "react/require-extension": "off",
     "no-undef": "off",
     "import/order": "off",

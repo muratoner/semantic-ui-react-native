@@ -17,99 +17,99 @@ import Zocial from 'react-native-vector-icons/Zocial';
 
 class Icon extends React.Component {
   state = {
-    Icon: null,
+  	Icon: null,
   };
 
   componentDidMount() {
-    this.setIcon(this.props.type);
+  	this.setIcon(this.props.type);
   }
 
   setIcon(type) {
-    let iconType;
-    switch (type) {
-      case 'AntDesign':
-        iconType = AntDesign;
-        break;
-      case 'Entypo':
-        iconType = Entypo;
-        break;
-      case 'EvilIcons':
-        iconType = EvilIcons;
-        break;
-      case 'Feather':
-        iconType = Feather;
-        break;
-      case 'FontAwesome':
-        iconType = FontAwesome;
-        break;
-      case 'FontAwesome5':
-        iconType = FontAwesome5;
-        break;
-      case 'Fontisto':
-        iconType = Fontisto;
-        break;
-      case 'Foundation':
-        iconType = Foundation;
-        break;
-      case 'Ionicons':
-        iconType = Ionicons;
-        break;
-      case 'MaterialCommunityIcons':
-        iconType = MaterialCommunityIcons;
-        break;
-      case 'MaterialIcons':
-        iconType = MaterialIcons;
-        break;
-      case 'Octicons':
-        iconType = Octicons;
-        break;
-      case 'SimpleLineIcons':
-        iconType = SimpleLineIcons;
-        break;
-      case 'Zocial':
-        iconType = Zocial;
-        break;
-      default:
-        iconType = Ionicons;
-    }
-    this.setState({
-      Icon: iconType,
-    });
+  	let iconType;
+  	switch (type) {
+  	case 'AntDesign':
+  		iconType = AntDesign;
+  		break;
+  	case 'Entypo':
+  		iconType = Entypo;
+  		break;
+  	case 'EvilIcons':
+  		iconType = EvilIcons;
+  		break;
+  	case 'Feather':
+  		iconType = Feather;
+  		break;
+  	case 'FontAwesome':
+  		iconType = FontAwesome;
+  		break;
+  	case 'FontAwesome5':
+  		iconType = FontAwesome5;
+  		break;
+  	case 'Fontisto':
+  		iconType = Fontisto;
+  		break;
+  	case 'Foundation':
+  		iconType = Foundation;
+  		break;
+  	case 'Ionicons':
+  		iconType = Ionicons;
+  		break;
+  	case 'MaterialCommunityIcons':
+  		iconType = MaterialCommunityIcons;
+  		break;
+  	case 'MaterialIcons':
+  		iconType = MaterialIcons;
+  		break;
+  	case 'Octicons':
+  		iconType = Octicons;
+  		break;
+  	case 'SimpleLineIcons':
+  		iconType = SimpleLineIcons;
+  		break;
+  	case 'Zocial':
+  		iconType = Zocial;
+  		break;
+  	default:
+  		iconType = Ionicons;
+  	}
+  	this.setState({
+  		Icon: iconType,
+  	});
   }
 
   render() {
-    return this.state.Icon ? (
-      <this.state.Icon
-        name={this.props.name}
-        color={this.props.color}
-        size={this.props.size}
-        style={this.props.style}
-      />
-    ) : null;
+  	return this.state.Icon ? (
+  		<this.state.Icon
+  			name={this.props.name}
+  			color={this.props.color}
+  			size={this.props.size}
+  			style={this.props.style}
+  		/>
+  	) : null;
   }
 }
 
 Icon.propTypes = {
-  name: PropTypes.string,
-  type: PropTypes.oneOf([
-    'AntDesign',
-    'Entypo',
-    'EvilIcons',
-    'Feather',
-    'FontAwesome',
-    'FontAwesome5',
-    'Fontisto',
-    'Foundation',
-    'Ionicons',
-    'MaterialCommunityIcons',
-    'MaterialIcons',
-    'Octicons',
-    'SimpleLineIcons',
-    'Zocial',
-  ]),
-  size: PropTypes.number,
-  color: PropTypes.string,
-  style: PropTypes.object,
+	name: PropTypes.string,
+	type: PropTypes.oneOf([
+		'AntDesign',
+		'Entypo',
+		'EvilIcons',
+		'Feather',
+		'FontAwesome',
+		'FontAwesome5',
+		'Fontisto',
+		'Foundation',
+		'Ionicons',
+		'MaterialCommunityIcons',
+		'MaterialIcons',
+		'Octicons',
+		'SimpleLineIcons',
+		'Zocial',
+	]),
+	size: PropTypes.number,
+	color: PropTypes.string,
+	style: PropTypes.object,
 };
 
 export default Icon;

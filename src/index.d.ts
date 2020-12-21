@@ -1,17 +1,17 @@
 import * as React from 'react';
 import {
-  ActivityIndicatorProps,
-  StyleProp,
-  TextProps as TextProperties,
-  TextStyle,
-  TouchableHighlightProps,
-  TouchableNativeFeedbackProps,
-  TouchableOpacityProps,
-  ViewStyle,
+	ActivityIndicatorProps,
+	StyleProp,
+	TextProps as TextProperties,
+	TextStyle,
+	TouchableHighlightProps,
+	TouchableNativeFeedbackProps,
+	TouchableOpacityProps,
+	ViewStyle,
 } from 'react-native';
 import {
-  IconButtonProps,
-  IconProps as VectorIconProps,
+	IconButtonProps,
+	IconProps as VectorIconProps,
 } from 'react-native-vector-icons/Icon';
 
 export interface TouchableComponent extends TouchableHighlightProps {}

@@ -7,8 +7,8 @@ import LabeledButton from './buttons/LabeledButton';
 import Icon from './icons/Icon';
 
 export {
-    Button,
-    LabeledButton,
-    Icon,
+	Button,
+	LabeledButton,
+	Icon,
 };
 
