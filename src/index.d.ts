@@ -7,11 +7,11 @@ import {
   TouchableHighlightProps,
   TouchableNativeFeedbackProps,
   TouchableOpacityProps,
-  ViewStyle
+  ViewStyle,
 } from 'react-native';
 import {
   IconButtonProps,
-  IconProps as VectorIconProps
+  IconProps as VectorIconProps,
 } from 'react-native-vector-icons/Icon';
 
 export interface TouchableComponent extends TouchableHighlightProps {}
@@ -20,20 +20,20 @@ export interface TouchableComponent extends TouchableHighlightProps {}
  * Supports auto complete for most used types as well as any other string type.
  */
 export type IconType =
-  'AntDesign'|
-  'Entypo'|
-  'EvilIcons'|
-  'Feather'|
-  'FontAwesome'|
-  'FontAwesome5'|
-  'Fontisto'|
-  'Foundation'|
-  'Ionicons'|
-  'MaterialCommunityIcons'|
-  'MaterialIcons'|
-  'Octicons'|
-  'SimpleLineIcons'|
-  'Zocial';
+  | 'AntDesign'
+  | 'Entypo'
+  | 'EvilIcons'
+  | 'Feather'
+  | 'FontAwesome'
+  | 'FontAwesome5'
+  | 'Fontisto'
+  | 'Foundation'
+  | 'Ionicons'
+  | 'MaterialCommunityIcons'
+  | 'MaterialIcons'
+  | 'Octicons'
+  | 'SimpleLineIcons'
+  | 'Zocial';
 
 export interface IconObject extends TouchableComponent {
   name?: string;
@@ -101,7 +101,7 @@ export interface LabeledButtonProps
   /**
    * Icon type
    */
-  iconType?: IconType
+  iconType?: IconType;
 
   /**
    * Style for the container around the icon
@@ -200,22 +200,22 @@ export interface LabeledButtonProps
   /**
    * Button type outline
    */
-  outline?: boolean
+  outline?: boolean;
 
   /**
    * Button pointing
    */
-  pointing?: boolean
+  pointing?: boolean;
 
   /**
    * Button width of its container
    */
-  fluid?: boolean
+  fluid?: boolean;
 
   /**
    * Button circular
    */
-  circular?: boolean
+  circular?: boolean;
 }
 
 export interface ButtonProps
@@ -263,7 +263,7 @@ export interface ButtonProps
   /**
    * Icon type
    */
-  iconType?: IconType
+  iconType?: IconType;
 
   /**
    * Style for the container around the icon
@@ -342,17 +342,17 @@ export interface ButtonProps
   /**
    * Button type outline
    */
-  outline?: boolean
+  outline?: boolean;
 
   /**
    * Button width of its container
    */
-  fluid?: boolean
+  fluid?: boolean;
 
   /**
    * Button circular
    */
-  circular?: boolean
+  circular?: boolean;
 }
 
 export type IconNode = boolean | React.ReactElement<{}> | Partial<IconProps>;
@@ -367,9 +367,7 @@ export class Button extends React.Component<ButtonProps, any> {}
  * Labeled Button component
  *
  */
-export class LabeledButton extends React.Component<LabeledButtonProps, any> {
-  
-}
+export class LabeledButton extends React.Component<LabeledButtonProps, any> {}
 
 export interface ButtonGroupProps {
   /**
@@ -394,7 +392,7 @@ export interface ButtonGroupProps {
   /**
    * Array of buttons for component, if returning a component, must be an object with { element: componentName }
    */
-  buttons: string[] | ElementObject[];
+  buttons: string[];
 
   /**
    * Choose other button component such as TouchableOpacity
@@ -434,11 +432,6 @@ export interface ButtonGroupProps {
    * Specify specific styling for text in the selected state
    */
   selectedTextStyle?: StyleProp<TextStyle>;
-
-  /**
-   * inherited styling	object { width, color }	update the styling of the interior border of the list of buttons
-   */
-  innerBorderStyle?: InnerBorderStyleProperty;
 
   /**
    * Specify underlayColor for TouchableHighlight
@@ -497,22 +490,6 @@ export interface ButtonGroupProps {
    * Method to update Button Group Index
    */
   onPress(selectedIndex: number): void;
-
-  /**
-   *
-   * Called immediately after the underlay is hidden
-   */
-  onHideUnderlay?(): void;
-
-  /**
-   * Called immediately after the underlay is shown
-   */
-  onShowUnderlay?(): void;
-
-  /**
-   * Animate the touchable to a new opacity.
-   */
-  setOpacityTo?(value: number): void;
 }
 
 export class ButtonGroup extends React.Component<ButtonGroupProps> {}
