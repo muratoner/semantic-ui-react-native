@@ -11,6 +11,9 @@
   <a href="https://travis-ci.org/muratoner/semantic-ui-react-native"><img src="https://img.shields.io/travis/muratoner/semantic-ui-react-native/master.svg"></a>
   <a href="https://codecov.io/gh/muratoner/semantic-ui-react-native"><img src="https://codecov.io/gh/muratoner/semantic-ui-react-native/coverage.svg"></a>
   <a href="https://www.npmjs.com/package/@muratoner/semantic-ui-react-native"><img src="https://img.shields.io/npm/dm/@muratoner/semantic-ui-react-native.svg"></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg"></a>
   <a href="http://makeapullrequest.com/"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
   <a href="https://david-dm.org/muratoner/semantic-ui-react-native"><img src="https://david-dm.org/muratoner/semantic-ui-react-native.svg"></a>
