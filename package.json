@@ -1,6 +1,6 @@
 {
   "name": "@muratoner/semantic-ui-react-native",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Semantic UI React Native - User Interface is the language of the mobile",
   "main": "src/index.js",
   "files": [
