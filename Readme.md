@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img alt="semantic-ui-react-native" height="1024" src="https://user-images.githubusercontent.com/4863567/103160201-fbf12d00-47e2-11eb-8819-2bfd9ad9a98c.gif">
+  <img alt="semantic-ui-react-native" height="640" src="https://user-images.githubusercontent.com/4863567/103160201-fbf12d00-47e2-11eb-8819-2bfd9ad9a98c.gif">
 </p>
 
 ## Get Started
