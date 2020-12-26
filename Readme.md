@@ -96,7 +96,7 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [ ] Card
 - [ ] CheckBox
 - [ ] Comment
-- [ ] Divider
+- [x] Divider
 - [ ] Dimmer
 - [ ] Feed
 - [ ] Flag
@@ -123,5 +123,5 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [ ] Social Icons / Social Icon Buttons
 - [ ] Tab
 - [ ] Table
-- [ ] Tile
-- [ ] Toolti
+- [x] Title
+- [ ] Tooltip
