@@ -113,7 +113,7 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [ ] Overlay
 - [ ] Placeholder
 - [ ] Pricing
-- [ ] Progress
+- [x] Progress
 - [ ] Rating
 - [ ] SearchBar
 - [ ] Segment
