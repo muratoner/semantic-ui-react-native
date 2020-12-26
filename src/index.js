@@ -5,10 +5,11 @@
 import Button from './buttons/Button';
 import LabeledButton from './buttons/LabeledButton';
 import Icon from './icons/Icon';
+// Typography
+import Title from './typography/Title';
+// UI
+import Column from './ui/Column';
+import Divider from './ui/Divider';
+import Row from './ui/Row';
 
-export {
-	Button,
-	LabeledButton,
-	Icon,
-};
-
+export { Button, LabeledButton, Icon, Row, Column, Divider, Title };

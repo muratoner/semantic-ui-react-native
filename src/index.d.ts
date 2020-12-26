@@ -7,6 +7,7 @@ import {
 	TouchableHighlightProps,
 	TouchableNativeFeedbackProps,
 	TouchableOpacityProps,
+	ViewProps,
 	ViewStyle,
 } from 'react-native';
 import {
@@ -493,6 +494,33 @@ export interface ButtonGroupProps {
 }
 
 export class ButtonGroup extends React.Component<ButtonGroupProps> {}
+
+export interface DividerProps extends ViewProps {
+  /**
+   * Title text
+   *
+   */
+  text?: string;
+}
+
+export class Divider extends React.Component<DividerProps> {}
+
+export interface TitleProps extends ViewProps {
+  /**
+   * Title text
+   *
+   */
+  text?: string;
+
+  /**
+   * Title type
+   *
+   * @default medium
+   */
+  type?: 'huge' | 'large' | 'medium' | 'small' | 'tiny';
+}
+
+export class Title extends React.Component<TitleProps> {}
 
 export interface IconProps extends IconButtonProps {
   /**
