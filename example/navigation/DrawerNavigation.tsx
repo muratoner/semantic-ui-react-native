@@ -6,6 +6,7 @@ import {
 	StackNavigatorDivider,
 	StackNavigatorIcon,
 	StackNavigatorLabeledButton,
+	StackNavigatorProgressBar,
 	StackNavigatorTitle
 } from './StackNavigator';
 
@@ -27,9 +28,10 @@ const DrawerNavigator = () => {
 				name={RouteNames.Divider}
 				component={StackNavigatorDivider}
 			/>
+			<Drawer.Screen name={RouteNames.Title} component={StackNavigatorTitle} />
 			<Drawer.Screen
-				name={RouteNames.Title}
-				component={StackNavigatorTitle}
+				name={RouteNames.ProgressBar}
+				component={StackNavigatorProgressBar}
 			/>
 		</Drawer.Navigator>
 	);

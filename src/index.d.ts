@@ -505,6 +505,16 @@ export interface DividerProps extends ViewProps {
 
 export class Divider extends React.Component<DividerProps> {}
 
+export interface ProgressBarProps extends ViewProps {
+  /**
+   * Progress size
+   *
+   */
+  progress?: number;
+}
+
+export class ProgressBar extends React.Component<ProgressBarProps> {}
+
 export interface TitleProps extends ViewProps {
   /**
    * Title text

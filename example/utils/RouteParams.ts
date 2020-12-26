@@ -7,4 +7,5 @@ export type RouteParams = {
   [RouteNames.Icon]: {};
   [RouteNames.Divider]: {};
   [RouteNames.Title]: {};
+  [RouteNames.ProgressBar]: {};
 };

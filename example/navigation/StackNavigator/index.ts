@@ -2,6 +2,7 @@ import StackNavigatorButton from './Button';
 import StackNavigatorDivider from './Divider';
 import StackNavigatorIcon from './Icon';
 import StackNavigatorLabeledButton from './LabeledButton';
+import StackNavigatorProgressBar from './ProgressBar';
 import StackNavigatorTitle from './Title';
 
 export {
@@ -10,4 +11,5 @@ export {
   StackNavigatorIcon,
   StackNavigatorDivider,
   StackNavigatorTitle,
+  StackNavigatorProgressBar,
 };
