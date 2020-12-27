@@ -1,13 +1,15 @@
-import React from 'react'
-import { StyleSheet, View } from 'react-native'
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { ProgressBarProps } from '../';
 
-export default ({progress, style}) => {
+export default (props: ProgressBarProps) => {
+	let { style, progress, ...attributes } = props;
 	return (
-		<View style={[styles.container, style]}>
-			<View style={[styles.fill, {width: `${progress}%}`}]} />
+		<View style={[styles.container, style]} {...attributes}>
+			<View style={[styles.fill, { width: `${progress}%` }]} />
 		</View>
-	)
-}
+	);
+};
 
 const styles = StyleSheet.create({
 	fill: {
@@ -21,4 +23,4 @@ const styles = StyleSheet.create({
 		borderRadius: 10,
 		backgroundColor: 'rgba(0,0,0,.1)'
 	}
-})
+});

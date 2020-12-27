@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
 import { StyleSheet, Text, ViewPropTypes } from 'react-native';
+import { TitleProps } from '../';
 
-const Component = (props) => {
-	const { style, type, ...attributes } = props;
+const Component = (props: TitleProps) => {
+	const { style, size, ...attributes } = props;
 
-	const fontSize  = useMemo(() => {
-		switch (type) {
+	const fontSize = useMemo(() => {
+		switch (size) {
 		case 'huge':
 			return 28;
 		case 'large':
@@ -17,25 +18,23 @@ const Component = (props) => {
 			return 14;
 		case 'medium':
 		default:
-			return 18
+			return 18;
 		}
-	}, [type])
+	}, [size]);
 
-	return (
-		<Text {...attributes} style={[{fontSize},styles.title, style]} />
-	);
+	return <Text {...attributes} style={[{ fontSize }, styles.title, style]} />;
 };
 
 const styles = StyleSheet.create({
 	title: {
 		fontWeight: 'bold'
 	}
-})
+});
 
 Component.protoTypes = {
 	...ViewPropTypes,
 	text: PropTypes.string,
-	type: PropTypes.oneOf(['huge','large','medium', 'small', 'tiny']),
+	type: PropTypes.oneOf(['huge', 'large', 'medium', 'small', 'tiny'])
 };
 
 export default Component;

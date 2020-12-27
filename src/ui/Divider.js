@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { StyleSheet, Text, View, ViewPropTypes } from 'react-native';
+import { DividerProps } from '../';
 import Icon from '../icons/Icon';
 
-const Component = (props) => {
-	const { style, text, icon, ...attributes } = props;
+const Component = (props: DividerProps) => {
+	const { style, text, icon, color, ...attributes } = props;
 	return (
-		<View {...attributes} style={[styles.divider, style]}>
+		<View {...attributes} style={[styles.divider(color), style]}>
 			<View style={styles.title}>
 				{icon && <Icon style={styles.icon} {...icon} />}
 				{text && <Text style={styles.text}>{text}</Text>}
@@ -16,11 +17,11 @@ const Component = (props) => {
 };
 
 const styles = StyleSheet.create({
-	divider: {
+	divider: (borderColor) => ({
 		borderBottomWidth: 1,
-		borderColor: 'rgba(0, 0, 0, .1)',
+		borderColor: borderColor || 'rgba(0, 0, 0, .1)',
 		width: '100%',
-	},
+	}),
 	text: {
 		fontWeight: 'bold',
 	},

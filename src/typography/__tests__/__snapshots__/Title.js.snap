@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component should render with children 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontSize": 18,
+      },
+      Object {
+        "fontWeight": "bold",
+      },
+      undefined,
+    ]
+  }
+>
+  <View>
+    <Text>
+      Title Test 2
+    </Text>
+  </View>
+</Text>
+`;
+
+exports[`Title Component should render with size huge 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontSize": 28,
+      },
+      Object {
+        "fontWeight": "bold",
+      },
+      undefined,
+    ]
+  }
+>
+  Title Test 1
+</Text>
+`;
+
+exports[`Title Component should render with size large 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontSize": 24,
+      },
+      Object {
+        "fontWeight": "bold",
+      },
+      undefined,
+    ]
+  }
+>
+  Title Test 1
+</Text>
+`;
+
+exports[`Title Component should render with size medium 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontSize": 18,
+      },
+      Object {
+        "fontWeight": "bold",
+      },
+      undefined,
+    ]
+  }
+>
+  Title Test 1
+</Text>
+`;
+
+exports[`Title Component should render with size small 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontSize": 15,
+      },
+      Object {
+        "fontWeight": "bold",
+      },
+      undefined,
+    ]
+  }
+>
+  Title Test 1
+</Text>
+`;
+
+exports[`Title Component should render with size tiny 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontSize": 14,
+      },
+      Object {
+        "fontWeight": "bold",
+      },
+      undefined,
+    ]
+  }
+>
+  Title Test 1
+</Text>
+`;
+
+exports[`Title Component should render with style 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontSize": 18,
+      },
+      Object {
+        "fontWeight": "bold",
+      },
+      Object {
+        "color": "#191919",
+      },
+    ]
+  }
+>
+  Title Test 1
+</Text>
+`;
+
+exports[`Title Component should render without issues 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontSize": 18,
+      },
+      Object {
+        "fontWeight": "bold",
+      },
+      undefined,
+    ]
+  }
+>
+  Title Test 1
+</Text>
+`;

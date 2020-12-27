@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider Component should render with color 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderBottomWidth": 1,
+        "borderColor": "#f9f9",
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "white",
+        "flexDirection": "row",
+        "paddingHorizontal": 10,
+        "top": 8,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Divider Component should render with icon and text 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderBottomWidth": 1,
+        "borderColor": "rgba(0, 0, 0, .1)",
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "white",
+        "flexDirection": "row",
+        "paddingHorizontal": 10,
+        "top": 8,
+      }
+    }
+  >
+    <Icon
+      name="user"
+      style={
+        Object {
+          "marginRight": 5,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Users
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Divider Component should render with style 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderBottomWidth": 1,
+        "borderColor": "rgba(0, 0, 0, .1)",
+        "width": "100%",
+      },
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "white",
+        "flexDirection": "row",
+        "paddingHorizontal": 10,
+        "top": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Users
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Divider Component should render with text 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderBottomWidth": 1,
+        "borderColor": "rgba(0, 0, 0, .1)",
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "white",
+        "flexDirection": "row",
+        "paddingHorizontal": 10,
+        "top": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Description
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Divider Component should render without issues 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderBottomWidth": 1,
+        "borderColor": "rgba(0, 0, 0, .1)",
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "white",
+        "flexDirection": "row",
+        "paddingHorizontal": 10,
+        "top": 8,
+      }
+    }
+  />
+</View>
+`;

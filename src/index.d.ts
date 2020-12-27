@@ -497,10 +497,22 @@ export class ButtonGroup extends React.Component<ButtonGroupProps> {}
 
 export interface DividerProps extends ViewProps {
   /**
-   * Title text
+   * Divider text
    *
    */
   text?: string;
+
+  /**
+   * Divider color
+   *
+   */
+  color?: string;
+
+  /**
+   * Divider icon config
+   *
+   */
+  icon?: { name: string; type?: IconType; color: string };
 }
 
 export class Divider extends React.Component<DividerProps> {}
@@ -515,7 +527,7 @@ export interface ProgressBarProps extends ViewProps {
 
 export class ProgressBar extends React.Component<ProgressBarProps> {}
 
-export interface TitleProps extends ViewProps {
+export interface TitleProps extends TextProps {
   /**
    * Title text
    *
@@ -527,7 +539,7 @@ export interface TitleProps extends ViewProps {
    *
    * @default medium
    */
-  type?: 'huge' | 'large' | 'medium' | 'small' | 'tiny';
+  size?: 'huge' | 'large' | 'medium' | 'small' | 'tiny';
 }
 
 export class Title extends React.Component<TitleProps> {}
