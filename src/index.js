@@ -1,6 +1,8 @@
 // UI references
 // https://semantic-ui.com/introduction/getting-started.html
 
+//Avatar
+import Avatar from './avatar/Avatar';
 // Core
 import Button from './buttons/Button';
 import LabeledButton from './buttons/LabeledButton';
@@ -21,6 +23,6 @@ export {
 	Column,
 	Divider,
 	Title,
-	ProgressBar
+	ProgressBar,
+	Avatar
 };
-

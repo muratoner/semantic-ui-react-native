@@ -1,3 +1,4 @@
+import StackNavigatorAvatar from './Avatar';
 import StackNavigatorButton from './Button';
 import StackNavigatorDivider from './Divider';
 import StackNavigatorIcon from './Icon';
@@ -12,4 +13,5 @@ export {
   StackNavigatorDivider,
   StackNavigatorTitle,
   StackNavigatorProgressBar,
+  StackNavigatorAvatar,
 };

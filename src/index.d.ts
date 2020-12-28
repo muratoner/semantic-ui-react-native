@@ -1,6 +1,8 @@
 import * as React from 'react';
 import {
 	ActivityIndicatorProps,
+	ImageSourcePropType,
+	ImageStyle,
 	StyleProp,
 	TextProps as TextProperties,
 	TextStyle,
@@ -497,22 +499,10 @@ export class ButtonGroup extends React.Component<ButtonGroupProps> {}
 
 export interface DividerProps extends ViewProps {
   /**
-   * Divider text
+   * Title text
    *
    */
   text?: string;
-
-  /**
-   * Divider color
-   *
-   */
-  color?: string;
-
-  /**
-   * Divider icon config
-   *
-   */
-  icon?: { name: string; type?: IconType; color: string };
 }
 
 export class Divider extends React.Component<DividerProps> {}
@@ -527,7 +517,7 @@ export interface ProgressBarProps extends ViewProps {
 
 export class ProgressBar extends React.Component<ProgressBarProps> {}
 
-export interface TitleProps extends TextProps {
+export interface TitleProps extends ViewProps {
   /**
    * Title text
    *
@@ -539,7 +529,7 @@ export interface TitleProps extends TextProps {
    *
    * @default medium
    */
-  size?: 'huge' | 'large' | 'medium' | 'small' | 'tiny';
+  type?: 'huge' | 'large' | 'medium' | 'small' | 'tiny';
 }
 
 export class Title extends React.Component<TitleProps> {}
@@ -611,3 +601,44 @@ export interface IconProps extends IconButtonProps {
  * Icon component
  */
 export class Icon extends React.Component<IconProps> {}
+
+export interface AvatarProps {
+  /**
+   * Fullname text
+   */
+  fullName?: string;
+
+  /**
+   * Fullname text
+   *
+   * @default showing all chars
+   */
+  showFullNameLimit?: number;
+
+  /**
+   * Avatar image source
+   */
+  source?: ImageSourcePropType;
+
+  /**
+   * Avatar image or text size
+   *
+   * @default 32
+   */
+  size?: number;
+
+  /**
+   * Fullname text style
+   */
+  textStyle?: TextStyle;
+
+  /**
+   * Image avatar style
+   */
+  imageStyle?: ImageStyle;
+}
+
+/**
+ * Avatar component
+ */
+export class Avatar extends React.Component<AvatarProps> {}

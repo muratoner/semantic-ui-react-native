@@ -1,3 +1,4 @@
+import ScreenAvatar from './Avatar';
 import ScreenButton from './Button';
 import ScreenDivider from './Divider';
 import ScreenIcon from './Icon';
@@ -11,4 +12,5 @@ export {
   ScreenDivider,
   ScreenTitle,
   ScreenProgressBar,
+  ScreenAvatar,
 };
