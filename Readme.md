@@ -88,6 +88,7 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 
 - [ ] Accordion
 - [x] Avatar
+- [ ] Avatar Group
 - [ ] Badge
 - [ ] BottomSheet
 - [ ] Breadcrumb
