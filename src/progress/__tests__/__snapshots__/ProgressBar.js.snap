@@ -1,158 +1,178 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgressBar Component should render with 0 progress 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "backgroundColor": "rgba(0,0,0,.1)",
-        "borderRadius": 10,
-        "height": 5,
-        "overflow": "hidden",
-      },
-      undefined,
-    ]
-  }
->
+<Fragment>
   <View
     style={
       Array [
         Object {
-          "backgroundColor": "black",
+          "backgroundColor": "rgba(0,0,0,.1)",
           "borderRadius": 10,
-          "height": 5,
+          "height": 20,
+          "overflow": "hidden",
         },
-        Object {
-          "width": "0%",
-        },
+        undefined,
       ]
     }
-  />
-</View>
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#888",
+            "borderRadius": 10,
+            "height": 20,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "0%",
+          },
+          null,
+        ]
+      }
+    />
+  </View>
+</Fragment>
 `;
 
 exports[`ProgressBar Component should render with 90 progress 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "backgroundColor": "rgba(0,0,0,.1)",
-        "borderRadius": 10,
-        "height": 5,
-        "overflow": "hidden",
-      },
-      undefined,
-    ]
-  }
->
+<Fragment>
   <View
     style={
       Array [
         Object {
-          "backgroundColor": "black",
+          "backgroundColor": "rgba(0,0,0,.1)",
           "borderRadius": 10,
-          "height": 5,
+          "height": 20,
+          "overflow": "hidden",
         },
-        Object {
-          "width": "60%",
-        },
+        undefined,
       ]
     }
-  />
-</View>
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#888",
+            "borderRadius": 10,
+            "height": 20,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "60%",
+          },
+          null,
+        ]
+      }
+    />
+  </View>
+</Fragment>
 `;
 
 exports[`ProgressBar Component should render with 100 progress 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "backgroundColor": "rgba(0,0,0,.1)",
-        "borderRadius": 10,
-        "height": 5,
-        "overflow": "hidden",
-      },
-      undefined,
-    ]
-  }
->
+<Fragment>
   <View
     style={
       Array [
         Object {
-          "backgroundColor": "black",
+          "backgroundColor": "rgba(0,0,0,.1)",
           "borderRadius": 10,
-          "height": 5,
+          "height": 20,
+          "overflow": "hidden",
         },
-        Object {
-          "width": "100%",
-        },
+        undefined,
       ]
     }
-  />
-</View>
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#888",
+            "borderRadius": 10,
+            "height": 20,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+          null,
+        ]
+      }
+    />
+  </View>
+</Fragment>
 `;
 
 exports[`ProgressBar Component should render with 100 progress and custom style 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "backgroundColor": "rgba(0,0,0,.1)",
-        "borderRadius": 10,
-        "height": 5,
-        "overflow": "hidden",
-      },
-      Object {
-        "backgroundColor": "#f90809",
-      },
-    ]
-  }
->
+<Fragment>
   <View
     style={
       Array [
         Object {
-          "backgroundColor": "black",
+          "backgroundColor": "rgba(0,0,0,.1)",
           "borderRadius": 10,
-          "height": 5,
+          "height": 20,
+          "overflow": "hidden",
         },
         Object {
-          "width": "100%",
+          "backgroundColor": "#f90809",
         },
       ]
     }
-  />
-</View>
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#888",
+            "borderRadius": 10,
+            "height": 20,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+          null,
+        ]
+      }
+    />
+  </View>
+</Fragment>
 `;
 
 exports[`ProgressBar Component should render without issues 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "backgroundColor": "rgba(0,0,0,.1)",
-        "borderRadius": 10,
-        "height": 5,
-        "overflow": "hidden",
-      },
-      undefined,
-    ]
-  }
->
+<Fragment>
   <View
     style={
       Array [
         Object {
-          "backgroundColor": "black",
+          "backgroundColor": "rgba(0,0,0,.1)",
           "borderRadius": 10,
-          "height": 5,
+          "height": 20,
+          "overflow": "hidden",
         },
-        Object {
-          "width": "undefined%",
-        },
+        undefined,
       ]
     }
-  />
-</View>
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#888",
+            "borderRadius": 10,
+            "height": 20,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "undefined%",
+          },
+          null,
+        ]
+      }
+    />
+  </View>
+</Fragment>
 `;

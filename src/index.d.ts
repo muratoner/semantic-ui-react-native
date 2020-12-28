@@ -9,7 +9,6 @@ import {
 	TouchableHighlightProps,
 	TouchableNativeFeedbackProps,
 	TouchableOpacityProps,
-	ViewProps,
 	ViewStyle,
 } from 'react-native';
 
@@ -34,7 +33,7 @@ export type IconType =
   | 'SimpleLineIcons'
   | 'Zocial';
 
-export interface IconObject extends TouchableComponent {
+export interface IconProps {
   name?: string;
   color?: string;
   size?: number;
@@ -493,27 +492,55 @@ export interface ButtonGroupProps {
 
 export class ButtonGroup extends React.Component<ButtonGroupProps> {}
 
-export interface DividerProps extends ViewProps {
+export interface DividerProps {
   /**
    * Title text
-   *
    */
   text?: string;
 }
 
 export class Divider extends React.Component<DividerProps> {}
 
-export interface ProgressBarProps extends ViewProps {
+export interface ProgressBarProps {
   /**
    * Progress size
-   *
    */
   progress?: number;
+
+  /**
+   * Show progress bar progress value
+   */
+  showProgressValue?: boolean;
+
+  /**
+   * Progress bar height
+   */
+  height?: number | string;
+
+  /**
+   * Progress bar width
+   */
+  width?: number | string;
+
+  /**
+   * Progress bar bottom text
+   */
+  bottomText?: string;
+
+  /**
+   * Progress bar bottom text include progress value
+   */
+  bottomTextIncludeProgress?: boolean;
+
+  /**
+   * Red to green auto background color transition
+   */
+  autoColored?: boolean;
 }
 
 export class ProgressBar extends React.Component<ProgressBarProps> {}
 
-export interface TitleProps extends ViewProps {
+export interface TitleProps {
   /**
    * Title text
    *
@@ -533,7 +560,7 @@ export class Title extends React.Component<TitleProps> {}
 /**
  * Icon component
  */
-export class Icon extends React.Component<IconObject> {}
+export class Icon extends React.Component<IconProps> {}
 
 export interface AvatarProps {
   /**
@@ -576,9 +603,23 @@ export interface AvatarProps {
   iconStyle?: TextStyle;
 
   /**
-   *
+   * Icon config
    */
-  icon?: IconObject;
+  icon?: IconProps;
+
+  /**
+   * Avatar, Title or Icon show with rounded border
+   *
+   * @default true
+   */
+  rounded?: boolean;
+
+  /**
+   * Auto generate random background color for title avatar
+   *
+   * @default true
+   */
+  withRandomColor?: boolean;
 }
 
 /**
