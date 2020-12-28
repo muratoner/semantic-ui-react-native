@@ -87,7 +87,7 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 ## Ready Components
 
 - [ ] Accordion
-- [ ] Avatar
+- [x] Avatar
 - [ ] Badge
 - [ ] BottomSheet
 - [ ] Breadcrumb
