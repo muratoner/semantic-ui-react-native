@@ -17,13 +17,22 @@ const Component = () => {
 						margin: 10
 					}}
 				>
-					<Avatar fullName="Murat ÖNER ÖNER" size={32} showFullNameLimit={2} />
+					<View style={{ flexDirection: 'row', justifyContent: 'space-around', flex: 1, width: '100%' }}>
+						<Avatar title="Yvette Barton" size={32} titleShowLimit={2} />
+						<Avatar title="Esta Moore" size={32} titleShowLimit={2} />
+						<Avatar title="Jermaine Schiller" size={32} titleShowLimit={2} />
+						<Avatar title="Estelle Monahan" size={32} titleShowLimit={2} />
+						<Avatar title="Frieda Christiansen II" size={32} />
+						<Avatar title="Tatyana Cassin MD" size={32} />
+						<Avatar title="Eulah Hegmann Monahan" size={32} withRandomColor={false} />
+					</View>
 					<Stack size={10} />
-					<Avatar fullName="Murat ÖNER ÖNER" size={64} showFullNameLimit={2} />
+					<Avatar title="Deanna Streich" size={64} titleShowLimit={2} />
 					<Stack size={10} />
-					<Avatar fullName="Murat ÖNER ÖNER" size={128} showFullNameLimit={2} />
+					<Avatar title="Murat Öner" size={128} titleShowLimit={2} />
 					<Stack size={10} />
 					<Avatar
+						title={"Trent Lemke"}
 						size={32}
 						source={{
 							uri: 'https://i.pravatar.cc/32'
@@ -31,6 +40,7 @@ const Component = () => {
 					/>
 					<Stack size={10} />
 					<Avatar
+						title={"Deon Legros"}
 						size={64}
 						source={{
 							uri: 'https://i.pravatar.cc/64'
@@ -38,9 +48,27 @@ const Component = () => {
 					/>
 					<Stack size={10} />
 					<Avatar
+						title={"Rhett Reichert"}
+						titleShowLimit={2}
 						size={128}
 						source={{
 							uri: 'https://i.pravatar.cc/128'
+						}}
+					/>
+					<Stack size={10} />
+					<Avatar
+						icon={{
+							name: 'user',
+							type: 'AntDesign',
+							color: 'white'
+						}}
+					/>
+					<Stack size={10} />
+					<Avatar
+						size={128}
+						icon={{
+							name: 'home',
+							type: 'AntDesign',
 						}}
 					/>
 				</View>

@@ -12,10 +12,6 @@ import {
 	ViewProps,
 	ViewStyle,
 } from 'react-native';
-import {
-	IconButtonProps,
-	IconProps as VectorIconProps,
-} from 'react-native-vector-icons/Icon';
 
 export interface TouchableComponent extends TouchableHighlightProps {}
 
@@ -534,86 +530,23 @@ export interface TitleProps extends ViewProps {
 
 export class Title extends React.Component<TitleProps> {}
 
-export interface IconProps extends IconButtonProps {
-  /**
-   * Type (defaults to material, options are material-community, zocial, font-awesome, octicon, ionicon, foundation, evilicon, simple-line-icon, or entypo)
-   * @default 'material'
-   */
-  type?: IconType;
-
-  /**
-   * View if no onPress method is defined, TouchableHighlight if onPress method is defined	React Native component	update React Native Component
-   */
-  Component?: React.ComponentClass;
-
-  /*
-   * Extra props supplied to Icon Component from react-native-vector-icons.
-   */
-  iconProps?: VectorIconProps;
-
-  /**
-   * Reverses color scheme
-   *
-   * @default false
-   */
-  reverse?: boolean;
-
-  /**
-   * Adds box shadow to button
-   *
-   * @default false
-   */
-  raised?: boolean;
-
-  /**
-   * Add styling to container holding icon
-   */
-  containerStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * Specify reverse icon color
-   *
-   * @default 'white'
-   */
-  reverseColor?: string;
-
-  /**
-   * Styles for the Icon when disabled
-   */
-  disabledStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * FontAwesome5 solid style
-   *
-   * @default false
-   */
-  solid?: boolean;
-
-  /**
-   * FontAwesome5 brands icon set
-   *
-   * @default false
-   */
-  brand?: boolean;
-}
-
 /**
  * Icon component
  */
-export class Icon extends React.Component<IconProps> {}
+export class Icon extends React.Component<IconObject> {}
 
 export interface AvatarProps {
   /**
-   * Fullname text
+   * Title text
    */
-  fullName?: string;
+  title?: string;
 
   /**
-   * Fullname text
+   * Title show characters count limit
    *
    * @default showing all chars
    */
-  showFullNameLimit?: number;
+  titleShowLimit?: number;
 
   /**
    * Avatar image source
@@ -628,14 +561,24 @@ export interface AvatarProps {
   size?: number;
 
   /**
-   * Fullname text style
+   * Title text style
    */
-  textStyle?: TextStyle;
+  titleStyle?: TextStyle;
 
   /**
    * Image avatar style
    */
   imageStyle?: ImageStyle;
+
+  /**
+   * Title text style
+   */
+  iconStyle?: TextStyle;
+
+  /**
+   *
+   */
+  icon?: IconObject;
 }
 
 /**

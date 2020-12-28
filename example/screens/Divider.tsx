@@ -1,4 +1,4 @@
-import { Divider, Title } from '@muratoner/semantic-ui-react-native';
+import { Divider, Icon, Title } from '@muratoner/semantic-ui-react-native';
 import React from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
 import { Inset } from 'react-native-spacing-system';
@@ -30,6 +30,17 @@ const Component = () => {
                         name: 'tag',
                         type: 'AntDesign'
                     }} />
+					<Inset top={50} bottom={10}>
+                        <Title>With custom children</Title>
+                    </Inset>
+                    <Divider>
+						<View style={{ flexDirection: 'row', alignItems: 'center', transform: [{
+							rotateZ: "0.2"
+						}] }}>
+							<Icon name="user" type="AntDesign" size={22} />
+							<Title>User Information</Title>
+						</View>
+					</Divider>
                 </View>
 			</ScrollView>
 		</SafeAreaView>
