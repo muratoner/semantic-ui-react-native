@@ -95,7 +95,8 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [x] Button
 - [ ] ButtonGroup
 - [ ] Card
-- [ ] CheckBox
+- [x] CheckBox
+- [ ] CheckBoxGroup
 - [ ] Comment
 - [x] Divider
 - [ ] Dimmer
@@ -116,6 +117,7 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [ ] Pricing
 - [x] Progress
 - [ ] Rating
+- [ ] RadioGroup
 - [ ] SearchBar
 - [ ] Segment
 - [ ] Statistic
