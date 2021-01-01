@@ -6,6 +6,7 @@ enum RouteNames {
   Title = 'Title',
   ProgressBar = 'ProgressBar',
   Avatar = 'Avatar',
+  Checkbox = 'Checkbox',
 }
 
 export default RouteNames;

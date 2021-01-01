@@ -9,4 +9,5 @@ export type RouteParams = {
   [RouteNames.Title]: {};
   [RouteNames.ProgressBar]: {};
   [RouteNames.Avatar]: {};
+  [RouteNames.Checkbox]: {};
 };

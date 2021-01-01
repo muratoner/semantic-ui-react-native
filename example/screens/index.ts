@@ -1,5 +1,6 @@
 import ScreenAvatar from './Avatar';
 import ScreenButton from './Button';
+import ScreenCheckbox from './Checkbox';
 import ScreenDivider from './Divider';
 import ScreenIcon from './Icon';
 import ScreenLabeledButton from './LabeledButton';
@@ -13,4 +14,5 @@ export {
   ScreenTitle,
   ScreenProgressBar,
   ScreenAvatar,
+  ScreenCheckbox,
 };

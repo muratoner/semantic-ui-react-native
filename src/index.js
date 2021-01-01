@@ -6,6 +6,7 @@ import Avatar from './avatar/Avatar';
 // Core
 import Button from './buttons/Button';
 import LabeledButton from './buttons/LabeledButton';
+import Checkbox from './checkbox/Checkbox';
 import Icon from './icons/Icon';
 import ProgressBar from './progress/ProgressBar';
 // Typography
@@ -24,5 +25,6 @@ export {
 	Divider,
 	Title,
 	ProgressBar,
-	Avatar
+	Avatar,
+	Checkbox
 };

@@ -4,6 +4,7 @@ import { RouteNames } from '../utils';
 import {
 	StackNavigatorAvatar,
 	StackNavigatorButton,
+	StackNavigatorCheckbox,
 	StackNavigatorDivider,
 	StackNavigatorIcon,
 	StackNavigatorLabeledButton,
@@ -23,6 +24,10 @@ const DrawerNavigator = () => {
 			<Drawer.Screen
 				name={RouteNames.Button}
 				component={StackNavigatorButton}
+			/>
+			<Drawer.Screen
+				name={RouteNames.Checkbox}
+				component={StackNavigatorCheckbox}
 			/>
 			<Drawer.Screen
 				name={RouteNames.Divider}

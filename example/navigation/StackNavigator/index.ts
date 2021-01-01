@@ -1,5 +1,6 @@
 import StackNavigatorAvatar from './Avatar';
 import StackNavigatorButton from './Button';
+import StackNavigatorCheckbox from './Checkbox';
 import StackNavigatorDivider from './Divider';
 import StackNavigatorIcon from './Icon';
 import StackNavigatorLabeledButton from './LabeledButton';
@@ -14,4 +15,5 @@ export {
   StackNavigatorTitle,
   StackNavigatorProgressBar,
   StackNavigatorAvatar,
+  StackNavigatorCheckbox,
 };

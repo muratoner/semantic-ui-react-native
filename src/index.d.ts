@@ -638,3 +638,75 @@ export interface AvatarProps {
  * Avatar component
  */
 export class Avatar extends React.Component<AvatarProps> {}
+
+export interface CheckboxProps {
+  /**
+   * Checkbox checked
+   * @default false
+   */
+  checked: boolean;
+
+  /**
+   * Container style
+   */
+  containerStyle?: ViewStyle;
+
+  /**
+   * Icon style
+   */
+  iconStyle?: TextStyle;
+
+  /**
+   * Title Style
+   */
+  titleStyle?: TextStyle;
+
+  /**
+   * Icon element or icon name
+   */
+  icon?: React.ReactElement | string;
+
+  /**
+   * If you set icon property with string then you can use this prop
+   */
+  iconType?: IconType;
+
+  /**
+   * OnChanged callback
+   */
+  onChanged?: (checked: boolean) => void;
+
+  /**
+   * Checkbox type
+   */
+  type?:
+    | 'square'
+    | 'square-overflow'
+    | 'circle'
+    | 'circle-overflow'
+    | 'flag'
+    | 'heart'
+    | 'volume'
+    | 'notification'
+    | 'lock'
+    | 'radio'
+    | 'slider'
+    | 'toggle';
+
+  /**
+   * Checkbox checked color
+   */
+  checkedColor?: string;
+
+  /**
+   * Checkbox unChecked color
+   */
+  unCheckedColor?: string;
+
+  /**
+   * Disable checkbox
+   */
+  disable?: boolean;
+}
+
+export class Checkbox extends React.Component<CheckboxProps> {}
