@@ -28,6 +28,7 @@ exports[`Title Component should render with size huge 1`] = `
     Array [
       Object {
         "fontSize": 28,
+        "fontWeight": "bold",
       },
       Object {
         "fontWeight": "bold",
@@ -46,6 +47,7 @@ exports[`Title Component should render with size large 1`] = `
     Array [
       Object {
         "fontSize": 24,
+        "fontWeight": "bold",
       },
       Object {
         "fontWeight": "bold",
@@ -64,6 +66,7 @@ exports[`Title Component should render with size medium 1`] = `
     Array [
       Object {
         "fontSize": 18,
+        "fontWeight": "bold",
       },
       Object {
         "fontWeight": "bold",
@@ -82,6 +85,7 @@ exports[`Title Component should render with size small 1`] = `
     Array [
       Object {
         "fontSize": 15,
+        "fontWeight": "bold",
       },
       Object {
         "fontWeight": "bold",
@@ -100,6 +104,7 @@ exports[`Title Component should render with size tiny 1`] = `
     Array [
       Object {
         "fontSize": 14,
+        "fontWeight": "bold",
       },
       Object {
         "fontWeight": "bold",
@@ -117,7 +122,9 @@ exports[`Title Component should render with style 1`] = `
   style={
     Array [
       Object {
+        "color": "#191919",
         "fontSize": 18,
+        "fontWeight": "bold",
       },
       Object {
         "fontWeight": "bold",
