@@ -13,7 +13,8 @@ const Button = ({
 	color,
 	title,
 	style,
-	fluid
+	fluid,
+	onPress
 }) => {
 	const bgColor = ButtonColor.getBgColor(color);
 	const textColor = outline ? bgColor : ButtonColor.getTextColor(color);
@@ -22,6 +23,7 @@ const Button = ({
 	};
 	return (
 		<TouchableOpacity
+			onPress={onPress}
 			disabled={disabled}
 			style={StyleSheet.flatten([
 				style,

@@ -28,7 +28,7 @@ const Component = () => {
 					}}
 				>
 					<Inset vertical={20}>
-						<Divider text="Progress" />
+						<Divider text="Progress with autoColored" />
 					</Inset>
 					<ProgressBar
 						progress={progress}
