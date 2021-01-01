@@ -23,7 +23,8 @@ const LabeledButton = ({
 	color,
 	title,
 	loading,
-	pointing
+	pointing,
+	indicatorStyle
 }) => {
 	const bgColor = ButtonColor.getBgColor(color);
 	const textColor = ButtonColor.getTextColor(color);
@@ -49,7 +50,6 @@ const LabeledButton = ({
 					styles.labelContainer,
 					{
 						backgroundColor: outline ? '#fff' : bgColor,
-						flex: fluid ? 1 : null,
 						borderColor: outline ? bgColor : '#fff',
 						borderRightWidth: outline ? 1 : 0
 					}
@@ -94,8 +94,6 @@ const LabeledButton = ({
 		) : null;
 	};
 
-	const indicatorStyle = { flex: fluid ? 1 : null };
-
 	return (
 		<TouchableOpacity
 			disabled={disabled}
@@ -116,8 +114,7 @@ const LabeledButton = ({
 					style={StyleSheet.flatten([
 						styles.title,
 						{
-							color: getValueColor(),
-							flex: fluid ? 1 : null
+							color: getValueColor()
 						}
 					])}
 				>
@@ -157,12 +154,15 @@ const styles = StyleSheet.create({
 	},
 	indicator: {
 		paddingHorizontal: 10,
-		paddingVertical: 10
+		paddingVertical: 10,
+		flex: 1
 	},
 	title: {
 		fontWeight: 'bold',
 		paddingHorizontal: 10,
-		paddingVertical: 10
+		paddingVertical: 10,
+		backgroundColor: 'white',
+		flex: 1
 	},
 	pointing: {
 		position: 'absolute',
