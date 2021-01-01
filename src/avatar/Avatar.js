@@ -87,7 +87,10 @@ const Component = ({
 
 	const avatarIcon = useMemo(() => {
 		return (
-			<Wrapper style={styles.textContainer(size, defaultBg, rounded)}>
+			<Wrapper
+				onPress={onPress}
+				style={styles.textContainer(size, defaultBg, rounded)}
+			>
 				<Icon
 					minimumFontScale={0.01}
 					adjustsFontSizeToFit
