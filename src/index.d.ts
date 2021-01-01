@@ -552,7 +552,7 @@ export interface TitleProps {
    *
    * @default medium
    */
-  type?: 'huge' | 'large' | 'medium' | 'small' | 'tiny';
+  size?: 'huge' | 'large' | 'medium' | 'small' | 'tiny';
 }
 
 export class Title extends React.Component<TitleProps> {}

@@ -15,27 +15,27 @@ const Component = () => {
 						margin: 10
 					}}
 				>
-                    <Divider text="Huge" />
+					<Divider text="Huge" />
 					<Inset vertical={20}>
-                        <Title type="huge">Statistic</Title>
-                    </Inset>
-                    <Divider text="Large" />
+						<Title size="huge">Statistic</Title>
+					</Inset>
+					<Divider text="Large" />
 					<Inset vertical={20}>
-                        <Title type="large">Statistic</Title>
-                    </Inset>
+						<Title size="large">Statistic</Title>
+					</Inset>
 					<Divider text="Medium (Default)" />
 					<Inset vertical={20}>
-                        <Title type="medium">Statistic</Title>
-                    </Inset>
+						<Title size="medium">Statistic</Title>
+					</Inset>
 					<Divider text="Small" />
 					<Inset vertical={20}>
-                        <Title type="small">Statistic</Title>
-                    </Inset>
+						<Title size="small">Statistic</Title>
+					</Inset>
 					<Divider text="Tiny" />
 					<Inset vertical={20}>
-                        <Title type="tiny">Statistic</Title>
-                    </Inset>
-                </View>
+						<Title size="tiny">Statistic</Title>
+					</Inset>
+				</View>
 			</ScrollView>
 		</SafeAreaView>
 	);
