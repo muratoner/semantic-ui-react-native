@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
 	divider: (borderColor) => ({
 		borderBottomWidth: 1,
 		borderColor: borderColor || 'rgba(0, 0, 0, .1)',
-		width: '100%'
+		width: '100%',
+		marginBottom: 10
 	}),
 	text: {
 		fontWeight: 'bold'

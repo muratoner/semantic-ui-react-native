@@ -1,7 +1,6 @@
 import { Divider, ProgressBar } from '@muratoner/semantic-ui-react-native';
 import React, { useEffect, useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
-import { Inset } from 'react-native-spacing-system';
 
 const Component = () => {
 	const [progress, setProgress] = useState(0);
@@ -24,12 +23,10 @@ const Component = () => {
 			>
 				<View
 					style={{
-						margin: 10
+						marginHorizontal: 10
 					}}
 				>
-					<Inset vertical={20}>
-						<Divider text="Progress with autoColored" />
-					</Inset>
+					<Divider text="Progress with autoColored" />
 					<ProgressBar
 						progress={progress}
 						showProgressValue
@@ -37,54 +34,32 @@ const Component = () => {
 						bottomText="Uploading Files"
 						bottomTextIncludeProgress
 					/>
-					<Inset vertical={20}>
-						<Divider text="Progress 0" />
-					</Inset>
+					<Divider text="Progress 0" />
 					<ProgressBar progress={0} showProgressValue />
-					<Inset vertical={20}>
-						<Divider text="Progress 10" />
-					</Inset>
+					<Divider text="Progress 10" />
 					<ProgressBar progress={10} showProgressValue />
-					<Inset vertical={20}>
-						<Divider text="Progress 20" />
-					</Inset>
+					<Divider text="Progress 20" />
 					<ProgressBar progress={20} showProgressValue />
-					<Inset vertical={20}>
-						<Divider text="Progress 30" />
-					</Inset>
+					<Divider text="Progress 30" />
 					<ProgressBar
 						progress={30}
 						showProgressValue
 						bottomText="Uploading Files"
 						bottomTextIncludeProgress
 					/>
-					<Inset vertical={20}>
-						<Divider text="Progress 40" />
-					</Inset>
+					<Divider text="Progress 40" />
 					<ProgressBar progress={40} />
-					<Inset vertical={20}>
-						<Divider text="Progress 50" />
-					</Inset>
+					<Divider text="Progress 50" />
 					<ProgressBar progress={50} />
-					<Inset vertical={20}>
-						<Divider text="Progress 60" />
-					</Inset>
+					<Divider text="Progress 60" />
 					<ProgressBar progress={60} />
-					<Inset vertical={20}>
-						<Divider text="Progress 70" />
-					</Inset>
+					<Divider text="Progress 70" />
 					<ProgressBar progress={70} />
-					<Inset vertical={20}>
-						<Divider text="Progress 80" />
-					</Inset>
+					<Divider text="Progress 80" />
 					<ProgressBar progress={80} />
-					<Inset vertical={20}>
-						<Divider text="Progress 90" />
-					</Inset>
+					<Divider text="Progress 90" />
 					<ProgressBar progress={90} showProgressValue />
-					<Inset vertical={20}>
-						<Divider text="Progress 100" />
-					</Inset>
+					<Divider text="Progress 100" />
 					<ProgressBar progress={100} showProgressValue />
 				</View>
 			</ScrollView>

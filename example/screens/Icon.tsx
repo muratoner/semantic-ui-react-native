@@ -1,7 +1,6 @@
-import { Divider, Icon, Title } from '@muratoner/semantic-ui-react-native';
+import { Divider, Icon } from '@muratoner/semantic-ui-react-native';
 import React from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
-import { Stack } from 'react-native-spacing-system';
 
 const Component = () => {
 	return (
@@ -17,78 +16,52 @@ const Component = () => {
 						margin: 10
 					}}
 				>
-					<Title>Default Type (Ionicons)</Title>
-					<Icon name="home" size={50} />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>AntDesign Type</Title>
-					<Icon name="user" size={50} type="AntDesign" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>Entypo Type</Title>
-					<Icon name="user" size={50} type="Entypo" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>EvilIcons Type</Title>
-					<Icon name="user" size={50} type="EvilIcons" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>Feather Type</Title>
-					<Icon name="user" size={50} type="Feather" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>FontAwesome Type</Title>
-					<Icon name="user" size={50} type="FontAwesome" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>FontAwesome5 Type</Title>
-					<Icon name="user" size={50} type="FontAwesome5" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>Fontisto Type</Title>
-					<Icon name="home" size={50} type="Fontisto" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>Foundation Type</Title>
-					<Icon name="home" size={50} type="Foundation" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>Ionicons Type</Title>
-					<Icon name="home" size={50} type="Ionicons" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>MaterialCommunityIcons Type</Title>
-					<Icon name="home" size={50} type="MaterialCommunityIcons" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>MaterialIcons Type</Title>
-					<Icon name="home" size={50} type="MaterialIcons" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>Octicons Type</Title>
-					<Icon name="home" size={50} type="Octicons" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>SimpleLineIcons Type</Title>
-					<Icon name="home" size={50} type="SimpleLineIcons" />
-					<Stack size={10} />
-					<Divider  />
-					<Stack size={10} />
-					<Title>Zocial Type</Title>
-					<Icon name="amazon" size={50} type="Zocial" />
+					<Divider text="Default (Ionicons)" />
+
+					<Icon name="home" color="#388e3c" size={22} />
+					<Divider text="AntDesign" />
+
+					<Icon name="user" size={22} type="AntDesign" />
+					<Divider text="Entypo" />
+
+					<Icon name="user" size={22} type="Entypo" color="#c62828" />
+					<Divider text="EvilIcons" />
+
+					<Icon name="user" size={22} type="EvilIcons" />
+					<Divider text="Feather" />
+
+					<Icon name="user" size={22} type="Feather" />
+					<Divider text="FontAwesome" />
+
+					<Icon name="user" size={22} type="FontAwesome" />
+					<Divider text="FontAwesome5" />
+
+					<Icon name="user" size={22} type="FontAwesome5" />
+					<Divider text="Fontisto" />
+
+					<Icon name="home" size={22} type="Fontisto" />
+					<Divider text="Foundation" />
+
+					<Icon name="home" size={22} type="Foundation" />
+					<Divider text="Ionicons" />
+
+					<Icon name="home" size={22} type="Ionicons" />
+					<Divider text="MaterialCommunityIcons" />
+
+					<Icon name="home" size={22} type="MaterialCommunityIcons" />
+					<Divider text="MaterialIcons" />
+
+					<Icon name="home" size={22} type="MaterialIcons" />
+
+					<Divider text="Octicons" />
+
+					<Icon name="home" size={22} type="Octicons" />
+					<Divider text="SimpleLineIcons" />
+
+					<Icon name="home" size={22} type="SimpleLineIcons" />
+					<Divider text="Zocial" />
+
+					<Icon name="amazon" size={22} type="Zocial" color="#F0941C" />
 				</View>
 			</ScrollView>
 		</SafeAreaView>
