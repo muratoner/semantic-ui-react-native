@@ -3,6 +3,7 @@
 exports[`Labeled Button Component should render with circular, disabled, fluid, outline, style, color, iconName and iconType props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -37,6 +38,7 @@ exports[`Labeled Button Component should render with circular, disabled, fluid, 
 exports[`Labeled Button Component should render with circular, disabled, fluid, outline, style, color, iconName, iconType and pointing props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -71,6 +73,7 @@ exports[`Labeled Button Component should render with circular, disabled, fluid, 
 exports[`Labeled Button Component should render with circular, disabled, fluid, outline, style, color, iconName, iconType and pointing props 2`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -325,6 +328,7 @@ exports[`Labeled Button Component should render with title prop 1`] = `
 exports[`Labeled Button Component should render with title, circular and disabled props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -372,6 +376,7 @@ exports[`Labeled Button Component should render with title, circular and disable
 exports[`Labeled Button Component should render with title, circular, disabled and fluid props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -419,6 +424,7 @@ exports[`Labeled Button Component should render with title, circular, disabled a
 exports[`Labeled Button Component should render with title, circular, disabled, fluid and outline props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -466,6 +472,7 @@ exports[`Labeled Button Component should render with title, circular, disabled, 
 exports[`Labeled Button Component should render with title, circular, disabled, fluid, outline and style props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -514,6 +521,7 @@ exports[`Labeled Button Component should render with title, circular, disabled, 
 exports[`Labeled Button Component should render with title, circular, disabled, fluid, outline style props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -562,6 +570,7 @@ exports[`Labeled Button Component should render with title, circular, disabled, 
 exports[`Labeled Button Component should render with title, circular, disabled, fluid, outline, style and color props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -610,6 +619,7 @@ exports[`Labeled Button Component should render with title, circular, disabled, 
 exports[`Labeled Button Component should render with title, circular, disabled, fluid, outline, style and color props 2`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -658,6 +668,7 @@ exports[`Labeled Button Component should render with title, circular, disabled, 
 exports[`Labeled Button Component should render with title, circular, disabled, fluid, outline, style, color and iconName props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",

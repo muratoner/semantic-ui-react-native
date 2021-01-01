@@ -11,6 +11,7 @@ exports[`Button Component should render with title and circular props 1`] = `
       "borderWidth": 0,
       "flex": null,
       "flexDirection": "row",
+      "justifyContent": "center",
       "opacity": 1,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
@@ -41,6 +42,7 @@ exports[`Button Component should render with title prop 1`] = `
       "borderWidth": 0,
       "flex": null,
       "flexDirection": "row",
+      "justifyContent": "center",
       "opacity": 1,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
@@ -63,6 +65,7 @@ exports[`Button Component should render with title prop 1`] = `
 exports[`Button Component should render with title, circular and disabled props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -72,6 +75,7 @@ exports[`Button Component should render with title, circular and disabled props 
       "borderWidth": 0,
       "flex": null,
       "flexDirection": "row",
+      "justifyContent": "center",
       "opacity": 0.45,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
@@ -94,6 +98,7 @@ exports[`Button Component should render with title, circular and disabled props 
 exports[`Button Component should render with title, circular, disabled and fluid props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -103,6 +108,7 @@ exports[`Button Component should render with title, circular, disabled and fluid
       "borderWidth": 0,
       "flex": 1,
       "flexDirection": "row",
+      "justifyContent": "center",
       "opacity": 0.45,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
@@ -125,6 +131,7 @@ exports[`Button Component should render with title, circular, disabled and fluid
 exports[`Button Component should render with title, circular, disabled, fluid and outline props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -134,6 +141,7 @@ exports[`Button Component should render with title, circular, disabled, fluid an
       "borderWidth": 1,
       "flex": 1,
       "flexDirection": "row",
+      "justifyContent": "center",
       "opacity": 0.45,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
@@ -156,6 +164,7 @@ exports[`Button Component should render with title, circular, disabled, fluid an
 exports[`Button Component should render with title, circular, disabled, fluid, outline and style props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -166,6 +175,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
       "flex": 1,
       "flexDirection": "row",
       "height": 50,
+      "justifyContent": "center",
       "opacity": 0.45,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
@@ -188,6 +198,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
 exports[`Button Component should render with title, circular, disabled, fluid, outline style props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -198,6 +209,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
       "flex": 1,
       "flexDirection": "row",
       "height": 50,
+      "justifyContent": "center",
       "opacity": 0.45,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
@@ -220,6 +232,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
 exports[`Button Component should render with title, circular, disabled, fluid, outline, style and color props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -230,6 +243,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
       "flex": 1,
       "flexDirection": "row",
       "height": 50,
+      "justifyContent": "center",
       "opacity": 0.45,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
@@ -252,6 +266,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
 exports[`Button Component should render with title, circular, disabled, fluid, outline, style and color props 2`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -262,6 +277,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
       "flex": 1,
       "flexDirection": "row",
       "height": 50,
+      "justifyContent": "center",
       "opacity": 0.45,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
@@ -284,6 +300,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
 exports[`Button Component should render with title, circular, disabled, fluid, outline, style, color and iconName props 1`] = `
 <ForwardRef
   disabled={true}
+  onPress={null}
   style={
     Object {
       "alignItems": "center",
@@ -294,6 +311,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
       "flex": 1,
       "flexDirection": "row",
       "height": 50,
+      "justifyContent": "center",
       "opacity": 0.45,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
@@ -324,6 +342,7 @@ exports[`Button Component should render with title, iconName and iconType props 
       "borderWidth": 0,
       "flex": null,
       "flexDirection": "row",
+      "justifyContent": "center",
       "opacity": 1,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
@@ -365,6 +384,7 @@ exports[`Button Component should render without issues 1`] = `
       "borderWidth": 0,
       "flex": null,
       "flexDirection": "row",
+      "justifyContent": "center",
       "opacity": 1,
       "paddingHorizontal": 11,
       "paddingVertical": 11,

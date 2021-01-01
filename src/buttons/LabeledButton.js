@@ -5,7 +5,7 @@ import {
 	StyleSheet,
 	Text,
 	TouchableOpacity,
-	View,
+	View
 } from 'react-native';
 import Icon from '../icons/Icon';
 import ButtonColor from './ButtonColor';
@@ -25,7 +25,7 @@ const LabeledButton = ({
 	loading,
 	pointing,
 	indicatorStyle,
-	onPress,
+	onPress
 }) => {
 	const bgColor = ButtonColor.getBgColor(color);
 	const textColor = ButtonColor.getTextColor(color);
@@ -43,7 +43,7 @@ const LabeledButton = ({
 
 	const getLabel = () => {
 		const iconStyle = {
-			marginRight: label ? 5 : 0,
+			marginRight: label ? 5 : 0
 		};
 		return (
 			<View
@@ -52,8 +52,8 @@ const LabeledButton = ({
 					{
 						backgroundColor: outline ? '#fff' : bgColor,
 						borderColor: outline ? bgColor : '#fff',
-						borderRightWidth: outline ? 1 : 0,
-					},
+						borderRightWidth: outline ? 1 : 0
+					}
 				])}
 			>
 				{labelIcon && labelIconType && (
@@ -69,8 +69,8 @@ const LabeledButton = ({
 						style={StyleSheet.flatten([
 							styles.label,
 							{
-								color: outline ? bgColor : textColor,
-							},
+								color: outline ? bgColor : textColor
+							}
 						])}
 					>
 						{label}
@@ -87,8 +87,8 @@ const LabeledButton = ({
 			transform: [
 				{ rotate: '45deg' },
 				{ translateX: labelRight ? -6 : -3 },
-				{ translateY: labelRight ? 0 : 4 },
-			],
+				{ translateY: labelRight ? 0 : 4 }
+			]
 		};
 		return pointing ? (
 			<View style={StyleSheet.flatten([styles.pointing, customStyle])} />
@@ -97,7 +97,7 @@ const LabeledButton = ({
 
 	return (
 		<TouchableOpacity
-			onPress={onPress}
+			onPress={disabled || loading ? null : onPress}
 			disabled={disabled}
 			style={StyleSheet.flatten([
 				styles.button,
@@ -105,9 +105,9 @@ const LabeledButton = ({
 					borderColor: bgColor,
 					borderRadius: circular ? 50 : 3,
 					width: fluid ? '100%' : undefined,
-					opacity: disabled ? 0.45 : 1,
+					opacity: disabled ? 0.45 : 1
 				},
-				style,
+				style
 			])}
 		>
 			{!labelRight && getLabel()}
@@ -116,8 +116,8 @@ const LabeledButton = ({
 					style={StyleSheet.flatten([
 						styles.title,
 						{
-							color: getValueColor(),
-						},
+							color: getValueColor()
+						}
 					])}
 				>
 					{!labelRight && getPointing()}
@@ -139,32 +139,32 @@ const styles = StyleSheet.create({
 		height: '100%',
 		paddingHorizontal: 21,
 		flexDirection: 'row',
-		alignItems: 'center',
+		alignItems: 'center'
 	},
 	label: {
-		fontWeight: 'bold',
+		fontWeight: 'bold'
 	},
 	button: {
 		alignItems: 'center',
 		justifyContent: 'center',
 		flexDirection: 'row',
 		overflow: 'hidden',
-		borderWidth: 1,
+		borderWidth: 1
 	},
 	icon: {
-		fontSize: 15,
+		fontSize: 15
 	},
 	indicator: {
 		paddingHorizontal: 10,
 		paddingVertical: 10,
-		flex: 1,
+		flex: 1
 	},
 	title: {
 		fontWeight: 'bold',
 		paddingHorizontal: 10,
 		paddingVertical: 10,
 		backgroundColor: 'white',
-		flex: 1,
+		flex: 1
 	},
 	pointing: {
 		position: 'absolute',
@@ -173,8 +173,8 @@ const styles = StyleSheet.create({
 		backgroundColor: '#fff',
 		borderBottomWidth: 1,
 		borderLeftWidth: 1,
-		top: '50%',
-	},
+		top: '50%'
+	}
 });
 
 LabeledButton.propTypes = {
@@ -184,7 +184,7 @@ LabeledButton.propTypes = {
 		'secondary',
 		'red',
 		'positive',
-		'negative',
+		'negative'
 	]),
 	iconName: PropTypes.string,
 	iconType: PropTypes.oneOf([
@@ -201,8 +201,8 @@ LabeledButton.propTypes = {
 		'MaterialIcons',
 		'Octicons',
 		'SimpleLineIcons',
-		'Zocial',
-	]),
+		'Zocial'
+	])
 };
 
 export default LabeledButton;

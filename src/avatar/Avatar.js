@@ -4,6 +4,7 @@ import {
 	LayoutAnimation,
 	StyleSheet,
 	Text,
+	TouchableOpacity,
 	View
 } from 'react-native';
 import Icon from '../icons/Icon';
@@ -19,12 +20,15 @@ const Component = ({
 	containerStyle,
 	icon,
 	rounded = true,
-	withRandomColor = true
+	withRandomColor = true,
+	shortestTitle = true,
+	onPress
 }: AvatarProps) => {
 	const [avatarLoaded, setAvatarLoaded] = useState(false);
 	const [defaultBg] = useState('#b1b1b1');
 	const [defaultTextColor] = useState('#fff');
 	const chars = useMemo(() => {
+		if (!shortestTitle) return title;
 		let chars = title
 			?.trim()
 			?.split(' ')
@@ -33,7 +37,15 @@ const Component = ({
 			return chars.slice(0, titleShowLimit);
 		}
 		return chars;
-	}, [title, titleShowLimit]);
+	}, [title, titleShowLimit, shortestTitle]);
+
+	const Wrapper = useMemo(() => {
+		if (onPress) {
+			return TouchableOpacity;
+		} else {
+			return View;
+		}
+	}, [onPress]);
 
 	const avatarTitleContent = useMemo(
 		() => (
@@ -54,12 +66,13 @@ const Component = ({
 				{chars}
 			</Text>
 		),
-		[title, size]
+		[title, size, withRandomColor, source, shortestTitle, titleShowLimit]
 	);
 
 	const avatarTitle = useMemo(
 		() => (
-			<View
+			<Wrapper
+				onPress={onPress}
 				style={styles.textContainer(
 					size,
 					withRandomColor ? UtilColor.stringToColour(title) : defaultBg,
@@ -67,14 +80,14 @@ const Component = ({
 				)}
 			>
 				{avatarTitleContent}
-			</View>
+			</Wrapper>
 		),
-		[title, size]
+		[title, size, rounded, withRandomColor, Wrapper, avatarTitleContent]
 	);
 
 	const avatarIcon = useMemo(() => {
 		return (
-			<View style={styles.textContainer(size, defaultBg, rounded)}>
+			<Wrapper style={styles.textContainer(size, defaultBg, rounded)}>
 				<Icon
 					minimumFontScale={0.01}
 					adjustsFontSizeToFit
@@ -85,13 +98,16 @@ const Component = ({
 					])}
 					{...icon}
 				/>
-			</View>
+			</Wrapper>
 		);
-	}, [source, size, icon]);
+	}, [size, icon, rounded, Wrapper]);
 
 	const avatarImage = useMemo(
 		() => (
-			<View style={[styles.imageContainer(size, rounded), containerStyle]}>
+			<Wrapper
+				onPress={onPress}
+				style={[styles.imageContainer(size, rounded), containerStyle]}
+			>
 				<ImageBackground
 					source={source}
 					style={StyleSheet.flatten([styles.image(size), style])}
@@ -105,9 +121,9 @@ const Component = ({
 				>
 					{title && !avatarLoaded && avatarTitleContent}
 				</ImageBackground>
-			</View>
+			</Wrapper>
 		),
-		[source, size, avatarLoaded]
+		[source, size, avatarLoaded, rounded, title, Wrapper, avatarTitleContent]
 	);
 
 	const avatar = useMemo(() => {

@@ -620,6 +620,18 @@ export interface AvatarProps {
    * @default true
    */
   withRandomColor?: boolean;
+
+  /**
+   * If you don't want shortest title then set false.
+   * @example 'Murat ÖNER' title shortest to 'MÖ'.
+   * @default true
+   */
+  shortestTitle?: boolean;
+
+  /**
+   * onPress callback function for avatar container
+   */
+  onPress?: () => void;
 }
 
 /**

@@ -1,6 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import {
+	ActivityIndicator,
+	StyleSheet,
+	Text,
+	TouchableOpacity
+} from 'react-native';
 import Icon from '../icons/Icon';
 import ButtonColor from './ButtonColor';
 
@@ -14,7 +19,9 @@ const Button = ({
 	title,
 	style,
 	fluid,
-	onPress
+	onPress,
+	loading,
+	indicatorStyle
 }) => {
 	const bgColor = ButtonColor.getBgColor(color);
 	const textColor = outline ? bgColor : ButtonColor.getTextColor(color);
@@ -23,7 +30,7 @@ const Button = ({
 	};
 	return (
 		<TouchableOpacity
-			onPress={onPress}
+			onPress={disabled || loading ? null : onPress}
 			disabled={disabled}
 			style={StyleSheet.flatten([
 				style,
@@ -33,6 +40,7 @@ const Button = ({
 					paddingVertical: 11,
 					borderRadius: circular ? 50 : 3,
 					alignItems: 'center',
+					justifyContent: 'center',
 					flexDirection: 'row',
 					borderWidth: outline ? 1 : 0,
 					borderColor: outline ? bgColor : null,
@@ -41,7 +49,7 @@ const Button = ({
 				}
 			])}
 		>
-			{iconName && iconType && (
+			{iconName && !loading && iconType && (
 				<Icon
 					name={iconName}
 					type={iconType}
@@ -49,7 +57,7 @@ const Button = ({
 					style={StyleSheet.flatten([styles.icon, iconStyle])}
 				/>
 			)}
-			{title && (
+			{title && !loading && (
 				<Text
 					style={{
 						fontWeight: 'bold',
@@ -59,6 +67,11 @@ const Button = ({
 					{title}
 				</Text>
 			)}
+			{loading && (
+				<ActivityIndicator
+					style={StyleSheet.flatten([styles.indicator, indicatorStyle])}
+				/>
+			)}
 		</TouchableOpacity>
 	);
 };
@@ -66,7 +79,8 @@ const Button = ({
 const styles = StyleSheet.create({
 	icon: {
 		fontSize: 15
-	}
+	},
+	indicator: {}
 });
 
 Button.propTypes = {

@@ -11,6 +11,40 @@ describe('Button Component', () => {
 		expect(toJson(component)).toMatchSnapshot();
 	});
 
+	it('should not be call onPress events when disabled is true', () => {
+		const onPress = jest.fn();
+		const component = shallow(<Button onPress={onPress} disabled />);
+
+		expect(component.get(0).props.style).toHaveProperty('opacity', 0.45);
+
+		// Simulate press action
+		component.simulate('press');
+
+		expect(onPress).not.toHaveBeenCalled();
+	});
+
+	it('should not be call onPress events when loading is true', () => {
+		const onPress = jest.fn();
+		const component = shallow(<Button onPress={onPress} loading />);
+
+		expect(component.find('ActivityIndicator')).toHaveLength(1);
+
+		// Simulate press action
+		component.simulate('press');
+
+		expect(onPress).not.toHaveBeenCalled();
+	});
+
+	it('should be call onPress events', () => {
+		const onPress = jest.fn();
+		const component = shallow(<Button onPress={onPress} />);
+
+		// Simulate press action
+		component.simulate('press');
+
+		expect(onPress).toHaveBeenCalled();
+	});
+
 	it('should render with title prop', () => {
 		const component = shallow(<Button title="Save" />);
 
