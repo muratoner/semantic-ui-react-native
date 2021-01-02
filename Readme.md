@@ -99,6 +99,7 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [x] Button
 - [ ] ButtonGroup
 - [ ] Card
+- [ ] Color Picker
 - [x] CheckBox
 - [ ] CheckBoxGroup
 - [ ] Comment
