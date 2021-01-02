@@ -6,14 +6,6 @@
   Semantic UI Kit For React Native
 </p>
 
-| Avatar | Button | Checkbox | Divider |
-| --- | --- | --- | --- |
-| ![Avatar](https://user-images.githubusercontent.com/4863567/103447406-048eab00-4c9c-11eb-9415-3eeb653edd76.png) | ![Button](https://user-images.githubusercontent.com/4863567/103447395-d7da9380-4c9b-11eb-8262-fc73a60a70bf.png) | ![Checkbox](https://user-images.githubusercontent.com/4863567/103447377-a19d1400-4c9b-11eb-87ca-6083ecf43ff5.png) | ![Divider](https://user-images.githubusercontent.com/4863567/103447430-34d64980-4c9c-11eb-935d-d99d240fa080.png) |
-
-| Icon | LabeledButton | ProgressBar | Title |
-| --- | --- | --- | --- |
-| ![Icon](https://user-images.githubusercontent.com/4863567/103447550-cd20fe00-4c9d-11eb-9fec-34805aec2c63.png) | ![LabeledButton](https://user-images.githubusercontent.com/4863567/103447556-e164fb00-4c9d-11eb-968f-6ff9dd44b4dc.png) | ![ProgressBar](https://user-images.githubusercontent.com/4863567/103447661-20e01700-4c9f-11eb-8133-c8939fc97721.png) | ![Title](https://user-images.githubusercontent.com/4863567/103447669-39503180-4c9f-11eb-99c6-c37a5cd62055.png) |
-
 <p align="center">
   <a href="https://www.npmjs.com/package/@muratoner/semantic-ui-react-native"><img src="https://img.shields.io/npm/v/@muratoner/semantic-ui-react-native.svg"></a>
   <a href="https://travis-ci.org/muratoner/semantic-ui-react-native"><img src="https://img.shields.io/travis/muratoner/semantic-ui-react-native/master.svg"></a>
@@ -28,6 +20,14 @@
   <a href="https://david-dm.org/muratoner/semantic-ui-react-native"><img src="https://david-dm.org/muratoner/semantic-ui-react-native.svg"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 </p>
+
+| Avatar | Button | Checkbox | Divider |
+| --- | --- | --- | --- |
+| ![Avatar](https://user-images.githubusercontent.com/4863567/103447406-048eab00-4c9c-11eb-9415-3eeb653edd76.png) | ![Button](https://user-images.githubusercontent.com/4863567/103447395-d7da9380-4c9b-11eb-8262-fc73a60a70bf.png) | ![Checkbox](https://user-images.githubusercontent.com/4863567/103447377-a19d1400-4c9b-11eb-87ca-6083ecf43ff5.png) | ![Divider](https://user-images.githubusercontent.com/4863567/103447430-34d64980-4c9c-11eb-935d-d99d240fa080.png) |
+
+| Icon | LabeledButton | ProgressBar | Title |
+| --- | --- | --- | --- |
+| ![Icon](https://user-images.githubusercontent.com/4863567/103447550-cd20fe00-4c9d-11eb-9fec-34805aec2c63.png) | ![LabeledButton](https://user-images.githubusercontent.com/4863567/103447556-e164fb00-4c9d-11eb-968f-6ff9dd44b4dc.png) | ![ProgressBar](https://user-images.githubusercontent.com/4863567/103447661-20e01700-4c9f-11eb-8133-c8939fc97721.png) | ![Title](https://user-images.githubusercontent.com/4863567/103447669-39503180-4c9f-11eb-99c6-c37a5cd62055.png) |
 
 ## Get Started
 
