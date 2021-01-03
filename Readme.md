@@ -23,7 +23,7 @@
 
 | Avatar | Button | Checkbox | Divider |
 | --- | --- | --- | --- |
-| ![Avatar](https://user-images.githubusercontent.com/4863567/103447406-048eab00-4c9c-11eb-9415-3eeb653edd76.png) | ![Button](https://user-images.githubusercontent.com/4863567/103447395-d7da9380-4c9b-11eb-8262-fc73a60a70bf.png) | ![Checkbox](https://user-images.githubusercontent.com/4863567/103447377-a19d1400-4c9b-11eb-87ca-6083ecf43ff5.png) | ![Divider](https://user-images.githubusercontent.com/4863567/103447430-34d64980-4c9c-11eb-935d-d99d240fa080.png) |
+| ![Avatar](https://user-images.githubusercontent.com/4863567/103491535-a5fd3480-4e35-11eb-9fe3-3afacf6b5687.png) | ![Button](https://user-images.githubusercontent.com/4863567/103447395-d7da9380-4c9b-11eb-8262-fc73a60a70bf.png) | ![Checkbox](https://user-images.githubusercontent.com/4863567/103447377-a19d1400-4c9b-11eb-87ca-6083ecf43ff5.png) | ![Divider](https://user-images.githubusercontent.com/4863567/103447430-34d64980-4c9c-11eb-935d-d99d240fa080.png) |
 
 | Icon | LabeledButton | ProgressBar | Title |
 | --- | --- | --- | --- |
