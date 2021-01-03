@@ -5,6 +5,7 @@ import ScreenDivider from './Divider';
 import ScreenIcon from './Icon';
 import ScreenLabeledButton from './LabeledButton';
 import ScreenProgressBar from './ProgressBar';
+import ScreenSocialIcon from './SocialIcon';
 import ScreenTitle from './Title';
 export {
   ScreenButton,
@@ -15,4 +16,5 @@ export {
   ScreenProgressBar,
   ScreenAvatar,
   ScreenCheckbox,
+  ScreenSocialIcon,
 };

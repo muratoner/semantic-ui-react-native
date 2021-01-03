@@ -144,6 +144,7 @@ describe('Button Component', () => {
 				circular
 				disabled
 				fluid
+				raised
 				type="outline"
 				style={{
 					height: 50
@@ -164,6 +165,7 @@ describe('Button Component', () => {
 				circular
 				disabled
 				fluid
+				raised
 				type="outline"
 				style={{
 					height: 50

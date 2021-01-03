@@ -22,19 +22,20 @@ export default (props: CheckboxProps) => {
 		type = 'circle',
 		checkedColor,
 		unCheckedColor,
-		disable
+		disable,
+		title
 	} = props;
 
 	const Slider = useMemo(() => {
 		if (type == 'slider') {
 			return (
 				<View
-					style={{
-						height: 3,
-						backgroundColor: checked ? '#191919' : 'rgba(0,0,0,.1)',
-						width: 50,
-						borderRadius: 10
-					}}
+					style={[
+						styles.slider,
+						{
+							backgroundColor: checked ? '#191919' : 'rgba(0,0,0,.1)'
+						}
+					]}
 				>
 					<View
 						style={{
@@ -61,28 +62,21 @@ export default (props: CheckboxProps) => {
 		if (type == 'toggle') {
 			return (
 				<View
-					style={{
-						height: 20,
-						backgroundColor: checked ? '#2185d0' : 'rgba(0,0,0,.1)',
-						width: 50,
-						borderRadius: 20 * 0.5
-					}}
+					style={[
+						styles.toggle,
+						{
+							backgroundColor: checked ? '#2185d0' : 'rgba(0,0,0,.1)'
+						}
+					]}
 				>
 					<View
-						style={{
-							borderRadius: 50,
-							shadowColor: 'rgba(0,0,0,.5)',
-							shadowOpacity: 1,
-							shadowRadius: 1,
-							shadowOffset: { width: 0, height: 0 },
-							width: 18,
-							height: 18,
-							backgroundColor: 'white',
-							position: 'absolute',
-							top: 1,
-							left: !checked ? 1 : undefined,
-							right: checked ? 1 : undefined
-						}}
+						style={[
+							styles.toggleCircle,
+							{
+								left: !checked ? 1 : undefined,
+								right: checked ? 1 : undefined
+							}
+						]}
 					></View>
 				</View>
 			);
@@ -166,16 +160,10 @@ export default (props: CheckboxProps) => {
 					  }
 					: undefined
 			}
-			style={StyleSheet.flatten([
-				styles.container,
-				containerStyle,
-				{ opacity: disable ? 0.7 : 1 }
-			])}
+			style={[styles.container, containerStyle, { opacity: disable ? 0.7 : 1 }]}
 		>
 			<IconComponent />
-			<Text style={StyleSheet.flatten([styles.title, titleStyle])}>
-				Make my profile visible
-			</Text>
+			{title && <Text style={[styles.title, titleStyle]}>{title}</Text>}
 		</TouchableOpacity>
 	);
 };
@@ -187,6 +175,28 @@ const styles = StyleSheet.create({
 	},
 	title: {
 		marginLeft: 10
+	},
+	slider: {
+		height: 3,
+		width: 50,
+		borderRadius: 10
+	},
+	toggle: {
+		height: 20,
+		width: 50,
+		borderRadius: 20 * 0.5
+	},
+	toggleCircle: {
+		borderRadius: 50,
+		shadowColor: 'rgba(0,0,0,.5)',
+		shadowOpacity: 1,
+		shadowRadius: 1,
+		shadowOffset: { width: 0, height: 0 },
+		width: 18,
+		height: 18,
+		backgroundColor: 'white',
+		position: 'absolute',
+		top: 1
 	},
 	icon: (type) => ({
 		padding: type == 'flat' ? 2 : null,

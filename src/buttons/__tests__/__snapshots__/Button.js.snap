@@ -281,6 +281,13 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
       "opacity": 0.45,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
+      "shadowColor": "#191919",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 1,
+      },
+      "shadowOpacity": 0.2,
+      "shadowRadius": 0.1,
     }
   }
 >
@@ -315,6 +322,13 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
       "opacity": 0.45,
       "paddingHorizontal": 11,
       "paddingVertical": 11,
+      "shadowColor": "#191919",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 1,
+      },
+      "shadowOpacity": 0.2,
+      "shadowRadius": 0.1,
     }
   }
 >

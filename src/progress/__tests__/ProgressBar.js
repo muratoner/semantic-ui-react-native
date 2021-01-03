@@ -21,6 +21,12 @@ describe('ProgressBar Component', () => {
 	it('should render with 90 progress', () => {
 		const component = shallow(<ProgressBar progress={60} />);
 
+		component.setProps({
+			progress: 30
+		});
+
+		component.update();
+
 		expect(component.length).toBe(1);
 		expect(toJson(component)).toMatchSnapshot();
 	});
@@ -36,6 +42,13 @@ describe('ProgressBar Component', () => {
 		const component = shallow(
 			<ProgressBar style={{ backgroundColor: '#f90809' }} progress={100} />
 		);
+
+		expect(component.length).toBe(1);
+		expect(toJson(component)).toMatchSnapshot();
+	});
+
+	it('should render with auto colored', () => {
+		const component = shallow(<ProgressBar autoColored progress={70} />);
 
 		expect(component.length).toBe(1);
 		expect(toJson(component)).toMatchSnapshot();

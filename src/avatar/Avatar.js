@@ -22,7 +22,8 @@ const Component = ({
 	rounded = true,
 	withRandomColor = true,
 	shortestTitle = true,
-	onPress
+	onPress,
+	textColorMode
 }: AvatarProps) => {
 	const [avatarLoaded, setAvatarLoaded] = useState(false);
 	const [defaultBg] = useState('#b1b1b1');
@@ -47,6 +48,14 @@ const Component = ({
 		}
 	}, [onPress]);
 
+	const avatarTitleAutoColor = useMemo(() => {
+		if (textColorMode == 'auto-light') {
+			return UtilColor.lightenColor(UtilColor.stringToColour(title), 80);
+		} else {
+			return UtilColor.contrast(UtilColor.stringToColour(title));
+		}
+	}, [textColorMode, title]);
+
 	const avatarTitleContent = useMemo(
 		() => (
 			<Text
@@ -56,9 +65,7 @@ const Component = ({
 				style={StyleSheet.flatten([
 					styles.text(
 						size,
-						source || !withRandomColor
-							? defaultTextColor
-							: UtilColor.contrast(UtilColor.stringToColour(title))
+						source || !withRandomColor ? defaultTextColor : avatarTitleAutoColor
 					),
 					style
 				])}
@@ -66,7 +73,14 @@ const Component = ({
 				{chars}
 			</Text>
 		),
-		[title, size, withRandomColor, source, shortestTitle, titleShowLimit]
+		[
+			size,
+			withRandomColor,
+			source,
+			shortestTitle,
+			titleShowLimit,
+			avatarTitleAutoColor
+		]
 	);
 
 	const avatarTitle = useMemo(

@@ -362,6 +362,12 @@ export interface AvatarProps {
    * onPress callback function for avatar container
    */
   onPress?: () => void;
+
+  /**
+   * Avatar text auto color mode
+   * @default auto-black-white
+   */
+  textColorMode?: 'black-white' | 'light';
 }
 
 /**
@@ -437,6 +443,11 @@ export interface CheckboxProps {
    * Disable checkbox
    */
   disable?: boolean;
+
+  /**
+   * Checkbox title
+   */
+  title?: string;
 }
 
 export class Checkbox extends React.Component<CheckboxProps> {}

@@ -7,6 +7,7 @@ enum RouteNames {
   ProgressBar = 'ProgressBar',
   Avatar = 'Avatar',
   Checkbox = 'Checkbox',
+  SocialIcon = 'SocialIcon',
 }
 
 export default RouteNames;

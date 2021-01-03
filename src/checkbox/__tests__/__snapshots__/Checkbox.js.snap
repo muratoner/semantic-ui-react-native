@@ -1,0 +1,313 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox Component should render circle 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render circle-overflow 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render flag 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render heart 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render lock 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render notification 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render radio 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render slider 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render square 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render square-overflow 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render title 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+  <Text
+    style={
+      Array [
+        Object {
+          "marginLeft": 10,
+        },
+        undefined,
+      ]
+    }
+  >
+    Volume toggle
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render toggle 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render volume 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render volume 2`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;
+
+exports[`Checkbox Component should render without issues 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
+      undefined,
+      Object {
+        "opacity": 1,
+      },
+    ]
+  }
+>
+  <Component />
+</ForwardRef>
+`;

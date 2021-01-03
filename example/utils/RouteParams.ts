@@ -10,4 +10,5 @@ export type RouteParams = {
   [RouteNames.ProgressBar]: {};
   [RouteNames.Avatar]: {};
   [RouteNames.Checkbox]: {};
+  [RouteNames.SocialIcon]: {};
 };

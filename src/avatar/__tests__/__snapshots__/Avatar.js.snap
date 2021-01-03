@@ -1,0 +1,505 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar Component should render with avatar image 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 16,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
+  }
+>
+  <ImageBackground
+    height={32}
+    onLoadEnd={[Function]}
+    resizeMode="cover"
+    source={
+      Object {
+        "uri": "https://i.pravatar.cc/50",
+      }
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#BCBEC1",
+        "height": 32,
+        "justifyContent": "center",
+        "width": 32,
+      }
+    }
+    width={32}
+  />
+</View>
+`;
+
+exports[`Avatar Component should render with avatar image 2`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": 16,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
+  }
+>
+  <ImageBackground
+    height={32}
+    onLoadEnd={[Function]}
+    resizeMode="cover"
+    source={
+      Object {
+        "uri": "https://i.pravatar.cc/50",
+      }
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#BCBEC1",
+        "height": 32,
+        "justifyContent": "center",
+        "width": 32,
+      }
+    }
+    width={32}
+  />
+</View>
+`;
+
+exports[`Avatar Component should render with icon 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#b1b1b1",
+      "borderRadius": 16,
+      "height": 32,
+      "justifyContent": "center",
+      "width": 32,
+    }
+  }
+>
+  <Icon
+    0="u"
+    1="s"
+    2="e"
+    3="r"
+    adjustsFontSizeToFit={true}
+    minimumFontScale={0.01}
+    numberOfLines={1}
+    style={
+      Object {
+        "color": "#fff",
+        "fontSize": 18.285714285714285,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Avatar Component should render with onPress in Icon avatar 1`] = `
+<ForwardRef
+  onPress={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#b1b1b1",
+      "borderRadius": 16,
+      "height": 32,
+      "justifyContent": "center",
+      "width": 32,
+    }
+  }
+>
+  <Icon
+    0="u"
+    1="s"
+    2="e"
+    3="r"
+    adjustsFontSizeToFit={true}
+    minimumFontScale={0.01}
+    numberOfLines={1}
+    style={
+      Object {
+        "color": "#fff",
+        "fontSize": 18.285714285714285,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+      }
+    }
+  />
+</ForwardRef>
+`;
+
+exports[`Avatar Component should render with onPress in image avatar 1`] = `
+<ForwardRef
+  onPress={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  style={
+    Array [
+      Object {
+        "borderRadius": 16,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
+  }
+>
+  <ImageBackground
+    height={32}
+    onLoadEnd={[Function]}
+    resizeMode="cover"
+    source={
+      Object {
+        "uri": "https://i.pravatar.cc/50",
+      }
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#BCBEC1",
+        "height": 32,
+        "justifyContent": "center",
+        "width": 32,
+      }
+    }
+    width={32}
+  />
+</ForwardRef>
+`;
+
+exports[`Avatar Component should render with onPress in title avatar 1`] = `
+<ForwardRef
+  onPress={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#c8bdf7",
+      "borderRadius": 16,
+      "height": 32,
+      "justifyContent": "center",
+      "width": 32,
+    }
+  }
+>
+  <Text
+    adjustsFontSizeToFit={true}
+    minimumFontScale={0.01}
+    numberOfLines={1}
+    style={
+      Object {
+        "color": "#000",
+        "fontSize": 200,
+        "paddingHorizontal": 4.571428571428571,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+      }
+    }
+  >
+    M
+    Ö
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Avatar Component should render with randomColor is false 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#b1b1b1",
+      "borderRadius": 16,
+      "height": 32,
+      "justifyContent": "center",
+      "width": 32,
+    }
+  }
+>
+  <Text
+    adjustsFontSizeToFit={true}
+    minimumFontScale={0.01}
+    numberOfLines={1}
+    style={
+      Object {
+        "color": "#fff",
+        "fontSize": 200,
+        "paddingHorizontal": 4.571428571428571,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+      }
+    }
+  >
+    M
+    Ö
+  </Text>
+</View>
+`;
+
+exports[`Avatar Component should render with rounded is false 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderRadius": undefined,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
+  }
+>
+  <ImageBackground
+    height={32}
+    onLoadEnd={[Function]}
+    resizeMode="cover"
+    source={
+      Object {
+        "uri": "https://i.pravatar.cc/50",
+      }
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#BCBEC1",
+        "height": 32,
+        "justifyContent": "center",
+        "width": 32,
+      }
+    }
+    width={32}
+  />
+</View>
+`;
+
+exports[`Avatar Component should render with shortestTitle is false 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#c8bdf7",
+      "borderRadius": 16,
+      "height": 32,
+      "justifyContent": "center",
+      "width": 32,
+    }
+  }
+>
+  <Text
+    adjustsFontSizeToFit={true}
+    minimumFontScale={0.01}
+    numberOfLines={1}
+    style={
+      Object {
+        "color": "#000",
+        "fontSize": 200,
+        "paddingHorizontal": 4.571428571428571,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+      }
+    }
+  >
+    Murat ÖNER
+  </Text>
+</View>
+`;
+
+exports[`Avatar Component should render with shortestTitle is false 2`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#c8bdf7",
+      "borderRadius": 16,
+      "height": 32,
+      "justifyContent": "center",
+      "width": 32,
+    }
+  }
+>
+  <Text
+    adjustsFontSizeToFit={true}
+    minimumFontScale={0.01}
+    numberOfLines={1}
+    style={
+      Object {
+        "color": "#000",
+        "fontSize": 200,
+        "paddingHorizontal": 4.571428571428571,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+      }
+    }
+  >
+    Murat ÖNER
+  </Text>
+</View>
+`;
+
+exports[`Avatar Component should render with textAutoColorMode is auto-light 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#c8bdf7",
+      "borderRadius": 16,
+      "height": 32,
+      "justifyContent": "center",
+      "width": 32,
+    }
+  }
+>
+  <Text
+    adjustsFontSizeToFit={true}
+    minimumFontScale={0.01}
+    numberOfLines={1}
+    style={
+      Object {
+        "color": "#ffffff",
+        "fontSize": 200,
+        "paddingHorizontal": 4.571428571428571,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+      }
+    }
+  >
+    M
+    Ö
+  </Text>
+</View>
+`;
+
+exports[`Avatar Component should render with title 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#c8bdf7",
+      "borderRadius": 16,
+      "height": 32,
+      "justifyContent": "center",
+      "width": 32,
+    }
+  }
+>
+  <Text
+    adjustsFontSizeToFit={true}
+    minimumFontScale={0.01}
+    numberOfLines={1}
+    style={
+      Object {
+        "color": "#000",
+        "fontSize": 200,
+        "paddingHorizontal": 4.571428571428571,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+      }
+    }
+  >
+    M
+    Ö
+  </Text>
+</View>
+`;
+
+exports[`Avatar Component should render with titleShowLimit is 2 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4e2b75",
+      "borderRadius": 16,
+      "height": 32,
+      "justifyContent": "center",
+      "width": 32,
+    }
+  }
+>
+  <Text
+    adjustsFontSizeToFit={true}
+    minimumFontScale={0.01}
+    numberOfLines={1}
+    style={
+      Object {
+        "color": "#fff",
+        "fontSize": 200,
+        "paddingHorizontal": 4.571428571428571,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+      }
+    }
+  >
+    M
+    S
+  </Text>
+</View>
+`;
+
+exports[`Avatar Component should render without issues 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#000000",
+      "borderRadius": 16,
+      "height": 32,
+      "justifyContent": "center",
+      "width": 32,
+    }
+  }
+>
+  <Text
+    adjustsFontSizeToFit={true}
+    minimumFontScale={0.01}
+    numberOfLines={1}
+    style={
+      Object {
+        "color": "#fff",
+        "fontSize": 200,
+        "paddingHorizontal": 4.571428571428571,
+        "textAlign": "center",
+        "textAlignVertical": "center",
+      }
+    }
+  />
+</View>
+`;

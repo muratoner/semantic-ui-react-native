@@ -57,7 +57,7 @@ const Component = () => {
 					</View>
 					<View style={{ flexDirection: 'row', marginVertical: 10 }}>
 						<Button
-							outline
+							type="outline"
 							title="Add Friend"
 							color="secondary"
 							iconName="user"
@@ -66,7 +66,7 @@ const Component = () => {
 						/>
 						<Button
 							loading
-							outline
+							type="outline"
 							title="Add Friend"
 							color="red"
 							iconName="user"
@@ -77,7 +77,7 @@ const Component = () => {
 						<Button
 							disabled
 							loading
-							outline
+							type="outline"
 							title="Add Friend"
 							color="red"
 							iconName="user"

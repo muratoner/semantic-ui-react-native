@@ -1,4 +1,5 @@
 import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import React from 'react';
 import Avatar from '../Avatar';
 
@@ -13,6 +14,24 @@ describe('Avatar Component', () => {
 		expect(props).toHaveProperty('adjustsFontSizeToFit', true);
 		expect(props).toHaveProperty('minimumFontScale', 0.01);
 		expect(props).toHaveProperty('children', undefined);
+
+		expect(toJson(component)).toMatchSnapshot();
+	});
+
+	it('should render with textAutoColorMode is auto-light', () => {
+		const component = shallow(
+			<Avatar title="Murat ÖNER" textColorMode="auto-light" />
+		);
+
+		let props = component.children().props();
+
+		expect(component.find('Text')).toHaveLength(1);
+		expect(props).toHaveProperty('numberOfLines', 1);
+		expect(props).toHaveProperty('adjustsFontSizeToFit', true);
+		expect(props).toHaveProperty('minimumFontScale', 0.01);
+		expect(props).toHaveProperty('children', ['M', 'Ö']);
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with title', () => {
@@ -25,6 +44,8 @@ describe('Avatar Component', () => {
 		expect(props).toHaveProperty('adjustsFontSizeToFit', true);
 		expect(props).toHaveProperty('minimumFontScale', 0.01);
 		expect(props).toHaveProperty('children', ['M', 'Ö']);
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with shortestTitle is false', () => {
@@ -39,6 +60,8 @@ describe('Avatar Component', () => {
 		expect(props).toHaveProperty('adjustsFontSizeToFit', true);
 		expect(props).toHaveProperty('minimumFontScale', 0.01);
 		expect(props).toHaveProperty('children', 'Murat ÖNER');
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with shortestTitle is false', () => {
@@ -53,6 +76,8 @@ describe('Avatar Component', () => {
 		expect(props).toHaveProperty('adjustsFontSizeToFit', true);
 		expect(props).toHaveProperty('minimumFontScale', 0.01);
 		expect(props).toHaveProperty('children', 'Murat ÖNER');
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with titleShowLimit is 2', () => {
@@ -67,6 +92,8 @@ describe('Avatar Component', () => {
 		expect(props).toHaveProperty('adjustsFontSizeToFit', true);
 		expect(props).toHaveProperty('minimumFontScale', 0.01);
 		expect(props).toHaveProperty('children', ['M', 'S']);
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with avatar image', () => {
@@ -95,6 +122,8 @@ describe('Avatar Component', () => {
 		expect(imageStyles).toHaveProperty('height', 32);
 		expect(image.get(0).props).toHaveProperty('resizeMode', 'cover');
 		expect(text.get(0).props).toHaveProperty('children', ['M', 'S']);
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with avatar image', () => {
@@ -123,6 +152,8 @@ describe('Avatar Component', () => {
 		expect(imageStyles).toHaveProperty('height', 32);
 		expect(image.get(0).props).toHaveProperty('resizeMode', 'cover');
 		expect(text.get(0).props).toHaveProperty('children', ['M', 'S']);
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with icon', () => {
@@ -134,6 +165,8 @@ describe('Avatar Component', () => {
 		expect(props).toHaveProperty('numberOfLines', 1);
 		expect(props).toHaveProperty('adjustsFontSizeToFit', true);
 		expect(props).toHaveProperty('minimumFontScale', 0.01);
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with randomColor is false', () => {
@@ -149,6 +182,8 @@ describe('Avatar Component', () => {
 			'backgroundColor',
 			'#b1b1b1'
 		);
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with rounded is false', () => {
@@ -167,6 +202,8 @@ describe('Avatar Component', () => {
 		expect(
 			component.get(0).props.style.reduce((acc, cur) => Object.assign(acc, cur))
 		).toHaveProperty('borderRadius', undefined);
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with onPress in Icon avatar', () => {
@@ -178,6 +215,8 @@ describe('Avatar Component', () => {
 		expect(component).toHaveLength(1);
 		expect(onPress).toBeCalled();
 		expect(onPress).toBeCalledTimes(1);
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with onPress in title avatar', () => {
@@ -189,6 +228,8 @@ describe('Avatar Component', () => {
 		expect(component).toHaveLength(1);
 		expect(onPress).toBeCalled();
 		expect(onPress).toBeCalledTimes(1);
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with onPress in image avatar', () => {
@@ -207,5 +248,7 @@ describe('Avatar Component', () => {
 		expect(component).toHaveLength(1);
 		expect(onPress).toBeCalled();
 		expect(onPress).toBeCalledTimes(1);
+
+		expect(toJson(component)).toMatchSnapshot();
 	});
 });
