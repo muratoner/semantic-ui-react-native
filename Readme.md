@@ -31,7 +31,7 @@
 
 | SocialIcon Button | ? | ? | ? |
 | --- | --- | --- | --- |
-| ![Simulator Screen Shot - iPhone 11 - 2021-01-03 at 04 39 08](https://user-images.githubusercontent.com/4863567/103470025-c964a880-4d7d-11eb-8b03-460653997271.png) | ![Construction](https://user-images.githubusercontent.com/4863567/103470071-69223680-4d7e-11eb-9eeb-438e34ca9c65.png) | ![Construction](https://user-images.githubusercontent.com/4863567/103470071-69223680-4d7e-11eb-9eeb-438e34ca9c65.png) | ![Construction](https://user-images.githubusercontent.com/4863567/103470071-69223680-4d7e-11eb-9eeb-438e34ca9c65.png) |
+| ![SocialIcon](https://user-images.githubusercontent.com/4863567/103476323-9e9e4280-4dc5-11eb-853f-bb02800bddeb.png) | ![Construction](https://user-images.githubusercontent.com/4863567/103470071-69223680-4d7e-11eb-9eeb-438e34ca9c65.png) | ![Construction](https://user-images.githubusercontent.com/4863567/103470071-69223680-4d7e-11eb-9eeb-438e34ca9c65.png) | ![Construction](https://user-images.githubusercontent.com/4863567/103470071-69223680-4d7e-11eb-9eeb-438e34ca9c65.png) |
 
 ## Get Started
 
