@@ -5,12 +5,12 @@ import { DividerProps } from '../';
 import Icon from '../icons/Icon';
 
 const Component = (props: DividerProps) => {
-	const { style, text, icon, color, children, ...attributes } = props;
+	const { style, title, icon, color, children, ...attributes } = props;
 	return (
 		<View {...attributes} style={[styles.divider(color), style]}>
-			<View style={styles.title}>
+			<View style={styles.titleContainer}>
 				{icon && <Icon style={styles.icon} {...icon} />}
-				{text && <Text style={styles.text}>{text}</Text>}
+				{title && <Text style={styles.title}>{title}</Text>}
 				{children}
 			</View>
 		</View>
@@ -24,13 +24,13 @@ const styles = StyleSheet.create({
 		width: '100%',
 		marginBottom: 10
 	}),
-	text: {
+	title: {
 		fontWeight: 'bold'
 	},
 	icon: {
 		marginRight: 5
 	},
-	title: {
+	titleContainer: {
 		alignItems: 'center',
 		flexDirection: 'row',
 		alignSelf: 'center',

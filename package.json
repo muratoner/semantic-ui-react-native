@@ -20,8 +20,8 @@
     "test:ci": "jest --runInBand",
     "test:watch": "jest --watch",
     "postinstall": "opencollective-postinstall || exit 0",
-    "lint": "eslint --ext js,ts . --fix",
-    "prettify": "prettier --single-quote --trailing-comma=es5 --write './**/*.md'",
+    "lint": "eslint",
+    "prettify": "prettier",
     "clean-install": "rimraf node_modules && yarn",
     "changelog": "auto-changelog -p"
   },

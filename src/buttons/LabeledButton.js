@@ -7,28 +7,30 @@ import {
 	TouchableOpacity,
 	View
 } from 'react-native';
+import { LabeledButtonProps } from '../';
 import Icon from '../icons/Icon';
 import ButtonColor from './ButtonColor';
 
 const LabeledButton = ({
-	outline,
-	fluid,
 	circular,
+	color,
 	disabled,
-	style,
+	fluid,
+	indicatorStyle,
 	label,
 	labelIcon,
 	labelIconType,
 	labelRight,
-	color,
-	title,
 	loading,
 	pointing,
-	indicatorStyle,
-	onPress
-}) => {
+	onPress,
+	style,
+	title,
+	type
+}: LabeledButtonProps) => {
 	const bgColor = ButtonColor.getBgColor(color);
 	const textColor = ButtonColor.getTextColor(color);
+	const outline = type == 'outline';
 
 	const getValueColor = () => {
 		switch (color) {

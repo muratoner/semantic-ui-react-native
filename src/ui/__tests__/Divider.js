@@ -19,14 +19,16 @@ describe('Divider Component', () => {
 	});
 
 	it('should render with text', () => {
-		const component = shallow(<Divider text="Description" />);
+		const component = shallow(<Divider title="Description" />);
 
 		expect(component.length).toBe(1);
 		expect(toJson(component)).toMatchSnapshot();
 	});
 
 	it('should render with icon and text', () => {
-		const component = shallow(<Divider text="Users" icon={{ name: 'user' }} />);
+		const component = shallow(
+			<Divider title="Users" icon={{ name: 'user' }} />
+		);
 
 		expect(component.length).toBe(1);
 		expect(toJson(component)).toMatchSnapshot();
@@ -34,7 +36,7 @@ describe('Divider Component', () => {
 
 	it('should render with style', () => {
 		const component = shallow(
-			<Divider text="Users" style={{ backgroundColor: 'red' }} />
+			<Divider title="Users" style={{ backgroundColor: 'red' }} />
 		);
 
 		expect(component.length).toBe(1);

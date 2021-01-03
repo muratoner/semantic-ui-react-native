@@ -75,7 +75,7 @@ describe('Button Component', () => {
 
 	it('should render with title, circular, disabled, fluid and outline props', () => {
 		const component = shallow(
-			<Button title="Save" circular disabled fluid outline />
+			<Button title="Save" circular disabled fluid type="outline" />
 		);
 
 		expect(component.length).toBe(1);
@@ -89,7 +89,7 @@ describe('Button Component', () => {
 				circular
 				disabled
 				fluid
-				outline
+				type="outline"
 				style={{
 					height: 50
 				}}
@@ -107,7 +107,7 @@ describe('Button Component', () => {
 				circular
 				disabled
 				fluid
-				outline
+				type="outline"
 				style={{
 					height: 50
 				}}
@@ -125,7 +125,7 @@ describe('Button Component', () => {
 				circular
 				disabled
 				fluid
-				outline
+				type="outline"
 				style={{
 					height: 50
 				}}
@@ -144,7 +144,7 @@ describe('Button Component', () => {
 				circular
 				disabled
 				fluid
-				outline
+				type="outline"
 				style={{
 					height: 50
 				}}
@@ -164,7 +164,7 @@ describe('Button Component', () => {
 				circular
 				disabled
 				fluid
-				outline
+				type="outline"
 				style={{
 					height: 50
 				}}

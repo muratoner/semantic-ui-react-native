@@ -8,6 +8,7 @@ import Button from './buttons/Button';
 import LabeledButton from './buttons/LabeledButton';
 import Checkbox from './checkbox/Checkbox';
 import Icon from './icons/Icon';
+import SocialIcon from './icons/SocialIcon';
 import ProgressBar from './progress/ProgressBar';
 // Typography
 import Title from './typography/Title';
@@ -26,5 +27,6 @@ export {
 	Title,
 	ProgressBar,
 	Avatar,
-	Checkbox
+	Checkbox,
+	SocialIcon
 };

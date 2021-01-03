@@ -1,14 +1,11 @@
 import * as React from 'react';
 import {
-	ActivityIndicatorProps,
 	ImageSourcePropType,
 	ImageStyle,
 	StyleProp,
 	TextProps as TextProperties,
 	TextStyle,
 	TouchableHighlightProps,
-	TouchableNativeFeedbackProps,
-	TouchableOpacityProps,
 	ViewStyle,
 } from 'react-native';
 
@@ -54,42 +51,16 @@ export interface TextProps extends TextProperties {
  */
 export class Text extends React.Component<TextProps, any> {}
 
-export interface LabeledButtonProps
-  extends TouchableOpacityProps,
-    TouchableNativeFeedbackProps {
+export interface LabeledButtonProps {
   /**
-   * Specify other touchable such as TouchableOpacity/TouchableNativeFeedback
-   *
-   * Default is TouchableOpacity on IOS and TouchableNativeFeedback on Android
+   * Button style
    */
-  TouchableComponent?: React.ComponentClass;
-
-  /**
-   * Specify a different component as the background for the button.
-   * Useful for if you want to make a button with a gradient background.
-   *
-   * @default View
-   */
-  ViewComponent?: React.ComponentClass<any>;
-
-  /**
-   * Additional styling for button (background) view component
-   *
-   * @default null
-   */
-  buttonStyle?: StyleProp<ViewStyle>;
+  style?: ViewStyle;
 
   /**
    * Labeled Button value
    */
   title?: string;
-
-  /**
-   * If to show the icon on the right
-   *
-   * @default false
-   */
-  iconRight?: boolean;
 
   /**
    * Icon name
@@ -102,48 +73,11 @@ export interface LabeledButtonProps
   iconType?: IconType;
 
   /**
-   * Style for the container around the icon
-   */
-  iconContainerStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * Title styling
-   */
-  titleStyle?: StyleProp<TextStyle>;
-
-  /**
-   * Optional props for the title inside the button
-   */
-  titleProps?: TextProperties;
-
-  /**
-   * Styling for Component container
-   *
-   * @default null
-   */
-  containerStyle?: StyleProp<ViewStyle>;
-
-  /**
    * Display a loading spinner
    *
    * @default false
    */
   loading?: boolean;
-
-  /**
-   * Additional style to applied to the ActivityIndicator
-   */
-  loadingStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * Additional props to applied to the ActivityIndicator
-   */
-  loadingProps?: ActivityIndicatorProps;
-
-  /**
-   * Object of props to be applied to the linearGradient view(ViewComponent)
-   */
-  linearGradientProps?: Object;
 
   /**
    * Type of button
@@ -157,23 +91,6 @@ export interface LabeledButtonProps
    * @default false
    */
   disabled?: boolean;
-
-  /**
-   * Style of the title when the button is disabled
-   */
-  disabledTitleStyle?: StyleProp<TextStyle>;
-
-  /**
-   * Style of the button when disabled
-   */
-  disabledStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * If the button has raised styling
-   *
-   * @default false
-   */
-  raised?: boolean;
 
   /**
    * Button label
@@ -196,11 +113,6 @@ export interface LabeledButtonProps
   labelRight?: boolean;
 
   /**
-   * Button type outline
-   */
-  outline?: boolean;
-
-  /**
    * Button pointing
    */
   pointing?: boolean;
@@ -214,44 +126,24 @@ export interface LabeledButtonProps
    * Button circular
    */
   circular?: boolean;
+
+  /**
+   * Button type
+   * @default solid
+   */
+  type?: 'solid' | 'outline';
 }
 
-export interface ButtonProps
-  extends TouchableOpacityProps,
-    TouchableNativeFeedbackProps {
+export interface ButtonProps {
   /**
-   * Specify other touchable such as TouchableOpacity/TouchableNativeFeedback
-   *
-   * Default is TouchableOpacity on IOS and TouchableNativeFeedback on Android
+   * Button style
    */
-  TouchableComponent?: React.ComponentClass;
-
-  /**
-   * Specify a different component as the background for the button.
-   * Useful for if you want to make a button with a gradient background.
-   *
-   * @default View
-   */
-  ViewComponent?: React.ComponentClass<any>;
-
-  /**
-   * Additional styling for button (background) view component
-   *
-   * @default null
-   */
-  buttonStyle?: StyleProp<ViewStyle>;
+  style?: StyleProp<ViewStyle>;
 
   /**
    * Button title
    */
   title?: string;
-
-  /**
-   * If to show the icon on the right
-   *
-   * @default false
-   */
-  iconRight?: boolean;
 
   /**
    * Icon name
@@ -264,48 +156,11 @@ export interface ButtonProps
   iconType?: IconType;
 
   /**
-   * Style for the container around the icon
-   */
-  iconContainerStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * Title styling
-   */
-  titleStyle?: StyleProp<TextStyle>;
-
-  /**
-   * Optional props for the title inside the button
-   */
-  titleProps?: TextProperties;
-
-  /**
-   * Styling for Component container
-   *
-   * @default null
-   */
-  containerStyle?: StyleProp<ViewStyle>;
-
-  /**
    * Display a loading spinner
    *
    * @default false
    */
   loading?: boolean;
-
-  /**
-   * Additional style to applied to the ActivityIndicator
-   */
-  loadingStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * Additional props to applied to the ActivityIndicator
-   */
-  loadingProps?: ActivityIndicatorProps;
-
-  /**
-   * Object of props to be applied to the linearGradient view(ViewComponent)
-   */
-  linearGradientProps?: Object;
 
   /**
    * Type of button
@@ -321,26 +176,11 @@ export interface ButtonProps
   disabled?: boolean;
 
   /**
-   * Style of the title when the button is disabled
-   */
-  disabledTitleStyle?: StyleProp<TextStyle>;
-
-  /**
-   * Style of the button when disabled
-   */
-  disabledStyle?: StyleProp<ViewStyle>;
-
-  /**
    * If the button has raised styling
    *
    * @default false
    */
   raised?: boolean;
-
-  /**
-   * Button type outline
-   */
-  outline?: boolean;
 
   /**
    * Button width of its container
@@ -351,6 +191,17 @@ export interface ButtonProps
    * Button circular
    */
   circular?: boolean;
+
+  /**
+   * Button type
+   * @default solid
+   */
+  type?: 'solid' | 'outline';
+
+  /**
+   * onPress callback function
+   */
+  onPress?: () => void;
 }
 
 export type IconNode = boolean | React.ReactElement<{}> | Partial<IconProps>;
@@ -366,137 +217,16 @@ export class Button extends React.Component<ButtonProps, any> {}
  *
  */
 export class LabeledButton extends React.Component<LabeledButtonProps, any> {}
-
-export interface ButtonGroupProps {
-  /**
-   * Allows the user to select multiple items
-   *
-   * @default false
-   */
-  selectMultiple?: boolean;
-
-  /**
-   * Current selected index of array of buttons
-   */
-  selectedIndex?: number | null;
-
-  /**
-   * The indexes that are selected. Used with 'selectMultiple'
-   *
-   * @default []
-   */
-  selectedIndexes?: number[];
-
-  /**
-   * Array of buttons for component, if returning a component, must be an object with { element: componentName }
-   */
-  buttons: string[];
-
-  /**
-   * Choose other button component such as TouchableOpacity
-   *
-   * @default TouchableHighlight
-   */
-  Component?: React.ComponentType<any>;
-
-  /**
-   * Specify styling for main button container
-   */
-  containerStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * Specify styling for buttons container
-   */
-  buttonContainerStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * inherited styling	specify styling for button
-   */
-  buttonStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * Specify styling selected button
-   *
-   * @default 'white'
-   */
-  selectedButtonStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * Specify specific styling for text
-   */
-  textStyle?: StyleProp<TextStyle>;
-
-  /**
-   * Specify specific styling for text in the selected state
-   */
-  selectedTextStyle?: StyleProp<TextStyle>;
-
-  /**
-   * Specify underlayColor for TouchableHighlight
-   *
-   * @default 'white'
-   */
-  underlayColor?: string;
-
-  /**
-   * Determines what the opacity of the wrapped view should be when touch is active.
-   */
-  activeOpacity?: number;
-
-  /**
-   * Border radius for the container
-   */
-  containerBorderRadius?: number;
-
-  /**
-   * Controls if buttons are disabled
-   *
-   * Setting `true` makes all of them disabled, while using an array only makes those indices disabled
-   *
-   * @default false
-   */
-  disabled?: boolean | number[];
-
-  /**
-   * Styling for each button when disabled
-   */
-  disabledStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * Styling for each selected button when disabled
-   */
-  disabledSelectedStyle?: StyleProp<ViewStyle>;
-
-  /**
-   * Styling for the text of each button when disabled
-   */
-  disabledTextStyle?: StyleProp<TextStyle>;
-
-  /**
-   * Styling for the text of each selected button when disabled
-   */
-  disabledSelectedTextStyle?: StyleProp<TextStyle>;
-
-  /**
-   * Display in vertical orientation
-   *
-   * @default false
-   */
-  vertical?: boolean;
-
-  /**
-   * Method to update Button Group Index
-   */
-  onPress(selectedIndex: number): void;
-}
-
-export class ButtonGroup extends React.Component<ButtonGroupProps> {}
-
 export interface DividerProps {
   /**
-   * Title text
+   * Title title
    */
-  text?: string;
+  title?: string;
+
+  /**
+   * Icon config
+   */
+  icon?: IconProps;
 }
 
 export class Divider extends React.Component<DividerProps> {}
@@ -710,3 +440,105 @@ export interface CheckboxProps {
 }
 
 export class Checkbox extends React.Component<CheckboxProps> {}
+
+export interface SocialIconProps {
+  /**
+   * Button style
+   */
+  style?: ViewStyle;
+
+  /**
+   * Icon style
+   */
+  iconStyle?: TextStyle;
+
+  /**
+   * Title Style
+   */
+  titleStyle?: TextStyle;
+
+  /**
+   * Icon element or icon name
+   */
+  icon?: React.ReactElement | IconProps;
+
+  /**
+   * Social icon type
+   */
+  type:
+    | 'angellist'
+    | 'codepen'
+    | 'envelope'
+    | 'etsy'
+    | 'facebook'
+    | 'flickr'
+    | 'foursquare'
+    | 'github'
+    | 'gitlab'
+    | 'instagram'
+    | 'linkedin'
+    | 'medium'
+    | 'pinterest'
+    | 'quora'
+    | 'reddit'
+    | 'soundcloud'
+    | 'stack-overflow'
+    | 'steam'
+    | 'stumbleupon'
+    | 'tumblr'
+    | 'twitch'
+    | 'twitter'
+    | 'google'
+    | 'vimeo'
+    | 'vk'
+    | 'weibo'
+    | 'wordpress'
+    | 'youtube';
+
+  /**
+   * Disable
+   * @default false
+   */
+  disable?: boolean;
+
+  /**
+   * raised adds a drop shadow, set to false to remove
+   * @default true
+   */
+  raised?: boolean;
+
+  /**
+   * onPress callback function
+   */
+  onPress?: () => void;
+
+  /**
+   * Shows loading indicator
+   * @default false
+   */
+  loading?: boolean;
+
+  /**
+   * Title
+   * @default Sign In With {type=Facebook,Google,Twitter etc.}
+   */
+  title?: string;
+
+  /**
+   * Light theme
+   * @default false
+   */
+  light?: boolean;
+
+  /**
+   * Button width of its container
+   */
+  fluid?: boolean;
+
+  /**
+   * Button circular
+   */
+  circular?: boolean;
+}
+
+export class SocialIcon extends React.Component<SocialIconProps> {}

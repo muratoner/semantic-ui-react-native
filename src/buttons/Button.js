@@ -6,50 +6,62 @@ import {
 	Text,
 	TouchableOpacity
 } from 'react-native';
+import { ButtonProps } from '../';
 import Icon from '../icons/Icon';
+import { UtilColor } from '../utils';
 import ButtonColor from './ButtonColor';
 
 const Button = ({
+	children,
 	circular,
-	outline,
+	color,
 	disabled,
+	fluid,
 	iconName,
 	iconType,
-	color,
-	title,
-	style,
-	fluid,
-	onPress,
+	indicatorStyle,
 	loading,
-	indicatorStyle
-}) => {
+	raised,
+	style,
+	title,
+	type,
+	onPress
+}: ButtonProps) => {
+	const outline = type == 'outline';
 	const bgColor = ButtonColor.getBgColor(color);
 	const textColor = outline ? bgColor : ButtonColor.getTextColor(color);
 	const iconStyle = {
 		marginRight: title ? 5 : 0
 	};
+	const buttonBgColor = outline ? '#fff' : bgColor;
+	const shadowStyle = raised
+		? {
+			shadowColor: '#191919',
+			shadowOpacity: 0.2,
+			shadowRadius: 0.1,
+			shadowOffset: { width: 1, height: 2 }
+		  }
+		: null;
+
 	return (
 		<TouchableOpacity
 			onPress={disabled || loading ? null : onPress}
 			disabled={disabled}
 			style={StyleSheet.flatten([
-				style,
+				styles.button,
 				{
-					backgroundColor: outline ? '#fff' : bgColor,
-					paddingHorizontal: 11,
-					paddingVertical: 11,
+					backgroundColor: buttonBgColor,
 					borderRadius: circular ? 50 : 3,
-					alignItems: 'center',
-					justifyContent: 'center',
-					flexDirection: 'row',
 					borderWidth: outline ? 1 : 0,
 					borderColor: outline ? bgColor : null,
 					opacity: disabled ? 0.45 : 1,
-					flex: fluid ? 1 : null
-				}
+					flex: fluid ? 1 : null,
+					...shadowStyle
+				},
+				style
 			])}
 		>
-			{iconName && !loading && iconType && (
+			{iconName && !loading && iconType && !children && (
 				<Icon
 					name={iconName}
 					type={iconType}
@@ -57,7 +69,7 @@ const Button = ({
 					style={StyleSheet.flatten([styles.icon, iconStyle])}
 				/>
 			)}
-			{title && !loading && (
+			{title && !loading && !children && (
 				<Text
 					style={{
 						fontWeight: 'bold',
@@ -67,8 +79,10 @@ const Button = ({
 					{title}
 				</Text>
 			)}
+			{children}
 			{loading && (
 				<ActivityIndicator
+					color={UtilColor.contrast(buttonBgColor)}
 					style={StyleSheet.flatten([styles.indicator, indicatorStyle])}
 				/>
 			)}
@@ -77,6 +91,13 @@ const Button = ({
 };
 
 const styles = StyleSheet.create({
+	button: {
+		paddingHorizontal: 11,
+		paddingVertical: 11,
+		alignItems: 'center',
+		justifyContent: 'center',
+		flexDirection: 'row'
+	},
 	icon: {
 		fontSize: 15
 	},
