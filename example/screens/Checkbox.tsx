@@ -57,7 +57,7 @@ const Component = () => {
 					</Inset>
 					<Checkbox checked={checked} onChanged={setChecked} type="toggle" />
 					<Inset vertical={20}>
-						<Divider text="Disable Status" />
+						<Divider title="Disable Status" />
 					</Inset>
 					<Checkbox
 						checked={checked}

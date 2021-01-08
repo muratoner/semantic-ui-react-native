@@ -1,6 +1,6 @@
 {
   "name": "@muratoner/semantic-ui-react-native",
-  "version": "1.0.15",
+  "version": "1.0.18",
   "description": "Semantic UI React Native - User Interface is the language of the mobile",
   "main": "src/index.js",
   "files": [
@@ -20,7 +20,7 @@
     "test:ci": "jest --runInBand",
     "test:watch": "jest --watch",
     "postinstall": "opencollective-postinstall || exit 0",
-    "lint": "eslint",
+    "lint": "eslint --ext js,ts",
     "prettify": "prettier",
     "clean-install": "rimraf node_modules && yarn",
     "changelog": "auto-changelog -p"
@@ -45,10 +45,10 @@
   "devDependencies": {
     "@react-native-community/eslint-config": "^2.0.0",
     "@testing-library/react-native": "^7.0.2",
+    "@types/jest": "^26.0.19",
     "@types/prop-types": "^15.7.3",
     "@types/react": "^16.9.0",
     "@types/react-native": "^0.63.2",
-    "@types/jest": "^26.0.19",
     "auto-changelog": "^2.2.1",
     "babel-jest": "^26.3.0",
     "enzyme": "^3.11.0",

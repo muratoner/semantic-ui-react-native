@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import {
+	ActivityIndicator,
 	ImageBackground,
-	LayoutAnimation,
 	StyleSheet,
 	Text,
 	TouchableOpacity,
@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import Icon from '../icons/Icon';
 import { AvatarProps } from '../index';
+import { Styles } from '../mixins';
 import { UtilColor } from '../utils';
 
 const Component = ({
@@ -19,11 +20,14 @@ const Component = ({
 	style,
 	containerStyle,
 	icon,
-	rounded = true,
+	circular = true,
 	withRandomColor = true,
 	shortestTitle = true,
 	onPress,
-	textColorMode
+	textColorMode,
+	bordered,
+	raised,
+	loading = true
 }: AvatarProps) => {
 	const [avatarLoaded, setAvatarLoaded] = useState(false);
 	const [defaultBg] = useState('#b1b1b1');
@@ -48,9 +52,19 @@ const Component = ({
 		}
 	}, [onPress]);
 
+	const ComputedBorder = useMemo(() => {
+		let res = bordered ? Styles.border : {};
+		return res;
+	}, [bordered, raised]);
+
+	const ComputedRaised = useMemo(() => {
+		let res = raised ? Styles.boxShadow : {};
+		return res;
+	}, [bordered, raised]);
+
 	const avatarTitleAutoColor = useMemo(() => {
-		if (textColorMode == 'auto-light') {
-			return UtilColor.lightenColor(UtilColor.stringToColour(title), 80);
+		if (textColorMode == 'light') {
+			return UtilColor.lightenColor(UtilColor.stringToColour(title), 100);
 		} else {
 			return UtilColor.contrast(UtilColor.stringToColour(title));
 		}
@@ -74,6 +88,7 @@ const Component = ({
 			</Text>
 		),
 		[
+			title,
 			size,
 			withRandomColor,
 			source,
@@ -87,23 +102,40 @@ const Component = ({
 		() => (
 			<Wrapper
 				onPress={onPress}
-				style={styles.textContainer(
-					size,
-					withRandomColor ? UtilColor.stringToColour(title) : defaultBg,
-					rounded
-				)}
+				style={[
+					styles.textContainer(
+						size,
+						withRandomColor ? UtilColor.stringToColour(title) : defaultBg,
+						circular
+					),
+					ComputedBorder,
+					ComputedRaised
+				]}
 			>
 				{avatarTitleContent}
 			</Wrapper>
 		),
-		[title, size, rounded, withRandomColor, Wrapper, avatarTitleContent]
+		[
+			title,
+			size,
+			circular,
+			withRandomColor,
+			Wrapper,
+			avatarTitleContent,
+			ComputedBorder,
+			ComputedRaised
+		]
 	);
 
 	const avatarIcon = useMemo(() => {
 		return (
 			<Wrapper
 				onPress={onPress}
-				style={styles.textContainer(size, defaultBg, rounded)}
+				style={[
+					styles.textContainer(size, defaultBg, circular),
+					ComputedBorder,
+					ComputedRaised
+				]}
 			>
 				<Icon
 					minimumFontScale={0.01}
@@ -117,30 +149,44 @@ const Component = ({
 				/>
 			</Wrapper>
 		);
-	}, [size, icon, rounded, Wrapper]);
+	}, [size, icon, circular, Wrapper, ComputedBorder, ComputedRaised]);
 
 	const avatarImage = useMemo(
 		() => (
-			<Wrapper
-				onPress={onPress}
-				style={[styles.imageContainer(size, rounded), containerStyle]}
-			>
+			<Wrapper onPress={onPress} style={[ComputedRaised, containerStyle]}>
 				<ImageBackground
 					source={source}
-					style={StyleSheet.flatten([styles.image(size), style])}
+					style={StyleSheet.flatten([
+						styles.image(size, circular),
+						style,
+						ComputedBorder
+					])}
 					width={size}
 					height={size}
 					resizeMode="cover"
 					onLoadEnd={() => {
-						LayoutAnimation.linear();
 						setAvatarLoaded(true);
 					}}
 				>
 					{title && !avatarLoaded && avatarTitleContent}
+					{!avatarLoaded && loading && (
+						<ActivityIndicator color="#fff" style={styles.indicator} />
+					)}
 				</ImageBackground>
 			</Wrapper>
 		),
-		[source, size, avatarLoaded, rounded, title, Wrapper, avatarTitleContent]
+		[
+			source,
+			size,
+			avatarLoaded,
+			circular,
+			title,
+			Wrapper,
+			avatarTitleContent,
+			ComputedBorder,
+			ComputedRaised,
+			loading
+		]
 	);
 
 	const avatar = useMemo(() => {
@@ -157,6 +203,12 @@ const Component = ({
 };
 
 const styles = StyleSheet.create({
+	indicator: {
+		position: 'absolute',
+		backgroundColor: 'rgba(0,0,0,.5)',
+		width: '100%',
+		height: '100%'
+	},
 	icon: (size, color) => ({
 		color,
 		textAlignVertical: 'center',
@@ -170,18 +222,16 @@ const styles = StyleSheet.create({
 		fontSize: 200,
 		paddingHorizontal: size / 7
 	}),
-	image: (size) => ({
+	image: (size, radius) => ({
 		width: size,
 		height: size,
 		backgroundColor: '#BCBEC1',
 		alignItems: 'center',
-		justifyContent: 'center'
+		justifyContent: 'center',
+		overflow: 'hidden',
+		borderRadius: radius ? size * 0.5 : undefined
 	}),
-	imageContainer: (size, radius) => ({
-		borderRadius: radius ? size * 0.5 : undefined,
-		overflow: 'hidden'
-	}),
-	textContainer: (size, bgColor, radius) => ({
+	textContainer: (size, bgColor, radius, bordered) => ({
 		backgroundColor: bgColor,
 		width: size,
 		height: size,

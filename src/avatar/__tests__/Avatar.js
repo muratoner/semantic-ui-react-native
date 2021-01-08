@@ -178,10 +178,9 @@ describe('Avatar Component', () => {
 
 		expect(text).toHaveLength(1);
 		expect(text.props()).toHaveProperty('children', ['M', 'Ö']);
-		expect(component.get(0).props.style).toHaveProperty(
-			'backgroundColor',
-			'#b1b1b1'
-		);
+		expect(
+			component.get(0).props.style.reduce((acc, cur) => Object.assign(acc, cur))
+		).toHaveProperty('backgroundColor', '#b1b1b1');
 
 		expect(toJson(component)).toMatchSnapshot();
 	});

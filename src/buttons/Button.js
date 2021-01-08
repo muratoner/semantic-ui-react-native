@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 import {
 	ActivityIndicator,
 	StyleSheet,
@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import { ButtonProps } from '../';
 import Icon from '../icons/Icon';
+import { Styles } from '../mixins';
 import { UtilColor } from '../utils';
 import ButtonColor from './ButtonColor';
 
@@ -34,14 +35,19 @@ const Button = ({
 		marginRight: title ? 5 : 0
 	};
 	const buttonBgColor = outline ? '#fff' : bgColor;
-	const shadowStyle = raised
-		? {
-			shadowColor: '#191919',
-			shadowOpacity: 0.2,
-			shadowRadius: 0.1,
-			shadowOffset: { width: 1, height: 2 }
-		  }
-		: null;
+	const ComputedStyle = useMemo(() => {
+		var computed = {};
+		if (raised) computed = StyleSheet.flatten([computed, Styles.boxShadow]);
+		if (outline)
+			computed = StyleSheet.flatten([
+				computed,
+				Styles.border,
+				{
+					borderColor: bgColor
+				}
+			]);
+		return computed;
+	}, [raised, type]);
 
 	return (
 		<TouchableOpacity
@@ -52,12 +58,10 @@ const Button = ({
 				{
 					backgroundColor: buttonBgColor,
 					borderRadius: circular ? 50 : 3,
-					borderWidth: outline ? 1 : 0,
-					borderColor: outline ? bgColor : null,
 					opacity: disabled ? 0.45 : 1,
-					flex: fluid ? 1 : null,
-					...shadowStyle
+					flex: fluid ? 1 : null
 				},
+				ComputedStyle,
 				style
 			])}
 		>

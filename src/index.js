@@ -3,6 +3,7 @@
 
 //Avatar
 import Avatar from './avatar/Avatar';
+import Badge from './badge/Badge';
 // Core
 import Button from './buttons/Button';
 import LabeledButton from './buttons/LabeledButton';
@@ -28,5 +29,6 @@ export {
 	ProgressBar,
 	Avatar,
 	Checkbox,
-	SocialIcon
+	SocialIcon,
+	Badge
 };

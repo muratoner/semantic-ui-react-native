@@ -1,5 +1,5 @@
-import React, { useEffect, useMemo } from 'react';
-import { LayoutAnimation, StyleSheet, Text, View } from 'react-native';
+import React, { useMemo } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import { ProgressBarProps } from '../';
 import { UtilColor } from '../utils';
 
@@ -13,12 +13,6 @@ export default (props: ProgressBarProps) => {
 		bottomTextIncludeProgress,
 		autoColored
 	} = props;
-
-	useEffect(() => {
-		LayoutAnimation.configureNext(
-			LayoutAnimation.create(500, LayoutAnimation.Types.easeIn)
-		);
-	}, [progress]);
 
 	const autoColorValue = useMemo(() => {
 		var red = 0,

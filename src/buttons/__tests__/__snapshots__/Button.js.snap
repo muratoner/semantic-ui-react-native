@@ -6,9 +6,7 @@ exports[`Button Component should render with title and circular props 1`] = `
     Object {
       "alignItems": "center",
       "backgroundColor": "#e0e1e2",
-      "borderColor": null,
       "borderRadius": 50,
-      "borderWidth": 0,
       "flex": null,
       "flexDirection": "row",
       "justifyContent": "center",
@@ -37,9 +35,7 @@ exports[`Button Component should render with title prop 1`] = `
     Object {
       "alignItems": "center",
       "backgroundColor": "#e0e1e2",
-      "borderColor": null,
       "borderRadius": 3,
-      "borderWidth": 0,
       "flex": null,
       "flexDirection": "row",
       "justifyContent": "center",
@@ -70,9 +66,7 @@ exports[`Button Component should render with title, circular and disabled props 
     Object {
       "alignItems": "center",
       "backgroundColor": "#e0e1e2",
-      "borderColor": null,
       "borderRadius": 50,
-      "borderWidth": 0,
       "flex": null,
       "flexDirection": "row",
       "justifyContent": "center",
@@ -103,9 +97,7 @@ exports[`Button Component should render with title, circular, disabled and fluid
     Object {
       "alignItems": "center",
       "backgroundColor": "#e0e1e2",
-      "borderColor": null,
       "borderRadius": 50,
-      "borderWidth": 0,
       "flex": 1,
       "flexDirection": "row",
       "justifyContent": "center",
@@ -351,9 +343,7 @@ exports[`Button Component should render with title, iconName and iconType props 
     Object {
       "alignItems": "center",
       "backgroundColor": "#e0e1e2",
-      "borderColor": null,
       "borderRadius": 3,
-      "borderWidth": 0,
       "flex": null,
       "flexDirection": "row",
       "justifyContent": "center",
@@ -393,9 +383,7 @@ exports[`Button Component should render without issues 1`] = `
     Object {
       "alignItems": "center",
       "backgroundColor": "#e0e1e2",
-      "borderColor": null,
       "borderRadius": 3,
-      "borderWidth": 0,
       "flex": null,
       "flexDirection": "row",
       "justifyContent": "center",

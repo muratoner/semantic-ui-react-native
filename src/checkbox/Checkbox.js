@@ -1,11 +1,5 @@
 import React, { useMemo } from 'react';
-import {
-	LayoutAnimation,
-	StyleSheet,
-	Text,
-	TouchableOpacity,
-	View
-} from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { CheckboxProps } from '../';
 import Icon from '../icons/Icon';
 
@@ -155,7 +149,6 @@ export default (props: CheckboxProps) => {
 			onPress={
 				!disable
 					? () => {
-						LayoutAnimation.easeInEaseOut();
 						onChanged?.(!checked);
 					  }
 					: undefined

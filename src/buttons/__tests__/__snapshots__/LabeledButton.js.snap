@@ -220,7 +220,7 @@ exports[`Labeled Button Component should render with color, title, label, labelI
     style={
       Object {
         "backgroundColor": "white",
-        "color": "#2185d0",
+        "color": "rgba(0,0,0,.6)",
         "flex": 1,
         "fontWeight": "bold",
         "paddingHorizontal": 10,
@@ -603,7 +603,7 @@ exports[`Labeled Button Component should render with title, circular, disabled, 
     style={
       Object {
         "backgroundColor": "white",
-        "color": "#db2828",
+        "color": "rgba(0,0,0,.6)",
         "flex": 1,
         "fontWeight": "bold",
         "paddingHorizontal": 10,
@@ -652,7 +652,7 @@ exports[`Labeled Button Component should render with title, circular, disabled, 
     style={
       Object {
         "backgroundColor": "white",
-        "color": "#db2828",
+        "color": "rgba(0,0,0,.6)",
         "flex": 1,
         "fontWeight": "bold",
         "paddingHorizontal": 10,
@@ -701,7 +701,7 @@ exports[`Labeled Button Component should render with title, circular, disabled, 
     style={
       Object {
         "backgroundColor": "white",
-        "color": "#db2828",
+        "color": "rgba(0,0,0,.6)",
         "flex": 1,
         "fontWeight": "bold",
         "paddingHorizontal": 10,

@@ -338,11 +338,11 @@ export interface AvatarProps {
   icon?: IconProps;
 
   /**
-   * Avatar, Title or Icon show with rounded border
+   * Avatar, Title or Icon show with circular border
    *
    * @default true
    */
-  rounded?: boolean;
+  circular?: boolean;
 
   /**
    * Auto generate random background color for title avatar
@@ -368,6 +368,24 @@ export interface AvatarProps {
    * @default auto-black-white
    */
   textColorMode?: 'black-white' | 'light';
+
+  /**
+   * Bordered Avatar
+   * @default false
+   */
+  bordered?: boolean;
+
+  /**
+   * Shadow Avatar
+   * @default false
+   */
+  raised?: boolean;
+
+  /**
+   * Show loading bar while image not loaded
+   * @default true
+   */
+  loading?: boolean;
 }
 
 /**
@@ -553,3 +571,13 @@ export interface SocialIconProps {
 }
 
 export class SocialIcon extends React.Component<SocialIconProps> {}
+
+export interface BadgeProps {
+  /**
+   * Badge text
+   *
+   */
+  text?: string;
+}
+
+export class Badge extends React.Component<BadgeProps> {}

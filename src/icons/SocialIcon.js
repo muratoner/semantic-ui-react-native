@@ -64,7 +64,7 @@ const Icon = (props: SocialIconProps) => {
 		}
 
 		return style;
-	}, [light, type, title]);
+	}, [light, type, title, attributes.fluid]);
 
 	return (
 		<Button style={[styles.style, ComputedButtonStyle, style]} {...attributes}>

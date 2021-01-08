@@ -32,17 +32,6 @@ const LabeledButton = ({
 	const textColor = ButtonColor.getTextColor(color);
 	const outline = type == 'outline';
 
-	const getValueColor = () => {
-		switch (color) {
-		case 'red':
-			return '#db2828';
-		case 'primary':
-			return '#2185d0';
-		default:
-			return 'rgba(0,0,0,.6)';
-		}
-	};
-
 	const getLabel = () => {
 		const iconStyle = {
 			marginRight: label ? 5 : 0
@@ -118,7 +107,7 @@ const LabeledButton = ({
 					style={StyleSheet.flatten([
 						styles.title,
 						{
-							color: getValueColor()
+							color: ButtonColor.getTextColor()
 						}
 					])}
 				>
