@@ -54,12 +54,17 @@ export default (props: ProgressBarProps) => {
 		return null;
 	}, [autoBgColor]);
 
+	const computedStyle = useMemo(() => {
+		return { height: height || 20 };
+	}, [height]);
+
 	return (
 		<>
 			<View style={[styles.container, style]}>
 				<View
 					style={[
 						styles.fill,
+						computedStyle,
 						{ width: `${showProgressValue && progress < 10 ? 10 : progress}%` },
 						autoBgColor
 					]}
@@ -105,12 +110,10 @@ const styles = StyleSheet.create({
 	fill: {
 		backgroundColor: '#888',
 		borderRadius: 10,
-		height: 20,
 		justifyContent: 'center'
 	},
 	container: {
 		overflow: 'hidden',
-		height: 20,
 		borderRadius: 10,
 		backgroundColor: 'rgba(0,0,0,.1)'
 	}

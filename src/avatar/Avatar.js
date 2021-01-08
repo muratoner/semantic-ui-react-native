@@ -52,14 +52,11 @@ const Component = ({
 		}
 	}, [onPress]);
 
-	const ComputedBorder = useMemo(() => {
-		let res = bordered ? Styles.border : {};
-		return res;
-	}, [bordered, raised]);
-
-	const ComputedRaised = useMemo(() => {
-		let res = raised ? Styles.boxShadow : {};
-		return res;
+	const ComputedStyle = useMemo(() => {
+		let style = {};
+		bordered && (style = { ...style, ...Styles.border });
+		raised && (style = { ...style, ...Styles.boxShadow });
+		return style;
 	}, [bordered, raised]);
 
 	const avatarTitleAutoColor = useMemo(() => {
@@ -108,8 +105,7 @@ const Component = ({
 						withRandomColor ? UtilColor.stringToColour(title) : defaultBg,
 						circular
 					),
-					ComputedBorder,
-					ComputedRaised
+					ComputedStyle
 				]}
 			>
 				{avatarTitleContent}
@@ -122,8 +118,7 @@ const Component = ({
 			withRandomColor,
 			Wrapper,
 			avatarTitleContent,
-			ComputedBorder,
-			ComputedRaised
+			ComputedStyle
 		]
 	);
 
@@ -131,11 +126,7 @@ const Component = ({
 		return (
 			<Wrapper
 				onPress={onPress}
-				style={[
-					styles.textContainer(size, defaultBg, circular),
-					ComputedBorder,
-					ComputedRaised
-				]}
+				style={[styles.textContainer(size, defaultBg, circular), ComputedStyle]}
 			>
 				<Icon
 					minimumFontScale={0.01}
@@ -149,20 +140,18 @@ const Component = ({
 				/>
 			</Wrapper>
 		);
-	}, [size, icon, circular, Wrapper, ComputedBorder, ComputedRaised]);
+	}, [size, icon, circular, Wrapper, ComputedStyle]);
 
 	const avatarImage = useMemo(
 		() => (
-			<Wrapper onPress={onPress} style={[ComputedRaised, containerStyle]}>
+			<Wrapper onPress={onPress} style={[containerStyle]}>
 				<ImageBackground
 					source={source}
 					style={StyleSheet.flatten([
+						ComputedStyle,
 						styles.image(size, circular),
-						style,
-						ComputedBorder
+						style
 					])}
-					width={size}
-					height={size}
 					resizeMode="cover"
 					onLoadEnd={() => {
 						setAvatarLoaded(true);
@@ -183,8 +172,7 @@ const Component = ({
 			title,
 			Wrapper,
 			avatarTitleContent,
-			ComputedBorder,
-			ComputedRaised,
+			ComputedStyle,
 			loading
 		]
 	);

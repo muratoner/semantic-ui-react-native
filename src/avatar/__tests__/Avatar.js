@@ -118,8 +118,6 @@ describe('Avatar Component', () => {
 		expect(imageBackground).toHaveLength(1);
 		expect(image).toHaveLength(1);
 		expect(text).toHaveLength(1);
-		expect(imageStyles).toHaveProperty('width', 32);
-		expect(imageStyles).toHaveProperty('height', 32);
 		expect(image.get(0).props).toHaveProperty('resizeMode', 'cover');
 		expect(text.get(0).props).toHaveProperty('children', ['M', 'S']);
 
@@ -148,8 +146,6 @@ describe('Avatar Component', () => {
 		expect(imageBackground).toHaveLength(1);
 		expect(image).toHaveLength(1);
 		expect(text).toHaveLength(1);
-		expect(imageStyles).toHaveProperty('width', 32);
-		expect(imageStyles).toHaveProperty('height', 32);
 		expect(image.get(0).props).toHaveProperty('resizeMode', 'cover');
 		expect(text.get(0).props).toHaveProperty('children', ['M', 'S']);
 
@@ -185,22 +181,23 @@ describe('Avatar Component', () => {
 		expect(toJson(component)).toMatchSnapshot();
 	});
 
-	it('should render with rounded is false', () => {
+	it('should render with circular is false', () => {
 		const component = shallow(
 			<Avatar
 				source={{
 					uri: 'https://i.pravatar.cc/50'
 				}}
-				rounded={false}
+				circular={false}
 			/>
 		);
 
 		const imageBackground = component.find('ImageBackground');
 
 		expect(imageBackground).toHaveLength(1);
-		expect(
-			component.get(0).props.style.reduce((acc, cur) => Object.assign(acc, cur))
-		).toHaveProperty('borderRadius', undefined);
+		expect(imageBackground.get(0).props.style).toHaveProperty(
+			'borderRadius',
+			undefined
+		);
 
 		expect(toJson(component)).toMatchSnapshot();
 	});

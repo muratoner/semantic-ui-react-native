@@ -8,7 +8,6 @@ exports[`ProgressBar Component should render with 0 progress 1`] = `
         Object {
           "backgroundColor": "rgba(0,0,0,.1)",
           "borderRadius": 10,
-          "height": 20,
           "overflow": "hidden",
         },
         undefined,
@@ -21,8 +20,10 @@ exports[`ProgressBar Component should render with 0 progress 1`] = `
           Object {
             "backgroundColor": "#888",
             "borderRadius": 10,
-            "height": 20,
             "justifyContent": "center",
+          },
+          Object {
+            "height": 20,
           },
           Object {
             "width": "0%",
@@ -43,7 +44,6 @@ exports[`ProgressBar Component should render with 90 progress 1`] = `
         Object {
           "backgroundColor": "rgba(0,0,0,.1)",
           "borderRadius": 10,
-          "height": 20,
           "overflow": "hidden",
         },
         undefined,
@@ -56,8 +56,10 @@ exports[`ProgressBar Component should render with 90 progress 1`] = `
           Object {
             "backgroundColor": "#888",
             "borderRadius": 10,
-            "height": 20,
             "justifyContent": "center",
+          },
+          Object {
+            "height": 20,
           },
           Object {
             "width": "30%",
@@ -78,7 +80,6 @@ exports[`ProgressBar Component should render with 100 progress 1`] = `
         Object {
           "backgroundColor": "rgba(0,0,0,.1)",
           "borderRadius": 10,
-          "height": 20,
           "overflow": "hidden",
         },
         undefined,
@@ -91,8 +92,10 @@ exports[`ProgressBar Component should render with 100 progress 1`] = `
           Object {
             "backgroundColor": "#888",
             "borderRadius": 10,
-            "height": 20,
             "justifyContent": "center",
+          },
+          Object {
+            "height": 20,
           },
           Object {
             "width": "100%",
@@ -113,7 +116,6 @@ exports[`ProgressBar Component should render with 100 progress and custom style 
         Object {
           "backgroundColor": "rgba(0,0,0,.1)",
           "borderRadius": 10,
-          "height": 20,
           "overflow": "hidden",
         },
         Object {
@@ -128,8 +130,10 @@ exports[`ProgressBar Component should render with 100 progress and custom style 
           Object {
             "backgroundColor": "#888",
             "borderRadius": 10,
-            "height": 20,
             "justifyContent": "center",
+          },
+          Object {
+            "height": 20,
           },
           Object {
             "width": "100%",
@@ -150,7 +154,6 @@ exports[`ProgressBar Component should render with auto colored 1`] = `
         Object {
           "backgroundColor": "rgba(0,0,0,.1)",
           "borderRadius": 10,
-          "height": 20,
           "overflow": "hidden",
         },
         undefined,
@@ -163,8 +166,10 @@ exports[`ProgressBar Component should render with auto colored 1`] = `
           Object {
             "backgroundColor": "#888",
             "borderRadius": 10,
-            "height": 20,
             "justifyContent": "center",
+          },
+          Object {
+            "height": 20,
           },
           Object {
             "width": "70%",
@@ -187,7 +192,6 @@ exports[`ProgressBar Component should render without issues 1`] = `
         Object {
           "backgroundColor": "rgba(0,0,0,.1)",
           "borderRadius": 10,
-          "height": 20,
           "overflow": "hidden",
         },
         undefined,
@@ -200,8 +204,10 @@ exports[`ProgressBar Component should render without issues 1`] = `
           Object {
             "backgroundColor": "#888",
             "borderRadius": 10,
-            "height": 20,
             "justifyContent": "center",
+          },
+          Object {
+            "height": 20,
           },
           Object {
             "width": "undefined%",
