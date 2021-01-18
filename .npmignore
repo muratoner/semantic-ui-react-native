@@ -7,6 +7,9 @@ _config.yml
 
 # Documents
 CONTRIBUTING.md
+README.md
+CHANGELOG.md
+LICENCE
 ISSUE_TEMPLATE.txt
 img
 
@@ -14,3 +17,5 @@ img
 __tests__
 dist/__tests__
 example
+node_modules
+*.log
