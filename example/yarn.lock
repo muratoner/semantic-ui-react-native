@@ -985,10 +985,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@muratoner/semantic-ui-react-native@^1.0.20":
-  version "1.0.20"
-  resolved "https://registry.yarnpkg.com/@muratoner/semantic-ui-react-native/-/semantic-ui-react-native-1.0.20.tgz#ec4ccf19a93f8002b04983ee037b5bd3c4bbfcb2"
-  integrity sha512-jo9tCAJf2EMwGSHvpp8Ra0wNMeNx7u6T30z1HCNqMEwmGm+1zs5BW/G+cXC7ad52xz/holohVySX+gwijQxoKg==
+"@muratoner/semantic-ui-react-native@^1.0.22":
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/@muratoner/semantic-ui-react-native/-/semantic-ui-react-native-1.0.22.tgz#b554f48f27b850ae08bf85b8afc586f4e1b18453"
+  integrity sha512-UvpgWsZ96Hs/DroCsHEatQ5pl1aiHCppVmO06YxHm0ZotcCY97GT8lPJawWZj0GaofJFaRBVbtDR2+yBlpzoXw==
   dependencies:
     "@types/react-native-vector-icons" "^6.4.6"
     color "^3.1.2"
@@ -5881,10 +5881,10 @@ react-test-renderer@16.13.1:
     react-is "^16.8.6"
     scheduler "^0.19.1"
 
-react@16.13.1:
-  version "16.13.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
-  integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
+react@16.14.0:
+  version "16.14.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
+  integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -6181,8 +6181,6 @@ rxjs@^5.4.3:
   version "5.5.12"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.12.tgz#6fa61b8a77c3d793dbaf270bee2f43f652d741cc"
   integrity sha512-xx2itnL5sBbqeeiVgNPVuQQ1nC8Jp2WfNJhXWHmElW9YmrpS9UVnNzhP3EH3HFqexO5Tlp8GhYY+WEcqcVMvGw==
-  dependencies:
-    symbol-observable "1.0.1"
 
 rxjs@^6.6.0:
   version "6.6.3"
