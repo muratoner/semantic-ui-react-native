@@ -985,10 +985,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@muratoner/semantic-ui-react-native@^1.0.20":
-  version "1.0.20"
-  resolved "https://registry.yarnpkg.com/@muratoner/semantic-ui-react-native/-/semantic-ui-react-native-1.0.20.tgz#ec4ccf19a93f8002b04983ee037b5bd3c4bbfcb2"
-  integrity sha512-jo9tCAJf2EMwGSHvpp8Ra0wNMeNx7u6T30z1HCNqMEwmGm+1zs5BW/G+cXC7ad52xz/holohVySX+gwijQxoKg==
+"@muratoner/semantic-ui-react-native@^1.0.22":
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/@muratoner/semantic-ui-react-native/-/semantic-ui-react-native-1.0.22.tgz#b554f48f27b850ae08bf85b8afc586f4e1b18453"
+  integrity sha512-UvpgWsZ96Hs/DroCsHEatQ5pl1aiHCppVmO06YxHm0ZotcCY97GT8lPJawWZj0GaofJFaRBVbtDR2+yBlpzoXw==
   dependencies:
     "@types/react-native-vector-icons" "^6.4.6"
     color "^3.1.2"
@@ -5833,10 +5833,10 @@ react-native-vector-icons@^7.1.0:
     prop-types "^15.7.2"
     yargs "^15.0.2"
 
-react-native@0.63.3:
-  version "0.63.3"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.63.3.tgz#4a7f6540e049ff41810887bbd1125abc4672f3bf"
-  integrity sha512-71wq13uNo5W8QVQnFlnzZ3AD+XgUBYGhpsxysQFW/hJ8GAt/J5o+Bvhy81FXichp6IBDJDh/JgfHH2gNji8dFA==
+react-native@0.63.4:
+  version "0.63.4"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.63.4.tgz#2210fdd404c94a5fa6b423c6de86f8e48810ec36"
+  integrity sha512-I4kM8kYO2mWEYUFITMcpRulcy4/jd+j9T6PbIzR0FuMcz/xwd+JwHoLPa1HmCesvR1RDOw9o4D+OFLwuXXfmGw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@react-native-community/cli" "^4.10.0"
