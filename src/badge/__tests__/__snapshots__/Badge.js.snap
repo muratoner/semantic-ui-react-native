@@ -1,3 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Badge Component should render without issues 1`] = `<View />`;
+exports[`Badge Component should render without issues 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#21ba45",
+          "borderRadius": 20,
+          "height": 10,
+          "width": 10,
+          "zIndex": 9,
+        },
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  />
+</View>
+`;

@@ -1,24 +1,24 @@
 {
-  "extends": ["prettier"],
-  "parser": "babel-eslint",
-  "rules": {
-    "indent": ["error", "tab"],
-    "react/require-extension": "off",
-    "no-undef": "off",
-    "import/order": "off",
-    "func-names": "off",
-    "import/prefer-default-export": "off",
-    "no-prototype-builtins": "off",
-    "no-nested-ternary": "warn",
-    "no-underscore-dangle": "off",
-    "no-unused-expressions": "off",
-    "react/jsx-filename-extension": "off",
-    "react/no-did-update-set-state": "off",
-    "react/prop-types": "off"
-  },
-  "plugins": ["react", "react-native"],
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 2015
-  }
+ "extends": ["prettier"],
+ "parser": "babel-eslint",
+ "rules": {
+  "indent": ["error", "tab"],
+  "react/require-extension": "off",
+  "no-undef": "off",
+  "import/order": "off",
+  "func-names": "off",
+  "import/prefer-default-export": "off",
+  "no-prototype-builtins": "off",
+  "no-nested-ternary": "off",
+  "no-underscore-dangle": "off",
+  "no-unused-expressions": "off",
+  "react/jsx-filename-extension": "off",
+  "react/no-did-update-set-state": "off",
+  "react/prop-types": "off"
+ },
+ "plugins": ["react", "react-native"],
+ "parserOptions": {
+  "sourceType": "module",
+  "ecmaVersion": 2015
+ }
 }

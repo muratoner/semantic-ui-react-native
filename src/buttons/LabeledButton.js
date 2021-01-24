@@ -1,15 +1,16 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import PropTypes from 'prop-types'
+import React from 'react'
 import {
 	ActivityIndicator,
 	StyleSheet,
 	Text,
 	TouchableOpacity,
 	View
-} from 'react-native';
-import { LabeledButtonProps } from '../';
-import Icon from '../icons/Icon';
-import ButtonColor from './ButtonColor';
+} from 'react-native'
+import {LabeledButtonProps} from '../'
+import Icon from '../icons/Icon'
+import {UtilColor} from '../utils'
+import ButtonColor from './ButtonColor'
 
 const LabeledButton = ({
 	circular,
@@ -28,14 +29,14 @@ const LabeledButton = ({
 	title,
 	type
 }: LabeledButtonProps) => {
-	const bgColor = ButtonColor.getBgColor(color);
-	const textColor = ButtonColor.getTextColor(color);
-	const outline = type == 'outline';
+	const bgColor = ButtonColor.getBgColor(color)
+	const textColor = UtilColor.contrast(bgColor)
+	const outline = type == 'outline'
 
 	const getLabel = () => {
 		const iconStyle = {
 			marginRight: label ? 5 : 0
-		};
+		}
 		return (
 			<View
 				style={StyleSheet.flatten([
@@ -69,22 +70,22 @@ const LabeledButton = ({
 				)}
 				{labelRight && getPointing()}
 			</View>
-		);
-	};
+		)
+	}
 
 	const getPointing = () => {
 		const customStyle = {
 			borderColor: outline ? bgColor : '#fff',
 			transform: [
-				{ rotate: '45deg' },
-				{ translateX: labelRight ? -6 : -3 },
-				{ translateY: labelRight ? 0 : 4 }
+				{rotate: '45deg'},
+				{translateX: labelRight ? -6 : -3},
+				{translateY: labelRight ? 0 : 4}
 			]
-		};
+		}
 		return pointing ? (
 			<View style={StyleSheet.flatten([styles.pointing, customStyle])} />
-		) : null;
-	};
+		) : null
+	}
 
 	return (
 		<TouchableOpacity
@@ -107,7 +108,7 @@ const LabeledButton = ({
 					style={StyleSheet.flatten([
 						styles.title,
 						{
-							color: ButtonColor.getTextColor()
+							color: UtilColor.contrast()
 						}
 					])}
 				>
@@ -122,8 +123,8 @@ const LabeledButton = ({
 			)}
 			{labelRight && getLabel()}
 		</TouchableOpacity>
-	);
-};
+	)
+}
 
 const styles = StyleSheet.create({
 	labelContainer: {
@@ -166,7 +167,7 @@ const styles = StyleSheet.create({
 		borderLeftWidth: 1,
 		top: '50%'
 	}
-});
+})
 
 LabeledButton.propTypes = {
 	title: PropTypes.string,
@@ -194,6 +195,6 @@ LabeledButton.propTypes = {
 		'SimpleLineIcons',
 		'Zocial'
 	])
-};
+}
 
-export default LabeledButton;
+export default LabeledButton

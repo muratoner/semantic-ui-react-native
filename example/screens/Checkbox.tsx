@@ -1,95 +1,129 @@
-import { Checkbox, Divider } from '@muratoner/semantic-ui-react-native';
-import React, { useState } from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
-import { Inset } from 'react-native-spacing-system';
-
+import {Checkbox, Divider, Inset} from '@muratoner/semantic-ui-react-native'
+import React, {useState} from 'react'
+import {SafeAreaView, ScrollView, StyleSheet} from 'react-native'
 const Component = () => {
-	const [checked, setChecked] = useState(false);
+	const [checked, setChecked] = useState(false)
 
 	return (
-		<SafeAreaView style={{ flex: 1 }}>
+		<SafeAreaView style={{flex: 1}}>
 			<ScrollView
-				contentInsetAdjustmentBehavior="automatic"
+				contentInsetAdjustmentBehavior='automatic'
 				style={styles.scrollView}
 			>
-				<View
-					style={{
-						margin: 10
-					}}
-				>
-					<Checkbox checked={checked} onChanged={setChecked} />
+				<Inset all={10}>
 					<Checkbox
 						checked={checked}
+						title='Show profile details'
 						onChanged={setChecked}
-						type="circle-overflow"
+					/>
+					<Checkbox
+						title='Show profile details'
+						checked={checked}
+						onChanged={setChecked}
+						type='circle-overflow'
+					/>
+					<Checkbox
+						title='Show profile details'
+						checked={checked}
+						onChanged={setChecked}
+						checkedColor='blue'
+						type='flag'
+					/>
+					<Checkbox
+						title='Show profile details'
+						checked={checked}
+						onChanged={setChecked}
+						type='heart'
+						checkedColor='red'
+						unCheckedColor='red'
 					/>
 					<Checkbox
 						checked={checked}
+						title='Show profile details'
 						onChanged={setChecked}
-						checkedColor="blue"
-						type="flag"
+						type='lock'
+					/>
+					<Checkbox
+						title='Show profile details'
+						checked={checked}
+						onChanged={setChecked}
+						type='notification'
 					/>
 					<Checkbox
 						checked={checked}
+						title='Show profile details'
 						onChanged={setChecked}
-						type="heart"
-						checkedColor="red"
-						unCheckedColor="red"
+						type='square'
 					/>
-					<Checkbox checked={checked} onChanged={setChecked} type="lock" />
 					<Checkbox
+						title='Show profile details'
 						checked={checked}
 						onChanged={setChecked}
-						type="notification"
+						checkedColor='green'
+						unCheckedColor='red'
+						type='square-overflow'
 					/>
-					<Checkbox checked={checked} onChanged={setChecked} type="square" />
 					<Checkbox
 						checked={checked}
+						title='Show profile details'
 						onChanged={setChecked}
-						checkedColor="green"
-						unCheckedColor="red"
-						type="square-overflow"
+						type='volume'
 					/>
-					<Checkbox checked={checked} onChanged={setChecked} type="volume" />
-					<Checkbox checked={checked} onChanged={setChecked} type="radio" />
-					<Inset vertical={10}>
-						<Checkbox checked={checked} onChanged={setChecked} type="slider" />
-					</Inset>
-					<Checkbox checked={checked} onChanged={setChecked} type="toggle" />
-					<Inset vertical={20}>
-						<Divider title="Disable Status" />
-					</Inset>
 					<Checkbox
 						checked={checked}
+						title='Show profile details'
 						onChanged={setChecked}
-						type="radio"
-						disable
+						type='radio'
 					/>
 					<Inset vertical={10}>
 						<Checkbox
 							checked={checked}
+							title='Show profile details'
 							onChanged={setChecked}
-							type="slider"
-							disable
+							type='slider'
 						/>
 					</Inset>
 					<Checkbox
 						checked={checked}
+						title='Show profile details'
 						onChanged={setChecked}
-						type="toggle"
+						type='toggle'
+					/>
+					<Inset vertical={20}>
+						<Divider title='Disable Status' />
+					</Inset>
+					<Checkbox
+						title='Show profile details'
+						checked={checked}
+						onChanged={setChecked}
+						type='radio'
 						disable
 					/>
-				</View>
+					<Inset vertical={10}>
+						<Checkbox
+							title='Show profile details'
+							checked={checked}
+							onChanged={setChecked}
+							type='slider'
+							disable
+						/>
+					</Inset>
+					<Checkbox
+						title='Show profile details'
+						checked={checked}
+						onChanged={setChecked}
+						type='toggle'
+						disable
+					/>
+				</Inset>
 			</ScrollView>
 		</SafeAreaView>
-	);
-};
-
+	)
+}
 const styles = StyleSheet.create({
 	scrollView: {
 		flex: 1,
 		height: '100%'
 	}
-});
-
-export default Component;
+})
+export default Component

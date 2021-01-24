@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native'
 
 export default StyleSheet.create({
 	border: {
@@ -6,9 +6,9 @@ export default StyleSheet.create({
 		borderColor: '#BCBEC1'
 	},
 	boxShadow: {
-		shadowColor: '#191919',
-		shadowOpacity: 0.2,
-		shadowRadius: 0.1,
-		shadowOffset: { width: 1, height: 2 }
+		shadowColor: 'rgba(0,0,0,.5)',
+		shadowOpacity: 0.5,
+		shadowRadius: 2,
+		shadowOffset: {width: 1, height: 2}
 	}
-});
+})

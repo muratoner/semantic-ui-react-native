@@ -1,16 +1,16 @@
-import PropTypes from 'prop-types';
-import React, { useMemo } from 'react';
+import PropTypes from 'prop-types'
+import React, {useMemo} from 'react'
 import {
 	ActivityIndicator,
 	StyleSheet,
 	Text,
 	TouchableOpacity
-} from 'react-native';
-import { ButtonProps } from '../';
-import Icon from '../icons/Icon';
-import { Styles } from '../mixins';
-import { UtilColor } from '../utils';
-import ButtonColor from './ButtonColor';
+} from 'react-native'
+import {ButtonProps} from '../'
+import Icon from '../icons/Icon'
+import {Styles} from '../mixins'
+import {UtilColor} from '../utils'
+import ButtonColor from './ButtonColor'
 
 const Button = ({
 	children,
@@ -28,16 +28,16 @@ const Button = ({
 	type,
 	onPress
 }: ButtonProps) => {
-	const outline = type == 'outline';
-	const bgColor = ButtonColor.getBgColor(color);
-	const textColor = outline ? bgColor : ButtonColor.getTextColor(color);
+	const outline = type == 'outline'
+	const bgColor = ButtonColor.getBgColor(color)
+	const textColor = outline ? bgColor : UtilColor.contrast(bgColor)
 	const iconStyle = {
 		marginRight: title ? 5 : 0
-	};
-	const buttonBgColor = outline ? '#fff' : bgColor;
+	}
+	const buttonBgColor = outline ? '#fff' : bgColor
 	const ComputedStyle = useMemo(() => {
-		var computed = {};
-		if (raised) computed = StyleSheet.flatten([computed, Styles.boxShadow]);
+		var computed = {}
+		if (raised) computed = StyleSheet.flatten([computed, Styles.boxShadow])
 		if (outline)
 			computed = StyleSheet.flatten([
 				computed,
@@ -45,9 +45,9 @@ const Button = ({
 				{
 					borderColor: bgColor
 				}
-			]);
-		return computed;
-	}, [raised, type]);
+			])
+		return computed
+	}, [raised, type])
 
 	return (
 		<TouchableOpacity
@@ -91,8 +91,8 @@ const Button = ({
 				/>
 			)}
 		</TouchableOpacity>
-	);
-};
+	)
+}
 
 const styles = StyleSheet.create({
 	button: {
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
 		fontSize: 15
 	},
 	indicator: {}
-});
+})
 
 Button.propTypes = {
 	title: PropTypes.string,
@@ -134,6 +134,6 @@ Button.propTypes = {
 		'SimpleLineIcons',
 		'Zocial'
 	])
-};
+}
 
-export default Button;
+export default Button

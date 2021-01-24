@@ -1,51 +1,44 @@
-import { Divider, Title } from '@muratoner/semantic-ui-react-native';
-import React from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
-import { Inset } from 'react-native-spacing-system';
-
+import {Divider, Inset, Title} from '@muratoner/semantic-ui-react-native'
+import React from 'react'
+import {SafeAreaView, ScrollView, StyleSheet} from 'react-native'
 const Component = () => {
 	return (
-		<SafeAreaView style={{ flex: 1 }}>
+		<SafeAreaView style={{flex: 1}}>
 			<ScrollView
-				contentInsetAdjustmentBehavior="automatic"
+				contentInsetAdjustmentBehavior='automatic'
 				style={styles.scrollView}
 			>
-				<View
-					style={{
-						margin: 10
-					}}
-				>
-					<Divider text="Huge" />
+				<Inset all={10}>
+					<Divider title='Huge' />
 					<Inset vertical={20}>
-						<Title size="huge">Statistic</Title>
+						<Title size='huge'>Statistic</Title>
 					</Inset>
-					<Divider text="Large" />
+					<Divider title='Large' />
 					<Inset vertical={20}>
-						<Title size="large">Statistic</Title>
+						<Title size='large'>Statistic</Title>
 					</Inset>
-					<Divider text="Medium (Default)" />
+					<Divider title='Medium (Default)' />
 					<Inset vertical={20}>
-						<Title size="medium">Statistic</Title>
+						<Title size='medium'>Statistic</Title>
 					</Inset>
-					<Divider text="Small" />
+					<Divider title='Small' />
 					<Inset vertical={20}>
-						<Title size="small">Statistic</Title>
+						<Title size='small'>Statistic</Title>
 					</Inset>
-					<Divider text="Tiny" />
+					<Divider title='Tiny' />
 					<Inset vertical={20}>
-						<Title size="tiny">Statistic</Title>
+						<Title size='tiny'>Statistic</Title>
 					</Inset>
-				</View>
+				</Inset>
 			</ScrollView>
 		</SafeAreaView>
-	);
-};
-
+	)
+}
 const styles = StyleSheet.create({
 	scrollView: {
 		flex: 1,
 		height: '100%'
 	}
-});
+})
 
-export default Component;
+export default Component

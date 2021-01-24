@@ -6,6 +6,8 @@ enum RouteNames {
   Title = 'Title',
   ProgressBar = 'ProgressBar',
   Avatar = 'Avatar',
+  Badge = 'Badge',
+  UI = 'UI',
   Checkbox = 'Checkbox',
   SocialIcon = 'SocialIcon',
 }

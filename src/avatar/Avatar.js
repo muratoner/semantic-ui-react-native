@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react'
 import {
 	ActivityIndicator,
 	ImageBackground,
@@ -6,11 +6,11 @@ import {
 	Text,
 	TouchableOpacity,
 	View
-} from 'react-native';
-import Icon from '../icons/Icon';
-import { AvatarProps } from '../index';
-import { Styles } from '../mixins';
-import { UtilColor } from '../utils';
+} from 'react-native'
+import Icon from '../icons/Icon'
+import { AvatarProps } from '../index'
+import { Styles } from '../mixins'
+import { UtilColor } from '../utils'
 
 const Component = ({
 	title,
@@ -20,8 +20,8 @@ const Component = ({
 	style,
 	containerStyle,
 	icon,
-	rounded,
 	circular = true,
+	rounded,
 	withRandomColor = true,
 	shortestTitle = true,
 	onPress,
@@ -30,43 +30,43 @@ const Component = ({
 	raised,
 	loading = true
 }: AvatarProps) => {
-	const [avatarLoaded, setAvatarLoaded] = useState(false);
-	const [defaultBg] = useState('#b1b1b1');
-	const [defaultTextColor] = useState('#fff');
+	const [avatarLoaded, setAvatarLoaded] = useState(false)
+	const [defaultBg] = useState('#b1b1b1')
+	const [defaultTextColor] = useState('#fff')
 	const chars = useMemo(() => {
-		if (!shortestTitle) return title;
+		if (!shortestTitle) return title
 		let chars = title
 			?.trim()
 			?.split(' ')
-			.map((word) => word?.trim()?.charAt(0));
+			.map((word) => word?.trim()?.charAt(0))
 		if (titleShowLimit) {
-			return chars.slice(0, titleShowLimit);
+			return chars.slice(0, titleShowLimit)
 		}
-		return chars;
-	}, [title, titleShowLimit, shortestTitle]);
+		return chars
+	}, [title, titleShowLimit, shortestTitle])
 
 	const Wrapper = useMemo(() => {
 		if (onPress) {
-			return TouchableOpacity;
+			return TouchableOpacity
 		} else {
-			return View;
+			return View
 		}
-	}, [onPress]);
+	}, [onPress])
 
 	const ComputedStyle = useMemo(() => {
-		let style = {};
-		bordered && (style = { ...style, ...Styles.border });
-		raised && (style = { ...style, ...Styles.boxShadow });
-		return style;
-	}, [bordered, raised]);
+		let style = {}
+		bordered && (style = {...style, ...Styles.border})
+		raised && (style = {...style, ...Styles.boxShadow})
+		return style
+	}, [bordered, raised])
 
 	const avatarTitleAutoColor = useMemo(() => {
 		if (textColorMode == 'light') {
-			return UtilColor.lightenColor(UtilColor.stringToColour(title), 100);
+			return UtilColor.lightenColor(UtilColor.stringToColour(title), 100)
 		} else {
-			return UtilColor.contrast(UtilColor.stringToColour(title));
+			return UtilColor.contrast(UtilColor.stringToColour(title))
 		}
-	}, [textColorMode, title]);
+	}, [textColorMode, title])
 
 	const avatarTitleContent = useMemo(
 		() => (
@@ -94,7 +94,7 @@ const Component = ({
 			titleShowLimit,
 			avatarTitleAutoColor
 		]
-	);
+	)
 
 	const avatarTitle = useMemo(
 		() => (
@@ -117,13 +117,12 @@ const Component = ({
 			title,
 			size,
 			circular,
-			rounded,
 			withRandomColor,
 			Wrapper,
 			avatarTitleContent,
 			ComputedStyle
 		]
-	);
+	)
 
 	const avatarIcon = useMemo(() => {
 		return (
@@ -138,34 +137,34 @@ const Component = ({
 					minimumFontScale={0.01}
 					adjustsFontSizeToFit
 					numberOfLines={1}
-					style={StyleSheet.flatten([
-						styles.icon(size, defaultTextColor),
-						style
-					])}
+					style={StyleSheet.flatten([styles.icon(size, defaultTextColor), style])}
 					{...icon}
 				/>
 			</Wrapper>
-		);
-	}, [size, icon, circular, rounded, Wrapper, ComputedStyle]);
+		)
+	}, [size, icon, circular, Wrapper, ComputedStyle])
 
 	const avatarImage = useMemo(
 		() => (
-			<Wrapper onPress={onPress} style={[containerStyle]}>
+			<Wrapper
+				onPress={onPress}
+				style={[
+					ComputedStyle,
+					styles.imageContainer(size, circular, rounded),
+					containerStyle
+				]}
+			>
 				<ImageBackground
 					source={source}
-					style={StyleSheet.flatten([
-						ComputedStyle,
-						styles.image(size, circular, rounded),
-						style
-					])}
-					resizeMode="cover"
+					style={StyleSheet.flatten([styles.image(size, circular, rounded), style])}
+					resizeMode='cover'
 					onLoadEnd={() => {
-						setAvatarLoaded(true);
+						setAvatarLoaded(true)
 					}}
 				>
 					{title && !avatarLoaded && avatarTitleContent}
 					{!avatarLoaded && loading && (
-						<ActivityIndicator color="#fff" style={styles.indicator} />
+						<ActivityIndicator color='#fff' style={styles.indicator} />
 					)}
 				</ImageBackground>
 			</Wrapper>
@@ -175,27 +174,26 @@ const Component = ({
 			size,
 			avatarLoaded,
 			circular,
-			rounded,
 			title,
 			Wrapper,
 			avatarTitleContent,
 			ComputedStyle,
 			loading
 		]
-	);
+	)
 
 	const avatar = useMemo(() => {
 		if (source) {
-			return avatarImage;
+			return avatarImage
 		} else if (icon) {
-			return avatarIcon;
+			return avatarIcon
 		} else {
-			return avatarTitle;
+			return avatarTitle
 		}
-	}, [avatarTitle, avatarIcon, avatarImage]);
+	}, [avatarTitle, avatarIcon, avatarImage])
 
-	return avatar;
-};
+	return avatar
+}
 
 const styles = StyleSheet.create({
 	indicator: {
@@ -217,23 +215,26 @@ const styles = StyleSheet.create({
 		fontSize: 200,
 		paddingHorizontal: size / 7
 	}),
-	image: (size, circular, rounded) => ({
+	imageContainer: (size, radius, rounded) => ({
+		borderRadius: radius ? size * 0.5 : rounded ? 5 : undefined
+	}),
+	image: (size, radius, rounded) => ({
 		width: size,
 		height: size,
 		backgroundColor: '#BCBEC1',
 		alignItems: 'center',
 		justifyContent: 'center',
-		overflow: 'hidden',
-		borderRadius: circular ? size * 0.5 : rounded ? 5 : undefined
+		borderRadius: radius ? size * 0.5 : rounded ? 5 : undefined,
+		overflow: 'hidden'
 	}),
-	textContainer: (size, bgColor, circular, rounded) => ({
+	textContainer: (size, bgColor, radius, rounded) => ({
 		backgroundColor: bgColor,
 		width: size,
 		height: size,
-		borderRadius: circular ? size * 0.5 : rounded ? 5 : undefined,
+		borderRadius: radius ? size * 0.5 : rounded ? 5 : undefined,
 		alignItems: 'center',
 		justifyContent: 'center'
 	})
-});
+})
 
-export default Component;
+export default Component

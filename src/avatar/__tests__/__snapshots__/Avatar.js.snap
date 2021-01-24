@@ -4,6 +4,10 @@ exports[`Avatar Component should render with avatar image 1`] = `
 <View
   style={
     Array [
+      Object {},
+      Object {
+        "borderRadius": 16,
+      },
       undefined,
     ]
   }
@@ -35,6 +39,10 @@ exports[`Avatar Component should render with avatar image 2`] = `
 <View
   style={
     Array [
+      Object {},
+      Object {
+        "borderRadius": 16,
+      },
       undefined,
     ]
   }
@@ -66,6 +74,10 @@ exports[`Avatar Component should render with circular is false 1`] = `
 <View
   style={
     Array [
+      Object {},
+      Object {
+        "borderRadius": undefined,
+      },
       undefined,
     ]
   }
@@ -210,6 +222,10 @@ exports[`Avatar Component should render with onPress in image avatar 1`] = `
   }
   style={
     Array [
+      Object {},
+      Object {
+        "borderRadius": 16,
+      },
       undefined,
     ]
   }
@@ -287,7 +303,7 @@ exports[`Avatar Component should render with onPress in title avatar 1`] = `
     numberOfLines={1}
     style={
       Object {
-        "color": "#000",
+        "color": "rgba(0,0,0,.6)",
         "fontSize": 200,
         "paddingHorizontal": 4.571428571428571,
         "textAlign": "center",
@@ -359,7 +375,7 @@ exports[`Avatar Component should render with shortestTitle is false 1`] = `
     numberOfLines={1}
     style={
       Object {
-        "color": "#000",
+        "color": "rgba(0,0,0,.6)",
         "fontSize": 200,
         "paddingHorizontal": 4.571428571428571,
         "textAlign": "center",
@@ -394,7 +410,7 @@ exports[`Avatar Component should render with shortestTitle is false 2`] = `
     numberOfLines={1}
     style={
       Object {
-        "color": "#000",
+        "color": "rgba(0,0,0,.6)",
         "fontSize": 200,
         "paddingHorizontal": 4.571428571428571,
         "textAlign": "center",
@@ -429,7 +445,7 @@ exports[`Avatar Component should render with textAutoColorMode is auto-light 1`]
     numberOfLines={1}
     style={
       Object {
-        "color": "#000",
+        "color": "rgba(0,0,0,.6)",
         "fontSize": 200,
         "paddingHorizontal": 4.571428571428571,
         "textAlign": "center",
@@ -465,7 +481,7 @@ exports[`Avatar Component should render with title 1`] = `
     numberOfLines={1}
     style={
       Object {
-        "color": "#000",
+        "color": "rgba(0,0,0,.6)",
         "fontSize": 200,
         "paddingHorizontal": 4.571428571428571,
         "textAlign": "center",

@@ -5814,11 +5814,6 @@ react-native-size-matters@^0.3.1:
   resolved "https://registry.yarnpkg.com/react-native-size-matters/-/react-native-size-matters-0.3.1.tgz#24d0cfc335a2c730f6d58bd7b43ea5a41be4b49f"
   integrity sha512-mKOfBLIBFBcs9br1rlZDvxD5+mAl8Gfr5CounwJtxI6Z82rGrMO+Kgl9EIg3RMVf3G855a85YVqHJL2f5EDRlw==
 
-react-native-spacing-system@^1.2.0-rc.0:
-  version "1.2.0-rc.0"
-  resolved "https://registry.yarnpkg.com/react-native-spacing-system/-/react-native-spacing-system-1.2.0-rc.0.tgz#9fc6c208bd563da87abfdb5c6f15580559bc80a4"
-  integrity sha512-OQWVyP421R2OftlFd3RNkgwGla2nJ0NGi492xEUScqkJSRX3/UpBEIKWScz9U+t1qgiqM0g2bIXl52UMG30qDA==
-
 react-native-vector-icons@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-7.1.0.tgz#145487d617b2a81d395d2cf64e6e065fcab3a454"
