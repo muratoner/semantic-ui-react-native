@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Center Component should render with children 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "column",
+      },
+      undefined,
+    ]
+  }
+>
+  <Component
+    title="Murat ÖNER"
+  />
+  <Component
+    title="Murat"
+  />
+</View>
+`;
+
+exports[`Center Component should render without issues 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "column",
+      },
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+/>
+`;

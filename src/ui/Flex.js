@@ -1,15 +1,15 @@
 import React from 'react'
 import {View} from 'react-native'
-export default (props) => {
-	let {size: flex = 1, children, ...attrs} = props
+export default ({size: flex = 1, style, ...attrs}) => {
 	return (
 		<View
 			{...attrs}
-			style={{
-				flex
-			}}
-		>
-			{children}
-		</View>
+			style={[
+				{
+					flex
+				},
+				style
+			]}
+		/>
 	)
 }

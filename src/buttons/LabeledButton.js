@@ -29,7 +29,7 @@ const LabeledButton = ({
 	title,
 	type
 }: LabeledButtonProps) => {
-	const bgColor = ButtonColor.getBgColor(color)
+	const bgColor = UtilColor.getBgColor(color)
 	const textColor = UtilColor.contrast(bgColor)
 	const outline = type == 'outline'
 

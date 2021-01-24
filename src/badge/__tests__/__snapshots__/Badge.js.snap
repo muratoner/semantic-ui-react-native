@@ -1,5 +1,156 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Badge Component should render with content 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#21ba45",
+          "borderRadius": 20,
+          "height": 10,
+          "width": 10,
+          "zIndex": 9,
+        },
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Icon
+      name="user"
+    />
+  </View>
+</View>
+`;
+
+exports[`Badge Component should render with overlap prop and Avatar child 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#21ba45",
+          "borderRadius": 20,
+          "height": 10,
+          "position": "absolute",
+          "right": 5,
+          "top": 5,
+          "width": 10,
+          "zIndex": 9,
+        },
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  />
+  <Component
+    title="Murat ÖNER"
+  />
+</View>
+`;
+
+exports[`Badge Component should render with rounded 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#21ba45",
+          "borderRadius": 20,
+          "zIndex": 9,
+        },
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      adjustsFontSizeToFit={true}
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "fontSize": 9,
+            "paddingHorizontal": 4,
+            "paddingVertical": 2,
+            "textAlign": "center",
+          },
+          Object {
+            "color": "#fff",
+          },
+          undefined,
+        ]
+      }
+    >
+      New
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Badge Component should render with rounded Avatar child 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#21ba45",
+          "borderRadius": 20,
+          "height": 10,
+          "position": "absolute",
+          "right": -3,
+          "top": -3,
+          "width": 10,
+          "zIndex": 9,
+        },
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  />
+  <Component
+    title="Murat ÖNER"
+  />
+</View>
+`;
+
 exports[`Badge Component should render without issues 1`] = `
 <View
   style={

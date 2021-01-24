@@ -10,7 +10,6 @@ import {ButtonProps} from '../'
 import Icon from '../icons/Icon'
 import {Styles} from '../mixins'
 import {UtilColor} from '../utils'
-import ButtonColor from './ButtonColor'
 
 const Button = ({
 	children,
@@ -29,7 +28,7 @@ const Button = ({
 	onPress
 }: ButtonProps) => {
 	const outline = type == 'outline'
-	const bgColor = ButtonColor.getBgColor(color)
+	const bgColor = UtilColor.getBgColor(color)
 	const textColor = outline ? bgColor : UtilColor.contrast(bgColor)
 	const iconStyle = {
 		marginRight: title ? 5 : 0

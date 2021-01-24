@@ -9,12 +9,10 @@ export default (props) => {
 		right: paddingRight,
 		top: paddingTop,
 		bottom: paddingBottom,
-		children,
 		style,
 		flex,
 		...attrs
 	} = props
-	console.info('paddingVertical > ', paddingVertical)
 
 	return (
 		<View
@@ -32,8 +30,6 @@ export default (props) => {
 				},
 				style
 			]}
-		>
-			{children}
-		</View>
+		/>
 	)
 }

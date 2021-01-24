@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row Component should render with children 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <Component
+    title="Murat ÖNER"
+  />
+  <Component
+    title="Murat"
+  />
+</View>
+`;
+
+exports[`Row Component should render without issues 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+/>
+`;

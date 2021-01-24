@@ -5,7 +5,7 @@ exports[`Button Component should render with title and circular props 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#e0e1e2",
+      "backgroundColor": undefined,
       "borderRadius": 50,
       "flex": null,
       "flexDirection": "row",
@@ -34,7 +34,7 @@ exports[`Button Component should render with title prop 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#e0e1e2",
+      "backgroundColor": undefined,
       "borderRadius": 3,
       "flex": null,
       "flexDirection": "row",
@@ -65,7 +65,7 @@ exports[`Button Component should render with title, circular and disabled props 
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#e0e1e2",
+      "backgroundColor": undefined,
       "borderRadius": 50,
       "flex": null,
       "flexDirection": "row",
@@ -96,7 +96,7 @@ exports[`Button Component should render with title, circular, disabled and fluid
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#e0e1e2",
+      "backgroundColor": undefined,
       "borderRadius": 50,
       "flex": 1,
       "flexDirection": "row",
@@ -128,7 +128,7 @@ exports[`Button Component should render with title, circular, disabled, fluid an
     Object {
       "alignItems": "center",
       "backgroundColor": "#fff",
-      "borderColor": "#e0e1e2",
+      "borderColor": undefined,
       "borderRadius": 50,
       "borderWidth": 1,
       "flex": 1,
@@ -143,7 +143,7 @@ exports[`Button Component should render with title, circular, disabled, fluid an
   <Text
     style={
       Object {
-        "color": "#e0e1e2",
+        "color": undefined,
         "fontWeight": "bold",
       }
     }
@@ -161,7 +161,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
     Object {
       "alignItems": "center",
       "backgroundColor": "#fff",
-      "borderColor": "#e0e1e2",
+      "borderColor": undefined,
       "borderRadius": 50,
       "borderWidth": 1,
       "flex": 1,
@@ -177,7 +177,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
   <Text
     style={
       Object {
-        "color": "#e0e1e2",
+        "color": undefined,
         "fontWeight": "bold",
       }
     }
@@ -195,7 +195,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
     Object {
       "alignItems": "center",
       "backgroundColor": "#fff",
-      "borderColor": "#e0e1e2",
+      "borderColor": undefined,
       "borderRadius": 50,
       "borderWidth": 1,
       "flex": 1,
@@ -211,7 +211,7 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
   <Text
     style={
       Object {
-        "color": "#e0e1e2",
+        "color": undefined,
         "fontWeight": "bold",
       }
     }
@@ -275,8 +275,8 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
       "paddingVertical": 11,
       "shadowColor": "rgba(0,0,0,.5)",
       "shadowOffset": Object {
-        "height": 2,
-        "width": 1,
+        "height": 0,
+        "width": 0,
       },
       "shadowOpacity": 0.5,
       "shadowRadius": 2,
@@ -316,8 +316,8 @@ exports[`Button Component should render with title, circular, disabled, fluid, o
       "paddingVertical": 11,
       "shadowColor": "rgba(0,0,0,.5)",
       "shadowOffset": Object {
-        "height": 2,
-        "width": 1,
+        "height": 0,
+        "width": 0,
       },
       "shadowOpacity": 0.5,
       "shadowRadius": 2,
@@ -342,7 +342,7 @@ exports[`Button Component should render with title, iconName and iconType props 
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#e0e1e2",
+      "backgroundColor": undefined,
       "borderRadius": 3,
       "flex": null,
       "flexDirection": "row",
@@ -382,7 +382,7 @@ exports[`Button Component should render without issues 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#e0e1e2",
+      "backgroundColor": undefined,
       "borderRadius": 3,
       "flex": null,
       "flexDirection": "row",

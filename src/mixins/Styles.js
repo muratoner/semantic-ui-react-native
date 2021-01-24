@@ -9,6 +9,6 @@ export default StyleSheet.create({
 		shadowColor: 'rgba(0,0,0,.5)',
 		shadowOpacity: 0.5,
 		shadowRadius: 2,
-		shadowOffset: {width: 1, height: 2}
+		shadowOffset: {width: 0, height: 0}
 	}
 })

@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Inset Component should render with flex 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": true,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "paddingVertical": undefined,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Inset Component should render with flex size is 2 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 2,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "paddingVertical": undefined,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Inset Component should render with paddingBottom size 10 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": undefined,
+        "padding": undefined,
+        "paddingBottom": 10,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "paddingVertical": undefined,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Inset Component should render with paddingHorizontal size 10 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": undefined,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": 10,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "paddingVertical": undefined,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Inset Component should render with paddingLeft size 10 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": undefined,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": 10,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "paddingVertical": undefined,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Inset Component should render with paddingRight size 10 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": undefined,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": 10,
+        "paddingTop": undefined,
+        "paddingVertical": undefined,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Inset Component should render with paddingTop size 10 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": undefined,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": 10,
+        "paddingVertical": undefined,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Inset Component should render with paddingVertical size 10 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": undefined,
+        "padding": undefined,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "paddingVertical": 10,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Inset Component should render without issues 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": undefined,
+        "padding": 10,
+        "paddingBottom": undefined,
+        "paddingHorizontal": undefined,
+        "paddingLeft": undefined,
+        "paddingRight": undefined,
+        "paddingTop": undefined,
+        "paddingVertical": undefined,
+      },
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+/>
+`;

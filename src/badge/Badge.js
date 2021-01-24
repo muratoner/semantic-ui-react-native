@@ -1,6 +1,6 @@
-import React, { useMemo } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { UtilColor } from '../utils'
+import React, {useMemo} from 'react'
+import {StyleSheet, Text, View} from 'react-native'
+import {UtilColor} from '../utils'
 
 export default (props) => {
 	let {

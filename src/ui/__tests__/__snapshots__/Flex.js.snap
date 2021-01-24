@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flex Component should render with 2 flex size 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 2,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Flex Component should render with two children 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <Component
+    title="Murat ÖNER"
+  />
+  <Component
+    title="Murat"
+  />
+</View>
+`;
+
+exports[`Flex Component should render without issues 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+/>
+`;

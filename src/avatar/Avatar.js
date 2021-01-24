@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, {useMemo, useState} from 'react'
 import {
 	ActivityIndicator,
 	ImageBackground,
@@ -8,9 +8,8 @@ import {
 	View
 } from 'react-native'
 import Icon from '../icons/Icon'
-import { AvatarProps } from '../index'
-import { Styles } from '../mixins'
-import { UtilColor } from '../utils'
+import {Styles} from '../mixins'
+import {UtilColor} from '../utils'
 
 const Component = ({
 	title,
@@ -29,7 +28,7 @@ const Component = ({
 	bordered,
 	raised,
 	loading = true
-}: AvatarProps) => {
+}) => {
 	const [avatarLoaded, setAvatarLoaded] = useState(false)
 	const [defaultBg] = useState('#b1b1b1')
 	const [defaultTextColor] = useState('#fff')
