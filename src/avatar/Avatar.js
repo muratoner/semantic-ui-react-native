@@ -20,6 +20,7 @@ const Component = ({
 	style,
 	containerStyle,
 	icon,
+	rounded,
 	circular = true,
 	withRandomColor = true,
 	shortestTitle = true,
@@ -103,7 +104,8 @@ const Component = ({
 					styles.textContainer(
 						size,
 						withRandomColor ? UtilColor.stringToColour(title) : defaultBg,
-						circular
+						circular,
+						rounded
 					),
 					ComputedStyle
 				]}
@@ -115,6 +117,7 @@ const Component = ({
 			title,
 			size,
 			circular,
+			rounded,
 			withRandomColor,
 			Wrapper,
 			avatarTitleContent,
@@ -126,7 +129,10 @@ const Component = ({
 		return (
 			<Wrapper
 				onPress={onPress}
-				style={[styles.textContainer(size, defaultBg, circular), ComputedStyle]}
+				style={[
+					styles.textContainer(size, defaultBg, circular, rounded),
+					ComputedStyle
+				]}
 			>
 				<Icon
 					minimumFontScale={0.01}
@@ -140,7 +146,7 @@ const Component = ({
 				/>
 			</Wrapper>
 		);
-	}, [size, icon, circular, Wrapper, ComputedStyle]);
+	}, [size, icon, circular, rounded, Wrapper, ComputedStyle]);
 
 	const avatarImage = useMemo(
 		() => (
@@ -149,7 +155,7 @@ const Component = ({
 					source={source}
 					style={StyleSheet.flatten([
 						ComputedStyle,
-						styles.image(size, circular),
+						styles.image(size, circular, rounded),
 						style
 					])}
 					resizeMode="cover"
@@ -169,6 +175,7 @@ const Component = ({
 			size,
 			avatarLoaded,
 			circular,
+			rounded,
 			title,
 			Wrapper,
 			avatarTitleContent,
@@ -210,20 +217,20 @@ const styles = StyleSheet.create({
 		fontSize: 200,
 		paddingHorizontal: size / 7
 	}),
-	image: (size, radius) => ({
+	image: (size, circular, rounded) => ({
 		width: size,
 		height: size,
 		backgroundColor: '#BCBEC1',
 		alignItems: 'center',
 		justifyContent: 'center',
 		overflow: 'hidden',
-		borderRadius: radius ? size * 0.5 : undefined
+		borderRadius: circular ? size * 0.5 : rounded ? 5 : undefined
 	}),
-	textContainer: (size, bgColor, radius, bordered) => ({
+	textContainer: (size, bgColor, circular, rounded) => ({
 		backgroundColor: bgColor,
 		width: size,
 		height: size,
-		borderRadius: radius ? size * 0.5 : undefined,
+		borderRadius: circular ? size * 0.5 : rounded ? 5 : undefined,
 		alignItems: 'center',
 		justifyContent: 'center'
 	})

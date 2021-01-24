@@ -234,6 +234,61 @@ const Component = () => {
 							}}
 						/>
 					</View>
+
+					<Divider title="With Rounded" />
+					<View
+						style={{
+							flexDirection: 'row',
+							justifyContent: 'space-around',
+							flex: 1,
+							width: '100%'
+						}}
+					>
+						<Avatar
+							title="Frieda Christiansen II"
+							size={64}
+							raised
+							circular={false}
+							rounded
+						/>
+						<Avatar
+							title="Frieda Christiansen II"
+							textColorMode="light"
+							size={64}
+							raised
+							circular={false}
+							rounded
+						/>
+						<Avatar
+							size={64}
+							raised
+							circular={false}
+							rounded
+							icon={{
+								name: 'twitter',
+								type: 'FontAwesome',
+								color: 'white'
+							}}
+						/>
+						<Avatar
+							title={'Trent Lemke'}
+							size={64}
+							raised
+							circular={false}
+							rounded
+							source={{
+								uri: 'https://i.pravatar.cc/128?img=5'
+							}}
+						/>
+						<Avatar
+							title="Estelle"
+							size={64}
+							shortestTitle={false}
+							circular={false}
+							rounded
+							raised
+						/>
+					</View>
 				</View>
 			</ScrollView>
 		</SafeAreaView>
