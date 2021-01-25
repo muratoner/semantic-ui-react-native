@@ -95,6 +95,7 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 ## Components
 
 - [ ] Accordion
+- [ ] Actionsheet
 - [x] Avatar
 - [ ] Avatar Group
 - [x] Badge
@@ -109,6 +110,7 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [x] CheckBox
 - [ ] CheckBoxGroup
 - [ ] Comment
+- [ ] Collapse
 - [x] Divider
 - [ ] Dimmer
 - [ ] Feed
