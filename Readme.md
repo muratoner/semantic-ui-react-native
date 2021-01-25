@@ -97,13 +97,15 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [ ] Accordion
 - [x] Avatar
 - [ ] Avatar Group
-- [ ] Badge
+- [x] Badge
 - [ ] BottomSheet
 - [ ] Breadcrumb
 - [x] Button
 - [ ] ButtonGroup
 - [ ] Card
+- [x] Center
 - [ ] Color Picker
+- [x] Column
 - [x] CheckBox
 - [ ] CheckBoxGroup
 - [ ] Comment
@@ -111,10 +113,12 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [ ] Dimmer
 - [ ] Feed
 - [ ] Flag
+- [x] Flex
 - [ ] Grid
 - [ ] Header
 - [ ] HTML style headings
 - [x] Icon
+- [x] Inset
 - [ ] Image
 - [ ] Input
 - [ ] Label
@@ -127,8 +131,10 @@ import { Button, LabeledButton } from '@muratoner/semantic-ui-react-native';
 - [x] Progress
 - [ ] Rating
 - [ ] RadioGroup
+- [x] Row
 - [ ] SearchBar
 - [ ] Segment
+- [x] Stack
 - [ ] Statistic
 - [ ] Step
 - [ ] Slider
