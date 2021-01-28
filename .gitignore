@@ -235,9 +235,12 @@ package-lock.json
 /packages/react-native-codegen/**/*.xcodeproj
 
 # CocoaPods
-/example/ios/Pods/
-/example/ios/Podfile.lock
+/example
 /packages/rn-tester/Gemfile.lock
+/navigation
+/utils
+*.sync.ffs_db
+/screens
 
 # Ignore RNTester specific Pods, but keep the __offline_mirrors__ here.
 /packages/rn-tester/Pods/*
