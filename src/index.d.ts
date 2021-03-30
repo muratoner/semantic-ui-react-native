@@ -430,6 +430,11 @@ export interface AvatarProps {
  iconStyle?: TextStyle
 
  /**
+  * Container style for image, icon or title
+  */
+ containerStyle?: ViewStyle
+
+ /**
   * Icon config
   */
  icon?: IconProps
@@ -481,7 +486,7 @@ export interface AvatarProps {
  /**
   * Avatar Rounded
   */
- raised?: boolean
+ rounded?: boolean
 
  /**
   * Show loading bar while image not loaded

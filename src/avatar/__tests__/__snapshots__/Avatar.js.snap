@@ -6,7 +6,7 @@ exports[`Avatar Component should render with avatar image 1`] = `
     Array [
       Object {},
       Object {
-        "borderRadius": 16,
+        "borderRadius": 64,
       },
       undefined,
     ]
@@ -24,7 +24,7 @@ exports[`Avatar Component should render with avatar image 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#BCBEC1",
-        "borderRadius": 16,
+        "borderRadius": 64,
         "height": 32,
         "justifyContent": "center",
         "overflow": "hidden",
@@ -41,7 +41,7 @@ exports[`Avatar Component should render with avatar image 2`] = `
     Array [
       Object {},
       Object {
-        "borderRadius": 16,
+        "borderRadius": 64,
       },
       undefined,
     ]
@@ -59,7 +59,7 @@ exports[`Avatar Component should render with avatar image 2`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#BCBEC1",
-        "borderRadius": 16,
+        "borderRadius": 64,
         "height": 32,
         "justifyContent": "center",
         "overflow": "hidden",
@@ -79,7 +79,7 @@ exports[`Avatar Component should render with bordered prop 1`] = `
         "borderWidth": 1,
       },
       Object {
-        "borderRadius": 16,
+        "borderRadius": 64,
       },
       undefined,
     ]
@@ -97,7 +97,7 @@ exports[`Avatar Component should render with bordered prop 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#BCBEC1",
-        "borderRadius": 16,
+        "borderRadius": 64,
         "height": 32,
         "justifyContent": "center",
         "overflow": "hidden",
@@ -316,7 +316,7 @@ exports[`Avatar Component should render with onPress in image avatar 1`] = `
     Array [
       Object {},
       Object {
-        "borderRadius": 16,
+        "borderRadius": 64,
       },
       undefined,
     ]
@@ -334,7 +334,7 @@ exports[`Avatar Component should render with onPress in image avatar 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#BCBEC1",
-        "borderRadius": 16,
+        "borderRadius": 64,
         "height": 32,
         "justifyContent": "center",
         "overflow": "hidden",
@@ -423,7 +423,7 @@ exports[`Avatar Component should render with raised prop 1`] = `
         "shadowRadius": 2,
       },
       Object {
-        "borderRadius": 16,
+        "borderRadius": 64,
       },
       undefined,
     ]
@@ -441,7 +441,7 @@ exports[`Avatar Component should render with raised prop 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "#BCBEC1",
-        "borderRadius": 16,
+        "borderRadius": 64,
         "height": 32,
         "justifyContent": "center",
         "overflow": "hidden",
